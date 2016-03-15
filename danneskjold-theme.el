@@ -6,7 +6,6 @@
 ;; URL: https://github.com/rails-to-cosmos/
 ;; Package-Version: 20160311.458
 
-
 ;;; Commentary:
 
 ;;; Code:
@@ -67,6 +66,7 @@
 
       ;; Shades of green
       (spring-flower "#B3DE81")
+      (summer-flower "#2f5218")
 
       ;; Shades of blue
       (twitter "#4CB5F5")
@@ -74,7 +74,8 @@
       ;; Shades of red
       (waddles "#FF87BA")
       (krayola "#E38B75")
-      (santa "#F34A4A"))
+      (santa "#F34A4A")
+      (red-forest "#330006"))
 
   (custom-theme-set-faces
    'danneskjold
@@ -95,6 +96,8 @@
    `(font-lock-type-face ((t (:foreground ,saffron))))
    `(font-lock-constant-face ((t (:foreground ,fg))))
 
+   `(mmm-default-submode-face ((t (:background ,as-dark-as-midnight))))
+
    ;; Mode-line
    `(mode-line ((t (:background ,as-dark-as-midnight
                     :foreground ,fg
@@ -111,6 +114,7 @@
 
    `(font-lock-warning-face ((t (:foreground ,santa))))
    `(compilation-warning ((t (:foreground ,santa))))
+   `(compilation-info ((t (:foreground ,spring-flower))))
    `(highlight ((t (:background ,as-dark-as-midnight :foreground ,frost))))
 
    `(linum ((t (:foreground ,anthracite))))
@@ -121,14 +125,22 @@
    ;; Highlight quoted mode-line
    `(highlight-quoted-symbol ((t (:foreground ,waddles))))
 
-   ;; hl-line and hlinum-activate
+   ;; Hl-line and hlinum-activate
    `(linum-highlight-face ((t (:foreground ,anthracite :background ,as-dark-as-midnight :weight bold))))
    `(hl-line ((t (:background ,as-dark-as-midnight))))
 
-   ;; magit
-   ;;`(magit-diff-added-highlight ((t (:background ,"#35B82C" :foreground ,fg))))
-   ;;`(magit-diff-removed-highlight ((t (:background "sunrise"))))
-   ;;`(magit-diff-context-highlight ((t (:background ,bg))))
+   ;; Magit
+   `(magit-diff-added ((t (:background ,summer-flower :foreground ,fg))))
+   `(magit-diff-added-highlight ((t (:background ,summer-flower :foreground ,fg))))
+   `(magit-diff-removed ((t (:background ,red-forest :foreground ,fg))))
+   `(magit-diff-removed-highlight ((t (:background ,red-forest :foreground ,fg))))
+   `(magit-diff-context ((t (:background ,bg :foreground ,comment))))
+   `(magit-diff-context-highlight ((t (:background ,bg :foreground ,frost))))
+   `(magit-section-highlight ((t (:background ,as-dark-as-midnight))))
+   `(magit-diff-hunk-heading-highlight ((t (:background ,bg))))
+   `(magit-section-heading ((t (:foreground ,sunrise :inherit nil))))
+   `(magit-diff-hunk-heading ((t (:foreground ,frost :background ,slightly-brighter-than-midnight))))
+   `(magit-diff-lines-heading ((t (:foreground ,frost :background ,slightly-brighter-than-midnight))))
 
    ;; Org
    `(org-todo ((t (:foreground ,santa))))
@@ -141,7 +153,7 @@
    `(org-level-1 ((t (:foreground ,twitter))))
    `(org-level-2 ((t (:foreground ,frost))))
 
-   ;; rainbow-delimiters
+   ;; Rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,spring-flower))))
    `(rainbow-delimiters-depth-2-face ((t (:foreground ,santa))))
    `(rainbow-delimiters-depth-3-face ((t (:foreground ,frost))))
