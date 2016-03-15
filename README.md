@@ -6,7 +6,12 @@ Beautiful high-contrast emacs theme.
 Screenshots
 -----------
 
+#### Dired and org-mode ####
+
 ![dired and org-mode](https://github.com/rails-to-cosmos/danneskjold-theme/raw/master/screenshots/dired-and-org.png)
+
+#### Magit ####
+![magit](https://github.com/rails-to-cosmos/danneskjold-theme/raw/master/screenshots/magit.png)
 
 ### Bug Reporting
 
