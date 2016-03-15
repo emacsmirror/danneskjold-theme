@@ -1,7 +1,7 @@
 Danneskjold Colorscheme for Emacs
 ===============================
 
-Beautiful high-contrast emacs theme
+Beautiful high-contrast emacs theme.
 
 Screenshots
 -----------
