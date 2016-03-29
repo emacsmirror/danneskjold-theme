@@ -112,6 +112,7 @@
    `(org-hide ((t (:foreground ,anthracite))))
    `(org-link ((t (:foreground ,frost :underline t))))
    `(org-date ((t (:foreground ,comment))))
+   `(org-tag ((t (:foreground ,anthracite))))
    `(org-special-keyword ((t (:foreground ,sunrise))))
    `(org-priority ((t (:foreground ,comment))))
    `(org-level-1 ((t (:foreground ,twitter))))
