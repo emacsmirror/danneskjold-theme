@@ -109,11 +109,11 @@
    ;; Org
    `(org-todo ((t (:foreground ,santa))))
    `(org-done ((t (:foreground ,spring-flower))))
-   ;; `(org-date ((t (:foreground ,sunrise))))
    `(org-hide ((t (:foreground ,anthracite))))
    `(org-link ((t (:foreground ,frost :underline t))))
    `(org-date ((t (:foreground ,comment))))
-
+   `(org-special-keyword ((t (:foreground ,sunrise))))
+   `(org-priority ((t (:foreground ,comment))))
    `(org-level-1 ((t (:foreground ,twitter))))
    `(org-level-2 ((t (:foreground ,frost))))
 
