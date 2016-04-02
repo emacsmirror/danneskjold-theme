@@ -112,18 +112,14 @@
    `(org-hide ((t (:foreground ,anthracite))))
    `(org-link ((t (:foreground ,frost :underline t))))
    `(org-date ((t (:foreground ,comment))))
-
-   `(org-level-1
-     ((t (:foreground ,twitter))))
-   `(org-level-2
-     ((t (:foreground ,frost))))
-
-   `(org-block-begin-line
-     ((t (:foreground ,sunrise))))
-   `(org-block-background
-     ((t (:background ,as-dark-as-midnight))))
-   `(org-block-end-line
-     ((t (:foreground ,sunrise))))
+   `(org-block-begin-line ((t (:foreground ,sunrise))))
+   `(org-block-background ((t (:background ,as-dark-as-midnight))))
+   `(org-block-end-line ((t (:foreground ,sunrise))))
+   `(org-tag ((t (:foreground ,anthracite))))
+   `(org-special-keyword ((t (:foreground ,sunrise))))
+   `(org-priority ((t (:foreground ,comment))))
+   `(org-level-1 ((t (:foreground ,twitter))))
+   `(org-level-2 ((t (:foreground ,frost))))
 
    ;; Rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,spring-flower))))
