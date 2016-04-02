@@ -30,7 +30,7 @@
 
       ;; Shades of green
       (spring-flower "#B3DE81")
-      (summer-flower "#2f5218")
+      (summer-flower "#013220")
 
       ;; Shades of blue
       (twitter "#4CB5F5")
@@ -39,7 +39,7 @@
       (waddles "#FF87BA")
       (krayola "#E38B75")
       (santa "#F34A4A")
-      (red-forest "#330006"))
+      (red-forest "#8b0000"))
 
   (custom-theme-set-faces
    'danneskjold
@@ -94,22 +94,21 @@
    `(hl-line ((t (:background ,as-dark-as-midnight))))
 
    ;; Magit
-   `(magit-diff-added ((t (:background ,summer-flower :foreground ,fg))))
-   `(magit-diff-added-highlight ((t (:background ,summer-flower :foreground ,fg))))
-   `(magit-diff-removed ((t (:background ,red-forest :foreground ,fg))))
-   `(magit-diff-removed-highlight ((t (:background ,red-forest :foreground ,fg))))
+   `(magit-diff-added ((t (:foreground ,spring-flower))))
+   `(magit-diff-added-highlight ((t (:foreground ,spring-flower))))
+   `(magit-diff-removed ((t (:foreground ,santa))))
+   `(magit-diff-removed-highlight ((t (:foreground ,santa))))
    `(magit-diff-context ((t (:background ,bg :foreground ,comment))))
    `(magit-diff-context-highlight ((t (:background ,bg :foreground ,frost))))
-   `(magit-section-highlight ((t (:background ,as-dark-as-midnight))))
-   `(magit-diff-hunk-heading-highlight ((t (:background ,bg))))
+   `(magit-section-highlight ((t (:background ,bg))))
    `(magit-section-heading ((t (:foreground ,sunrise :inherit nil))))
-   `(magit-diff-hunk-heading ((t (:foreground ,frost :background ,slightly-brighter-than-midnight))))
+   `(magit-diff-hunk-heading ((t (:foreground ,twitter :background ,slightly-brighter-than-midnight))))
+   `(magit-diff-hunk-heading-highlight ((t (:foreground ,twitter :background ,slightly-brighter-than-midnight))))
    `(magit-diff-lines-heading ((t (:foreground ,frost :background ,slightly-brighter-than-midnight))))
 
    ;; Org
    `(org-todo ((t (:foreground ,santa))))
    `(org-done ((t (:foreground ,spring-flower))))
-   ;; `(org-date ((t (:foreground ,sunrise))))
    `(org-hide ((t (:foreground ,anthracite))))
    `(org-link ((t (:foreground ,frost :underline t))))
    `(org-date ((t (:foreground ,comment))))
