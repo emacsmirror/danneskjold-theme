@@ -1,4 +1,4 @@
-;;; danneskjold-theme.el --- beautiful high-contrast theme
+;; danneskjold-theme.el --- beautiful high-contrast theme
 
 ;; Copyright (c) 2016 Dmitry Akatov
 
@@ -64,15 +64,15 @@
 
    ;; Mode-line
    `(mode-line ((t (:background ,as-dark-as-midnight
-                    :foreground ,fg
-                    :box ,(list
-                           :line-width 4
-                           :color as-dark-as-midnight)))))
+                                :foreground ,fg
+                                :box ,(list
+                                       :line-width 4
+                                       :color as-dark-as-midnight)))))
    `(mode-line-inactive ((t (:background ,slightly-brighter-than-midnight
-                             :foreground ,fg
-                             :box ,(list
-                                    :line-width 4
-                                    :color slightly-brighter-than-midnight)))))
+                                         :foreground ,fg
+                                         :box ,(list
+                                                :line-width 4
+                                                :color slightly-brighter-than-midnight)))))
    `(mode-line-buffer-id ((t (:foreground ,fg))))
 
 
@@ -114,8 +114,17 @@
    `(org-link ((t (:foreground ,frost :underline t))))
    `(org-date ((t (:foreground ,comment))))
 
-   `(org-level-1 ((t (:foreground ,twitter))))
-   `(org-level-2 ((t (:foreground ,frost))))
+   `(org-level-1
+     ((t (:foreground ,twitter))))
+   `(org-level-2
+     ((t (:foreground ,frost))))
+
+   `(org-block-begin-line
+     ((t (:foreground ,sunrise))))
+   `(org-block-background
+     ((t (:background ,as-dark-as-midnight))))
+   `(org-block-end-line
+     ((t (:foreground ,sunrise))))
 
    ;; Rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,spring-flower))))
