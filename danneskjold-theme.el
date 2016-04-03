@@ -98,7 +98,7 @@
    `(magit-diff-added-highlight ((t (:foreground ,spring-flower))))
    `(magit-diff-removed ((t (:foreground ,santa))))
    `(magit-diff-removed-highlight ((t (:foreground ,santa))))
-   `(magit-diff-context ((t (:background ,bg :foreground ,comment))))
+   `(magit-diff-context ((t (:background ,bg :foreground ,frost))))
    `(magit-diff-context-highlight ((t (:background ,bg :foreground ,frost))))
    `(magit-section-highlight ((t (:background ,bg))))
    `(magit-section-heading ((t (:foreground ,sunrise :inherit nil))))
