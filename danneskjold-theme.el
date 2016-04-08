@@ -50,6 +50,8 @@
    `(link ((t (:foreground ,frost :underline t))))
    `(menu ((t (:foreground ,fg :background ,as-dark-as-midnight))))
 
+   `(show-paren-match ((t (:background ,twitter :foreground ,white))))
+
    `(font-lock-string-face ((t (:foreground ,krayola))))
    `(font-lock-builtin-face ((t (:foreground ,twitter))))
    `(font-lock-variable-name-face ((t (:foreground ,sunrise))))
