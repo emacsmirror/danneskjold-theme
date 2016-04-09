@@ -46,7 +46,7 @@
    `(default ((t (:foreground ,fg :background ,bg))))
    `(fringe ((t (:background ,bg))))
    `(region ((t (:background ,anthracite))))
-   `(button ((t (:foreground ,frost :underline t))))
+   `(button ((t (:foreground ,frost :underline t :weight normal))))
    `(link ((t (:foreground ,frost :underline t))))
    `(menu ((t (:foreground ,fg :background ,as-dark-as-midnight))))
 
@@ -61,6 +61,15 @@
    `(font-lock-constant-face ((t (:foreground ,fg))))
 
    `(mmm-default-submode-face ((t (:background ,as-dark-as-midnight))))
+
+   `(header-line ((t (:background ,bg
+                      :foreground ,comment
+                      :underline ,comment
+                      :weight normal
+                      :box ,(list
+                             :line-width 4
+                             :color bg
+                             )))))
 
    ;; Mode-line
    `(mode-line ((t (:background ,as-dark-as-midnight
@@ -120,6 +129,11 @@
    `(org-priority ((t (:foreground ,comment))))
    `(org-level-1 ((t (:foreground ,twitter))))
    `(org-level-2 ((t (:foreground ,frost))))
+
+   ;; Prodigy
+   `(prodigy-red-face ((t (:foreground ,santa))))
+   `(prodigy-green-face ((t (:foreground ,spring-flower))))
+   `(prodigy-yellow-face ((t (:foreground ,sunrise))))
 
    ;; Rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,spring-flower))))
