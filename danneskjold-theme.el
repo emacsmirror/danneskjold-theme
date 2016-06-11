@@ -116,6 +116,7 @@
    `(magit-diff-hunk-heading ((t (:foreground ,twitter :background ,slightly-brighter-than-midnight))))
    `(magit-diff-hunk-heading-highlight ((t (:foreground ,twitter :background ,slightly-brighter-than-midnight))))
    `(magit-diff-lines-heading ((t (:foreground ,frost :background ,slightly-brighter-than-midnight))))
+   `(magit-blame-heading ((t (:foreground ,twitter :background ,slightly-brighter-than-midnight))))
 
    ;; Org
    `(org-todo ((t (:foreground ,santa))))
