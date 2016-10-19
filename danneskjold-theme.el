@@ -67,11 +67,7 @@
    `(header-line ((t (:background ,bg
                       :foreground ,comment
                       :underline ,comment
-                      :weight normal
-                      :box ,(list
-                             :line-width 4
-                             :color bg
-                             )))))
+                      :weight normal))))
 
    ;; Mode-line
    `(mode-line ((t (:background ,as-dark-as-midnight
@@ -86,12 +82,12 @@
                                                 :color slightly-brighter-than-midnight)))))
    `(mode-line-buffer-id ((t (:foreground ,fg))))
 
-
    `(font-lock-warning-face ((t (:foreground ,santa))))
    `(compilation-warning ((t (:foreground ,santa))))
    `(compilation-info ((t (:foreground ,spring-flower))))
    `(highlight ((t (:background ,as-dark-as-midnight :foreground ,frost))))
 
+   ;; Linum
    `(linum ((t (:foreground ,anthracite))))
 
    `(widget-field ((t (:foreground ,fg :background ,slightly-brighter-than-midnight))))
@@ -137,6 +133,18 @@
    `(prodigy-red-face ((t (:foreground ,santa))))
    `(prodigy-green-face ((t (:foreground ,spring-flower))))
    `(prodigy-yellow-face ((t (:foreground ,sunrise))))
+
+   ;; Jabber
+   `(jabber-title-large ((t (:foreground ,frost :underline t))))
+   `(jabber-title-medium ((t (:foreground ,frost :underline t))))
+   `(jabber-title-small ((t (:foreground ,frost :underline t))))
+   `(jabber-chat-prompt-local ((t (:foreground ,frost))))
+   `(jabber-chat-prompt-foreign ((t(:foreground ,sunrise))))
+   `(jabber-roster-user-xa ((t (:foreground ,saffron))))
+   `(jabber-roster-user-online ((t (:foreground ,spring-flower))))
+   `(jabber-roster-user-offline ((t (:foreground ,comment))))
+   `(jabber-roster-user-away ((t (:foreground ,frost))))
+   `(jabber-rare-time-face ((t (:foreground ,slightly-brighter-than-midnight))))
 
    ;; Rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,spring-flower))))
@@ -192,9 +200,7 @@
    `(dired-filetype-link ((t (:foreground ,twitter :underline t))))
    `(dired-flagged ((t (:foreground ,santa :underline t))))
    `(dired-marked ((t (:foreground ,saffron :underline t))))
-
    `(diredp-dir-heading ((t (:foreground ,saffron))))
-
    `(dired-subtree-depth-1-face ((t (:background ,"#21252b"))))
    `(dired-subtree-depth-2-face ((t (:background ,"#282c34"))))
    `(dired-subtree-depth-3-face ((t (:background ,bg))))
