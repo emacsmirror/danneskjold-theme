@@ -135,8 +135,8 @@
    `(prodigy-yellow-face ((t (:foreground ,sunrise))))
 
    ;; Jabber
-   `(jabber-title-large ((t (:foreground ,twitter :weight bold))))
-   `(jabber-title-medium ((t (:foreground ,twitter))))
+   `(jabber-title-large ((t (:foreground ,frost :weight bold))))
+   `(jabber-title-medium ((t (:foreground ,frost))))
    `(jabber-title-small ((t (:foreground ,sunrise))))
    `(jabber-chat-prompt-local ((t (:foreground ,frost))))
    `(jabber-chat-prompt-foreign ((t(:foreground ,sunrise))))
