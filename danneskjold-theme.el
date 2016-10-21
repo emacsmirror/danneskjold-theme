@@ -53,6 +53,7 @@
    `(show-paren-match ((t (:background ,twitter :foreground ,white))))
 
    `(font-lock-string-face ((t (:foreground ,krayola))))
+   `(font-lock-doc-face ((t (:foreground ,anthracite))))
    `(font-lock-builtin-face ((t (:foreground ,twitter))))
    `(font-lock-variable-name-face ((t (:foreground ,sunrise))))
    `(font-lock-keyword-face ((t (:foreground ,frost))))
