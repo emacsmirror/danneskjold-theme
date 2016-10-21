@@ -27,7 +27,7 @@
       ;; Shades of yellow
       (sunrise "#FFDB45")
       (saffron "#F9BA32")
-      (orange "#FF9009")
+      (orange-saturated "#FF9009")
 
       ;; Shades of green
       (spring-flower "#B3DE81")
@@ -62,7 +62,7 @@
    `(font-lock-comment-face ((t (:foreground ,comment))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,anthracite))))
    `(font-lock-function-name-face ((t (:foreground ,saffron))))
-   `(font-lock-type-face ((t (:foreground ,orange))))
+   `(font-lock-type-face ((t (:foreground ,orange-saturated))))
    `(font-lock-constant-face ((t (:foreground ,fg))))
 
    `(mmm-default-submode-face ((t (:background ,as-dark-as-midnight))))
