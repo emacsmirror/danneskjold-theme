@@ -214,7 +214,12 @@
    `(ido-vertical-match-face ((t (:foreground ,twitter))))
 
    ;; vertical-border
-   `(vertical-border ((t (:foreground "#282a2e"))))))
+   `(vertical-border ((t (:foreground "#282a2e"))))
+
+   ;; hackernews
+   `(hackernews-score-face ((t (:foreground ,fg))))
+   `(hackernews-link-face ((t (:foreground ,spring-flower))))
+   `(hackernews-comment-count-face ((t (:foreground ,santa))))))
 
 ;;;###autoload
 (when load-file-name
