@@ -27,6 +27,7 @@
       ;; Shades of yellow
       (sunrise "#FFDB45")
       (saffron "#F9BA32")
+      (orange "#FF9009")
 
       ;; Shades of green
       (spring-flower "#B3DE81")
@@ -34,6 +35,7 @@
 
       ;; Shades of blue
       (twitter "#4CB5F5")
+
 
       ;; Shades of red
       (waddles "#FF87BA")
@@ -55,12 +57,12 @@
    `(font-lock-string-face ((t (:foreground ,spring-flower))))
    `(font-lock-doc-face ((t (:foreground ,anthracite))))
    `(font-lock-builtin-face ((t (:foreground ,twitter))))
-   `(font-lock-variable-name-face ((t (:foreground ,sunrise))))
+   `(font-lock-variable-name-face ((t (:foreground ,fg))))
    `(font-lock-keyword-face ((t (:foreground ,frost))))
    `(font-lock-comment-face ((t (:foreground ,comment))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,anthracite))))
-   `(font-lock-function-name-face ((t (:foreground ,fg))))
-   `(font-lock-type-face ((t (:foreground ,saffron))))
+   `(font-lock-function-name-face ((t (:foreground ,saffron))))
+   `(font-lock-type-face ((t (:foreground ,orange))))
    `(font-lock-constant-face ((t (:foreground ,fg))))
 
    `(mmm-default-submode-face ((t (:background ,as-dark-as-midnight))))
