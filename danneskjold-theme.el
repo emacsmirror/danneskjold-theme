@@ -186,7 +186,7 @@
    `(erc-current-nick-face ((t (:foreground ,santa))))
 
    ;; eshell
-   `(eshell-prompt ((t (:foreground ,santa))))
+   `(eshell-prompt ((t (:foreground ,frost))))
    `(eshell-ls-executable ((t (:foreground ,spring-flower))))
    `(eshell-ls-directory ((t (:foreground ,twitter))))
    `(eshell-ls-symlink ((t (:foreground ,waddles))))
