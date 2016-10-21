@@ -186,6 +186,7 @@
    `(eshell-prompt ((t (:foreground ,santa))))
    `(eshell-ls-executable ((t (:foreground ,spring-flower))))
    `(eshell-ls-directory ((t (:foreground ,twitter))))
+   `(eshell-ls-symlink ((t (:foreground ,waddles))))
    `(eshell-ls-readonly ((t (:foreground ,anthracite))))
 
    ;; dired
