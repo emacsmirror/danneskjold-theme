@@ -149,6 +149,11 @@
    `(jabber-roster-user-away ((t (:foreground ,frost))))
    `(jabber-rare-time-face ((t (:foreground ,slightly-brighter-than-midnight))))
 
+   ;; SQL*Plus
+   `(sqlplus-table-head-face ((t (:foreground ,sunrise))))
+   `(sqlplus-table-even-rows-face ((t (:foreground ,fg :background ,as-dark-as-midnight))))
+   `(sqlplus-table-odd-rows-face ((t (:foreground ,fg))))
+
    ;; Rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,spring-flower))))
    `(rainbow-delimiters-depth-2-face ((t (:foreground ,santa))))
