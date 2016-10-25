@@ -63,7 +63,7 @@
    `(font-lock-comment-delimiter-face ((t (:foreground ,anthracite))))
    `(font-lock-function-name-face ((t (:foreground ,saffron))))
    `(font-lock-type-face ((t (:foreground ,orange-saturated))))
-   `(font-lock-constant-face ((t (:foreground ,fg))))
+   `(font-lock-constant-face ((t (:foreground ,sunrise))))
 
    `(mmm-default-submode-face ((t (:background ,as-dark-as-midnight))))
 
