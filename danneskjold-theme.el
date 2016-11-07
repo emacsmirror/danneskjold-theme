@@ -55,7 +55,7 @@
    `(show-paren-match ((t (:background ,twitter :foreground ,white))))
 
    `(font-lock-string-face ((t (:foreground ,spring-flower))))
-   `(font-lock-doc-face ((t (:foreground ,anthracite))))
+   `(font-lock-doc-face ((t (:foreground ,waddles))))
    `(font-lock-builtin-face ((t (:foreground ,twitter))))
    `(font-lock-variable-name-face ((t (:foreground ,fg))))
    `(font-lock-keyword-face ((t (:foreground ,frost))))
@@ -124,7 +124,7 @@
    `(org-link ((t (:foreground ,frost :underline t))))
    `(org-date ((t (:foreground ,comment))))
    `(org-block-begin-line ((t (:foreground ,sunrise))))
-   `(org-block-background ((t (:background ,as-dark-as-midnight))))
+   `(org-block-background ((t (:background ,bg))))
    `(org-block-end-line ((t (:foreground ,sunrise))))
    `(org-tag ((t (:foreground ,anthracite))))
    `(org-special-keyword ((t (:foreground ,sunrise))))
