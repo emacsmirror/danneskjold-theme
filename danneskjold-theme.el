@@ -55,7 +55,7 @@
    `(show-paren-match ((t (:background ,twitter :foreground ,white))))
 
    `(font-lock-string-face ((t (:foreground ,spring-flower))))
-   `(font-lock-doc-face ((t (:foreground ,waddles))))
+   `(font-lock-doc-face ((t (:foreground ,spring-flower))))
    `(font-lock-builtin-face ((t (:foreground ,twitter))))
    `(font-lock-variable-name-face ((t (:foreground ,fg))))
    `(font-lock-keyword-face ((t (:foreground ,frost))))
