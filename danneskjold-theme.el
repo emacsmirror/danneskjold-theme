@@ -10,7 +10,7 @@
 
 ;;; Code:
 (deftheme danneskjold
-  "Created 2016-03-16.")
+  "Amazing. Beautiful. High-contrast.")
 
 (let ((bg "#000000")
       (fg "#ffffff")
