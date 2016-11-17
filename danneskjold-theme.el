@@ -11,7 +11,7 @@
 ;;; Code:
 
 (deftheme danneskjold
-  "Amazing. Beautiful. High-contrast.")
+  "Amazing. Beautiful. Contrast.")
 
 (let ((bg "#000000")
       (fg "#ffffff")
@@ -36,7 +36,7 @@
 
       ;; Shades of blue
       (twitter "#4CB5F5")
-
+      (diredcl "#74749A9AF7F7")
 
       ;; Shades of red
       (waddles "#FF87BA")
@@ -206,7 +206,7 @@
    `(dired-filetype-omit ((t (:foreground ,anthracite))))
    `(dired-filetype-common ((t (:foreground ,saffron))))
    `(dired-filetype-execute ((t (:foreground ,spring-flower))))
-   `(dired-filetype-source ((t (:foreground ,waddles))))
+   `(dired-filetype-source ((t (:foreground ,orange-saturated))))
    `(dired-filetype-plain ((t (:foreground ,comment))))
    `(dired-filetype-link ((t (:foreground ,twitter :underline t))))
    `(dired-flagged ((t (:foreground ,santa :underline t))))
@@ -218,10 +218,17 @@
    ;;; dired+
    `(diredp-dir-heading ((t (:foreground ,santa))))
    `(diredp-dir-name ((t (:foreground ,twitter))))
-   `(diredp-file-name ((t (:foreground ,sunrise))))
-   `(diredp-file-suffix ((t (:foreground ,saffron))))
+   `(diredp-file-name ((t (:foreground ,fg))))
+   `(diredp-file-suffix ((t (:foreground ,frost))))
    `(diredp-ignored-file-name ((t (:foreground ,comment))))
    `(diredp-symlink ((t (:foreground ,waddles))))
+   `(diredp-number ((t (:foreground ,saffron))))
+
+   `(diredp-dir-priv ((t (:foreground ,twitter))))
+   `(diredp-read-priv ((t (:foreground ,santa))))
+   `(diredp-write-priv ((t (:foreground ,sunrise))))
+   `(diredp-exec-priv ((t (:foreground ,spring-flower))))
+   `(diredp-no-priv ((t (:foreground ,fg))))
 
    ;; ido
    `(minibuffer-prompt ((t (:foreground ,comment))))
