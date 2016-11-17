@@ -229,6 +229,7 @@
    `(diredp-write-priv ((t (:foreground ,sunrise))))
    `(diredp-exec-priv ((t (:foreground ,spring-flower))))
    `(diredp-no-priv ((t (:foreground ,fg))))
+   `(diredp-rare-priv ((t (:foreground ,waddles))))
 
    ;; ido
    `(minibuffer-prompt ((t (:foreground ,comment))))
