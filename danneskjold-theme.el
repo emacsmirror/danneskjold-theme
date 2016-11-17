@@ -216,6 +216,7 @@
    `(dired-subtree-depth-3-face ((t (:background ,bg))))
 
    ;;; dired+
+   `(diredp-dir-heading ((t (:foreground ,santa))))
    `(diredp-dir-name ((t (:foreground ,twitter))))
    `(diredp-file-name ((t (:foreground ,sunrise))))
    `(diredp-file-suffix ((t (:foreground ,saffron))))
