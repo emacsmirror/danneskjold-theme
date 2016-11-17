@@ -210,7 +210,6 @@
    `(dired-filetype-link ((t (:foreground ,twitter :underline t))))
    `(dired-flagged ((t (:foreground ,santa :underline t))))
    `(dired-marked ((t (:foreground ,saffron :underline t))))
-   `(diredp-dir-heading ((t (:foreground ,saffron))))
    `(dired-subtree-depth-1-face ((t (:background ,"#21252b"))))
    `(dired-subtree-depth-2-face ((t (:background ,"#282c34"))))
    `(dired-subtree-depth-3-face ((t (:background ,bg))))
