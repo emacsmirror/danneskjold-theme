@@ -221,7 +221,7 @@
    `(diredp-file-name ((t (:foreground ,sunrise))))
    `(diredp-file-suffix ((t (:foreground ,saffron))))
    `(diredp-ignored-file-name ((t (:foreground ,comment))))
-   `(diredp-symlink ((t (:foreground ,orange-saturated))))
+   `(diredp-symlink ((t (:foreground ,waddles))))
 
    ;; ido
    `(minibuffer-prompt ((t (:foreground ,comment))))
