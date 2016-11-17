@@ -9,6 +9,7 @@
 ;;; Commentary:
 
 ;;; Code:
+
 (deftheme danneskjold
   "Amazing. Beautiful. High-contrast.")
 
@@ -213,6 +214,13 @@
    `(dired-subtree-depth-1-face ((t (:background ,"#21252b"))))
    `(dired-subtree-depth-2-face ((t (:background ,"#282c34"))))
    `(dired-subtree-depth-3-face ((t (:background ,bg))))
+
+   ;;; dired+
+   `(diredp-dir-name ((t (:foreground ,twitter))))
+   `(diredp-file-name ((t (:foreground ,sunrise))))
+   `(diredp-file-suffix ((t (:foreground ,saffron))))
+   `(diredp-ignored-file-name ((t (:foreground ,comment))))
+   `(diredp-symlink ((t (:foreground ,orange-saturated))))
 
    ;; ido
    `(minibuffer-prompt ((t (:foreground ,comment))))
