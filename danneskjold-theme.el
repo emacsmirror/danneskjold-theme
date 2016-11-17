@@ -198,6 +198,7 @@
    `(eshell-ls-symlink ((t (:foreground ,waddles))))
    `(eshell-ls-readonly ((t (:foreground ,anthracite))))
    `(eshell-ls-missing ((t (:foreground ,santa))))
+   `(eshell-ls-special ((t (:foreground ,comment :underline t))))
 
    ;; dired
    `(dired-directory ((t (:foreground ,twitter))))
