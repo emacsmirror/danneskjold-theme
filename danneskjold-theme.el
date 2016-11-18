@@ -233,6 +233,8 @@
    `(diredp-rare-priv ((t (:foreground ,waddles))))
    `(diredp-flag-mark ((t (:foreground ,bg))))
    `(diredp-flag-mark-line ((t (:foreground ,bg :background ,sunrise))))
+   `(diredp-deletion ((t (:foreground ,bg :background ,santa))))
+   `(diredp-deletion-file-name ((t (:foreground ,bg :background ,santa))))
 
    ;; ido
    `(minibuffer-prompt ((t (:foreground ,comment))))
