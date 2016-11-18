@@ -231,6 +231,8 @@
    `(diredp-exec-priv ((t (:foreground ,spring-flower))))
    `(diredp-no-priv ((t (:foreground ,fg))))
    `(diredp-rare-priv ((t (:foreground ,waddles))))
+   `(diredp-flag-mark ((t (:foreground ,bg))))
+   `(diredp-flag-mark-line ((t (:foreground ,bg :background ,sunrise))))
 
    ;; ido
    `(minibuffer-prompt ((t (:foreground ,comment))))
