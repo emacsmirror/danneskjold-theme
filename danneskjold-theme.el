@@ -37,6 +37,7 @@
       ;; Shades of blue
       (twitter "#4CB5F5")
       (diredcl "#74749A9AF7F7")
+      (dvi "DarkViolet")
 
       ;; Shades of red
       (waddles "#FF87BA")
@@ -233,8 +234,10 @@
    `(diredp-rare-priv ((t (:foreground ,waddles))))
    `(diredp-flag-mark ((t (:foreground ,bg))))
    `(diredp-flag-mark-line ((t (:foreground ,bg :background ,sunrise))))
+   `(diredp-mode-line-marked ((t (:foreground ,sunrise))))
    `(diredp-deletion ((t (:foreground ,bg :background ,santa))))
    `(diredp-deletion-file-name ((t (:foreground ,bg :background ,santa))))
+   `(diredp-mode-line-flagged ((t (:foreground ,santa))))
 
    ;; ido
    `(minibuffer-prompt ((t (:foreground ,comment))))
