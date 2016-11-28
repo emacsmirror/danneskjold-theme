@@ -105,6 +105,14 @@
    `(linum-highlight-face ((t (:foreground ,anthracite :background ,as-dark-as-midnight :weight bold))))
    `(hl-line ((t (:background ,as-dark-as-midnight))))
 
+   ;; Diff
+   `(diff-header ((t (:foreground ,sunrise))))
+   `(diff-file-header ((t (:foreground ,sunrise))))
+   `(diff-indicator-removed ((t (:background ,red-forest))))
+   `(diff-removed ((t (:foreground ,bg :background ,santa))))
+   `(diff-added ((t (:foreground ,bg :background ,spring-flower))))
+   `(diff-indicator-added ((t (:background ,summer-flower))))
+
    ;; Magit
    `(magit-diff-added ((t (:foreground ,spring-flower))))
    `(magit-diff-added-highlight ((t (:foreground ,spring-flower))))
