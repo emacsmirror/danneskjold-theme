@@ -108,10 +108,14 @@
    ;; Diff
    `(diff-header ((t (:foreground ,sunrise))))
    `(diff-file-header ((t (:foreground ,sunrise))))
-   `(diff-indicator-removed ((t (:background ,red-forest))))
-   `(diff-removed ((t (:foreground ,bg :background ,santa))))
-   `(diff-added ((t (:foreground ,bg :background ,spring-flower))))
-   `(diff-indicator-added ((t (:background ,summer-flower))))
+   `(diff-indicator-removed ((t (:foreground ,bg))))
+   `(diff-removed ((t (:foreground ,santa))))
+   `(diff-added ((t (:foreground ,spring-flower))))
+   `(diff-indicator-added ((t (:foreground ,bg))))
+   `(diff-refine-removed ((t (:foreground ,red-forest))))
+   `(diff-refine-added ((t (:foreground ,summer-flower))))
+
+   `(diff-context ((t (:foreground ,comment))))
 
    ;; Magit
    `(magit-diff-added ((t (:foreground ,spring-flower))))
