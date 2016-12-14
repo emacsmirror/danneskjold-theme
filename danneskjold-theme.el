@@ -191,6 +191,12 @@
    ;; `(company-preview-common ((t (:background ,slightly-brighter-than-midnight :foreground ,santa))))
    ;; `(company-mouse ((t (:background ,as-dark-as-midnight))))
 
+   ;; Elfeed
+   `(elfeed-search-feed-face ((t (:foreground ,comment))))
+   `(elfeed-search-tag-face ((t (:foreground ,spring-flower))))
+   `(elfeed-search-unread-title-face ((t (:foreground ,fg))))
+   `(elfeed-search-date-face ((t (:foreground ,diredcl))))
+
    ;; Flycheck
    `(flycheck-warning ((t (:foreground ,santa :underline t))))
 
