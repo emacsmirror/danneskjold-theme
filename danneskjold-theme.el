@@ -182,14 +182,14 @@
    `(rainbow-delimiters-depth-10-face ((t (:foreground ,saffron))))
 
    ;; Company-mode
-   ;; `(company-tooltip ((t (:foreground ,fg :background ,as-dark-as-midnight))))
-   ;; `(company-tooltip-selection ((t (:foreground ,fg :background ,slightly-brighter-than-midnight))))
-   ;; `(company-scrollbar-fg ((t (:background ,as-dark-as-midnight))))
-   ;; `(company-scrollbar-bg ((t (:background ,slightly-brighter-than-midnight))))
-   ;; `(company-tooltip-common ((t (:foreground ,saffron))))
-   ;; `(company-preview ((t (:background ,slightly-brighter-than-midnight))))
-   ;; `(company-preview-common ((t (:background ,slightly-brighter-than-midnight :foreground ,santa))))
-   ;; `(company-mouse ((t (:background ,as-dark-as-midnight))))
+   `(company-tooltip ((t (:foreground ,fg :background ,as-dark-as-midnight))))
+   `(company-tooltip-selection ((t (:foreground ,fg :background ,slightly-brighter-than-midnight))))
+   `(company-scrollbar-fg ((t (:background ,as-dark-as-midnight))))
+   `(company-scrollbar-bg ((t (:background ,slightly-brighter-than-midnight))))
+   `(company-tooltip-common ((t (:foreground ,saffron))))
+   `(company-preview ((t (:background ,slightly-brighter-than-midnight))))
+   `(company-preview-common ((t (:background ,slightly-brighter-than-midnight :foreground ,santa))))
+   `(company-mouse ((t (:background ,as-dark-as-midnight))))
 
    ;; Elfeed
    `(elfeed-search-feed-face ((t (:foreground ,comment))))
