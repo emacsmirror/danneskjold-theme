@@ -148,13 +148,13 @@
    `(org-ellipsis ((t (:foreground ,frost))))
 
    ;; Perspeen
-   `(perspeen-selected-face ((t (:foreground ,orange-saturated))))
+   `(perspeen-selected-face ((t (:foreground ,frost))))
 
    ;; Powerline
-   `(powerline-active1 ((t (:foreground ,diredcl))))
-   `(powerline-active2 ((t (:foreground ,frost))))
+   `(powerline-active1 ((t (:foreground ,sunrise))))
+   `(powerline-active2 ((t (:foreground ,comment))))
    `(powerline-inactive1 ((t (:foreground ,comment))))
-   `(powerline-inactive2 ((t (:foreground ,frost))))
+   `(powerline-inactive2 ((t (:foreground ,comment))))
 
    ;; Prodigy
    `(prodigy-red-face ((t (:foreground ,santa))))
