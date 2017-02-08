@@ -76,15 +76,15 @@
 
    ;; Mode-line
    `(mode-line ((t (:background ,as-dark-as-midnight
-                                :foreground ,fg
-                                :box ,(list
-                                       :line-width 4
-                                       :color as-dark-as-midnight)))))
+                    :foreground ,fg
+                    :box ,(list
+                           :line-width 4
+                           :color as-dark-as-midnight)))))
    `(mode-line-inactive ((t (:background ,slightly-brighter-than-midnight
-                                         :foreground ,fg
-                                         :box ,(list
-                                                :line-width 4
-                                                :color slightly-brighter-than-midnight)))))
+                             :foreground ,fg
+                             :box ,(list
+                                    :line-width 4
+                                    :color slightly-brighter-than-midnight)))))
    `(mode-line-buffer-id ((t (:foreground ,fg))))
 
    `(font-lock-warning-face ((t (:foreground ,santa))))
@@ -146,6 +146,15 @@
    `(org-level-1 ((t (:foreground ,twitter))))
    `(org-level-2 ((t (:foreground ,frost))))
    `(org-ellipsis ((t (:foreground ,frost))))
+
+   ;; Perspeen
+   `(perspeen-selected-face ((t (:foreground ,spring-flower))))
+
+   ;; Powerline
+   `(powerline-active1 ((t (:foreground ,diredcl))))
+   `(powerline-active2 ((t (:foreground ,frost))))
+   `(powerline-inactive1 ((t (:foreground ,comment))))
+   `(powerline-inactive2 ((t (:foreground ,frost))))
 
    ;; Prodigy
    `(prodigy-red-face ((t (:foreground ,santa))))
