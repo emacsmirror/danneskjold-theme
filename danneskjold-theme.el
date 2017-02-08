@@ -148,7 +148,7 @@
    `(org-ellipsis ((t (:foreground ,frost))))
 
    ;; Perspeen
-   `(perspeen-selected-face ((t (:foreground ,spring-flower))))
+   `(perspeen-selected-face ((t (:foreground ,orange-saturated))))
 
    ;; Powerline
    `(powerline-active1 ((t (:foreground ,diredcl))))
