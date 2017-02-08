@@ -76,16 +76,16 @@
 
    ;; Mode-line
    `(mode-line ((t (:background ,as-dark-as-midnight
-                    :foreground ,fg
+                    :foreground ,comment
                     :box ,(list
                            :line-width 4
                            :color as-dark-as-midnight)))))
    `(mode-line-inactive ((t (:background ,slightly-brighter-than-midnight
-                             :foreground ,fg
+                             :foreground ,comment
                              :box ,(list
                                     :line-width 4
                                     :color slightly-brighter-than-midnight)))))
-   `(mode-line-buffer-id ((t (:foreground ,fg))))
+   `(mode-line-buffer-id ((t (:foreground ,frost))))
 
    `(font-lock-warning-face ((t (:foreground ,santa))))
    `(compilation-warning ((t (:foreground ,santa))))
