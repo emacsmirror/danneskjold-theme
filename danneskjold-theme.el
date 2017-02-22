@@ -147,6 +147,10 @@
    `(org-level-2 ((t (:foreground ,frost))))
    `(org-ellipsis ((t (:foreground ,frost))))
 
+   ;; Hi
+   `(hi-green-b ((t (:foreground ,spring-flower))))
+   `(hi-red-b ((t (:foreground ,santa))))
+
    ;; Perspeen
    `(perspeen-selected-face ((t (:foreground ,frost))))
 
