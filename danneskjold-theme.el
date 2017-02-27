@@ -88,6 +88,7 @@
    `(mode-line-buffer-id ((t (:foreground ,frost))))
 
    `(font-lock-warning-face ((t (:foreground ,santa))))
+   `(compilation-error ((t (:background ,red-forest))))
    `(compilation-warning ((t (:foreground ,santa))))
    `(compilation-info ((t (:foreground ,spring-flower))))
    `(highlight ((t (:background ,as-dark-as-midnight :foreground ,frost))))
