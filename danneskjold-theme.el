@@ -147,6 +147,7 @@
    `(org-level-1 ((t (:foreground ,twitter))))
    `(org-level-2 ((t (:foreground ,frost))))
    `(org-ellipsis ((t (:foreground ,frost))))
+   `(org-formula ((t (:foreground ,orange-saturated))))
 
    ;; Hi
    `(hi-green-b ((t (:foreground ,spring-flower))))
