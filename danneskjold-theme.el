@@ -149,6 +149,7 @@
 
    ;; Hi
    `(hi-green-b ((t (:foreground ,spring-flower))))
+   `(hi-yellow-b ((t (:foreground ,sunrise))))
    `(hi-red-b ((t (:foreground ,santa))))
 
    ;; Perspeen
