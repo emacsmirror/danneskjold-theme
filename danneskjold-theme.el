@@ -152,7 +152,7 @@
    `(org-level-6 ((t (:foreground ,frost))))
    `(org-level-7 ((t (:foreground ,frost))))
    `(org-level-8 ((t (:foreground ,frost))))
-   `(org-ellipsis ((t (:foreground ,frost))))
+   `(org-ellipsis ((t (:foreground ,as-dark-as-midnight))))
    `(org-formula ((t (:foreground ,orange-saturated))))
 
    ;; Hi
