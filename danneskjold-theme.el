@@ -136,6 +136,7 @@
    `(org-todo ((t (:foreground ,santa))))
    `(org-done ((t (:foreground ,spring-flower))))
    `(org-hide ((t (:foreground ,bg))))
+   `(org-table ((t (:foreground ,twitter))))
    `(org-link ((t (:foreground ,frost :underline t))))
    `(org-date ((t (:foreground ,comment))))
    `(org-block-begin-line ((t (:foreground ,diredcl))))
