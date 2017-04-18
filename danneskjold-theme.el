@@ -140,7 +140,7 @@
    `(org-link ((t (:foreground ,frost :underline t))))
    `(org-date ((t (:foreground ,comment))))
    `(org-block-begin-line ((t (:foreground ,diredcl))))
-   `(org-block ((t (:foreground ,fg :background ,as-dark-as-midnight))))
+   `(org-block ((t (:background "#161a1f"))))
    `(org-block-end-line ((t (:foreground ,diredcl))))
    `(org-tag ((t (:foreground ,anthracite))))
    `(org-special-keyword ((t (:foreground ,sunrise))))
@@ -154,6 +154,7 @@
    `(org-level-7 ((t (:foreground ,frost))))
    `(org-level-8 ((t (:foreground ,frost))))
    `(org-ellipsis ((t (:foreground ,twitter))))
+   `(org-verbatim ((t (:foreground ,comment))))
    `(org-formula ((t (:foreground ,orange-saturated))))
 
    ;; Hi
