@@ -233,7 +233,7 @@
      `(org-document-info            ((,c (:foreground ,orange))))
      `(org-document-info-keyword    ((,c (:foreground ,grey-1))))
      `(org-meta-line                ((,c (:foreground ,vsubtle))))
-     `(org-block-begin-line         ((,c (:background ,current-line :foreground ,vsubtle))))
+     `(org-block-begin-line         ((,c (:foreground ,vsubtle))))
      `(org-block-end-line           ((,c (:inherit org-block-begin-line))))
      `(org-block-background         ((,c (:background ,current-line))))
      `(org-archived                 ((,c (:foreground ,grey-.5))))
