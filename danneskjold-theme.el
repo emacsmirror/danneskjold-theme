@@ -222,7 +222,6 @@
      ;; `(org-level-8 ((t (:foreground ,frost))))
      ;; `(org-ellipsis ((t (:foreground ,twitter))))
      ;; `(org-verbatim ((t (:foreground ,comment))))
-     ;; `(org-formula ((t (:foreground ,orange-sat))))
      ;; org-mode
      `(org-tag                      ((,c (:foreground ,yellow :bold nil))))
      `(org-ellipsis                 ((,c (:inherit hs-face))))
@@ -245,7 +244,7 @@
      `(org-level-6                  ((,c (:foreground ,blue+2))))
      `(org-code                     ((,c (:foreground ,orange))))
      `(org-verbatim                 ((,c (:foreground ,green))))
-     `(org-formula                  ((,c (:foreground ,twitter))))
+     `(org-formula                  ((,c (:foreground ,yellow))))
      `(org-list-dt                  ((,c (:foreground ,twitter))))
      `(org-footnote                 ((,c (:foreground ,orange))))
      `(org-link                     ((,c (:foreground ,frost :underline t))))
