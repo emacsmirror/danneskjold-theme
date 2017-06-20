@@ -220,6 +220,8 @@
      `(org-level-5                  ((,c (:foreground ,yellow))))
      `(org-level-6                  ((,c (:foreground ,waddles))))
      `(org-code                     ((,c (:foreground ,orange))))
+     `(org-column                   ((,c (:background ,bg))))
+     `(org-column-title             ((,c (:background ,bg :foreground ,comment))))
      `(org-verbatim                 ((,c (:foreground ,green))))
      `(org-formula                  ((,c (:foreground ,yellow))))
      `(org-list-dt                  ((,c (:foreground ,twitter))))
