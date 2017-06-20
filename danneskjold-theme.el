@@ -306,6 +306,13 @@
      ;; js2-mode
      `(js2-function-param ((t (:foreground ,saffron))))
 
+     ;; message
+     `(message-header-name ((t (:foreground ,comment))))
+     `(message-header-subject ((t (:foreground ,fg))))
+     `(message-header-to ((t (:foreground ,fg))))
+     `(message-header-other ((t (:foreground ,fg))))
+     `(shr-link ((t (:foreground ,frost :underline t))))
+
      ;; erc
      `(erc-timestamp-face ((t (:foreground ,santa))))
      `(erc-prompt-face ((t (:foreground ,spring-flower))))
