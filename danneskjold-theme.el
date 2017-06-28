@@ -239,8 +239,9 @@
      `(org-habit-ready-future-face ((,c (:background ,bg :underline t :foreground ,green))))
      `(org-scheduled-today ((,c (:foreground ,green))))
      `(org-scheduled-previously ((,c (:foreground ,orange))))
-     `(org-time-grid ((,c (:foreground ,yellow))))
+     `(org-time-grid ((,c (:foreground ,comment))))
      `(org-agenda-date ((,c (:foreground ,blue))))
+     `(org-agenda-dimmed-todo-face ((,c (:foreground ,comment))))
      `(org-agenda-date-today ((,c (:foreground ,red))))
      `(org-agenda-structure ((,c (:foreground ,violet))))
 
