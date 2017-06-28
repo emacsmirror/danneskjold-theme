@@ -245,6 +245,8 @@
      `(org-agenda-date-today ((,c (:foreground ,red))))
      `(org-agenda-structure ((,c (:foreground ,violet))))
 
+     `(secondary-selection ((,c (:background ,sbt-midnight))))
+
      ;; Hi
      `(hi-green-b ((t (:foreground ,spring-flower))))
      `(hi-yellow-b ((t (:foreground ,sunrise))))
