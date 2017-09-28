@@ -155,8 +155,8 @@
      `(mode-line-buffer-id ((t (:foreground ,frost))))
 
      `(font-lock-warning-face ((t (:foreground ,santa))))
-     `(compilation-error ((t (:background ,red-forest))))
-     `(compilation-warning ((t (:foreground ,santa))))
+     `(compilation-error ((t (:foreground ,santa))))
+     `(compilation-warning ((t (:background ,santa))))
      `(compilation-info ((t (:foreground ,spring-flower))))
      `(highlight ((t (:background ,ada-midnight :foreground ,frost))))
 
@@ -171,7 +171,7 @@
 
      ;; Hl-line and hlinum-activate
      `(linum-highlight-face ((t (:foreground ,anthracite :background ,ada-midnight :weight bold))))
-     `(hl-line ((t (:background ,ada-midnight))))
+     `(hl-line ((t (:foreground ,fg :background ,diredcl))))
 
      ;; Diff
      `(diff-header ((t (:foreground ,sunrise))))
@@ -234,9 +234,12 @@
      `(org-special-keyword          ((,c (:foreground ,orange))))
      `(org-checkbox-statistics-todo ((,c (:inherit org-todo))))
      `(org-checkbox-statistics-done ((,c (:inherit org-done))))
-     `(org-habit-clear-future-face ((,c (:background ,bg :underline t :foreground ,comment))))
+
+     `(org-habit-clear-face ((,c (:background ,bg :foreground ,frost :underline t))))
+     `(org-habit-clear-future-face ((,c (:background ,bg :underline t :foreground ,frost))))
      `(org-habit-ready-face ((,c (:background ,bg :foreground ,green :underline t))))
      `(org-habit-ready-future-face ((,c (:background ,bg :underline t :foreground ,green))))
+
      `(org-scheduled-today ((,c (:foreground ,green))))
      `(org-scheduled-previously ((,c (:foreground ,orange))))
      `(org-time-grid ((,c (:foreground ,comment))))
@@ -252,6 +255,11 @@
      `(hi-yellow-b ((t (:foreground ,sunrise))))
      `(hi-yellow ((t (:foreground ,orange-sat))))
      `(hi-red-b ((t (:foreground ,santa))))
+
+     ;; Wgrep
+     `(wgrep-face                  ((,c (:foreground ,saffron))))
+     `(wgrep-done-face                  ((,c (:foreground ,green))))
+     `(wgrep-reject-face                  ((,c (:foreground ,santa))))
 
      ;; Perspeen
      `(perspeen-selected-face ((t (:foreground ,frost))))
@@ -383,7 +391,7 @@
      ;; ido
      `(minibuffer-prompt ((t (:foreground ,comment))))
      `(ido-first-match ((t (:foreground ,frost))))
-     `(ido-only-match ((t (:foreground ,frost))))
+     `(ido-only-match ((t (:foreground ,diredcl :bold t))))
      `(ido-subdir ((t (:foreground ,frost))))
      `(ido-vertical-match-face ((t (:foreground ,twitter))))
 
