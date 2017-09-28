@@ -239,7 +239,14 @@
      `(org-habit-clear-future-face ((,c (:background ,bg :underline t :foreground ,frost))))
      `(org-habit-ready-face ((,c (:background ,bg :foreground ,green :underline t))))
      `(org-habit-ready-future-face ((,c (:background ,bg :underline t :foreground ,green))))
+<<<<<<< HEAD
 
+=======
+     `(org-habit-alert-face ((,c (:background ,bg :underline t :foreground ,yellow))))
+     `(org-habit-alert-future-face ((,c (:background ,bg :underline t :foreground ,yellow))))
+     `(org-habit-overdue-face ((,c (:background ,bg :underline t :foreground ,red))))
+     `(org-habit-overdue-future-face ((,c (:background ,bg :underline t :foreground ,red))))
+>>>>>>> f4de0fa84bec756ea31419f8db0b900fd1603c83
      `(org-scheduled-today ((,c (:foreground ,green))))
      `(org-scheduled-previously ((,c (:foreground ,orange))))
      `(org-time-grid ((,c (:foreground ,comment))))
