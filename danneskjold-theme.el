@@ -198,6 +198,9 @@
      `(magit-diff-hunk-heading-highlight ((t (:foreground ,twitter :background ,sbt-midnight))))
      `(magit-diff-lines-heading ((t (:foreground ,frost :background ,sbt-midnight))))
      `(magit-blame-heading ((t (:foreground ,twitter :background ,sbt-midnight))))
+     `(magit-diff-lines-heading ((t (:foreground ,orange :background ,sbt-midnight))))
+     `(magit-diff-lines-boundary ((t (:foreground ,fg :background ,sbt-midnight))))
+     `(magit-diff-hunk-heading-highlight ((t (:foreground ,fg :background ,sbt-midnight))))
 
      ;; Org-mode
      `(org-tag                      ((,c (:foreground ,yellow :bold nil))))
@@ -367,14 +370,14 @@
      `(dired-filetype-link ((t (:foreground ,twitter :underline t))))
      `(dired-flagged ((t (:foreground ,santa :underline t))))
      `(dired-marked ((t (:foreground ,saffron :underline t))))
-     `(dired-subtree-depth-1-face ((t (:background ,"#21252b"))))
-     `(dired-subtree-depth-2-face ((t (:background ,"#282c34"))))
+     `(dired-subtree-depth-1-face ((t (:background ,bg))))
+     `(dired-subtree-depth-2-face ((t (:background ,bg))))
      `(dired-subtree-depth-3-face ((t (:background ,bg))))
 
    ;;; dired+
      `(diredp-dir-heading ((t (:foreground ,santa))))
      `(diredp-dir-name ((t (:foreground ,twitter))))
-     `(diredp-file-name ((t (:foreground ,fg))))
+     `(diredp-file-name ((t (:foreground ,frost))))
      `(diredp-file-suffix ((t (:foreground ,frost))))
      `(diredp-ignored-file-name ((t (:foreground ,comment))))
      `(diredp-symlink ((t (:foreground ,waddles))))
@@ -396,7 +399,7 @@
      ;; ido
      `(minibuffer-prompt ((t (:foreground ,comment))))
      `(ido-first-match ((t (:foreground ,frost))))
-     `(ido-only-match ((t (:foreground ,diredcl :bold t))))
+     `(ido-only-match ((t (:foreground ,spring-flower))))
      `(ido-subdir ((t (:foreground ,frost))))
      `(ido-vertical-match-face ((t (:foreground ,twitter))))
 
