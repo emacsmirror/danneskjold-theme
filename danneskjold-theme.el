@@ -255,6 +255,7 @@
      `(org-agenda-dimmed-todo-face ((,c (:foreground ,comment))))
      `(org-agenda-date-today ((,c (:foreground ,red))))
      `(org-agenda-structure ((,c (:foreground ,violet))))
+     `(org-upcoming-deadline ((,c (:foreground ,violet))))
 
      `(secondary-selection ((,c (:background ,sbt-midnight))))
 
