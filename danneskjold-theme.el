@@ -374,6 +374,12 @@
      `(dired-subtree-depth-1-face ((t (:background ,bg))))
      `(dired-subtree-depth-2-face ((t (:background ,bg))))
      `(dired-subtree-depth-3-face ((t (:background ,bg))))
+     `(dired-subtree-depth-4-face ((t (:background ,bg))))
+     `(dired-subtree-depth-5-face ((t (:background ,bg))))
+     `(dired-subtree-depth-6-face ((t (:background ,bg))))
+     `(dired-subtree-depth-7-face ((t (:background ,bg))))
+     `(dired-subtree-depth-8-face ((t (:background ,bg))))
+     `(dired-subtree-depth-9-face ((t (:background ,bg))))
 
    ;;; dired+
      `(diredp-dir-heading ((t (:foreground ,santa))))
