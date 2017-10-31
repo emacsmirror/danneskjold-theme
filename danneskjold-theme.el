@@ -14,20 +14,18 @@
   "Amazing. Beautiful. Contrast.")
 
 (defcustom doom-enable-bold t
-  "If nil, bold will remove removed from all faces."
+  "If nil, bold will be removed from all faces."
   :group 'doom-themes
   :type 'boolean)
 
 (defcustom doom-enable-italic t
-  "If nil, italics will remove removed from all faces."
+  "If nil, italics will be removed from all faces."
   :group 'doom-themes
   :type 'boolean)
 
 (let ((c '((class color) (min-colors 89)))
-      (bg             "#000000")
-      (bg-l           "#222425")
+      (background     "#000000")
       (fg             "#ffffff")
-      (subtle         "#aab6c7")
       (vsubtle        "#556172")
       (bold   doom-enable-bold)
       (italic doom-enable-italic)
@@ -114,8 +112,8 @@
          (vc-deleted     red))
     (custom-theme-set-faces
      'danneskjold
-     `(default ((t (:foreground ,fg :background ,bg))))
-     `(fringe ((t (:background ,bg))))
+     `(default ((t (:foreground ,fg :background ,background))))
+     `(fringe ((t (:background ,background))))
      `(region ((t (:background ,anthracite))))
      `(button ((t (:foreground ,frost :underline t :weight normal))))
      `(link ((t (:foreground ,frost :underline t))))
@@ -136,7 +134,7 @@
 
      `(mmm-default-submode-face ((t (:background ,ada-midnight))))
 
-     `(header-line ((t (:background ,bg
+     `(header-line ((t (:background ,background
                                     :foreground ,comment
                                     :underline ,comment
                                     :weight normal))))
@@ -154,9 +152,9 @@
                                                   :color sbt-midnight)))))
      `(mode-line-buffer-id ((t (:foreground ,frost))))
 
-     `(font-lock-warning-face ((t (:foreground ,santa))))
-     `(compilation-error ((t (:foreground ,santa))))
-     `(compilation-warning ((t (:background ,santa))))
+     `(font-lock-warning-face ((t (:underline (:color ,santa :style wave)))))
+     `(compilation-error ((t (:background ,santa))))
+     `(compilation-warning ((t (:underline (:color ,santa :style wave)))))
      `(compilation-info ((t (:foreground ,spring-flower))))
      `(highlight ((t (:background ,ada-midnight :foreground ,frost))))
 
@@ -168,6 +166,7 @@
 
      ;; Highlight quoted mode-line
      `(highlight-quoted-symbol ((t (:foreground ,waddles))))
+     `(highlight-symbol-face ((t (:foreground ,background :background ,violet))))
 
      ;; Hl-line and hlinum-activate
      `(linum-highlight-face ((t (:foreground ,anthracite :background ,ada-midnight :weight bold))))
@@ -176,10 +175,10 @@
      ;; Diff
      `(diff-header ((t (:foreground ,sunrise))))
      `(diff-file-header ((t (:foreground ,sunrise))))
-     `(diff-indicator-removed ((t (:foreground ,bg))))
+     `(diff-indicator-removed ((t (:foreground ,background))))
      `(diff-removed ((t (:foreground ,santa))))
      `(diff-added ((t (:foreground ,spring-flower))))
-     `(diff-indicator-added ((t (:foreground ,bg))))
+     `(diff-indicator-added ((t (:foreground ,background))))
      `(diff-refine-removed ((t (:foreground ,red-forest))))
      `(diff-refine-added ((t (:foreground ,summer-flower))))
 
@@ -190,9 +189,9 @@
      `(magit-diff-added-highlight ((t (:foreground ,spring-flower))))
      `(magit-diff-removed ((t (:foreground ,santa))))
      `(magit-diff-removed-highlight ((t (:foreground ,santa))))
-     `(magit-diff-context ((t (:background ,bg :foreground ,frost))))
-     `(magit-diff-context-highlight ((t (:background ,bg :foreground ,frost))))
-     `(magit-section-highlight ((t (:background ,bg))))
+     `(magit-diff-context ((t (:background ,background :foreground ,frost))))
+     `(magit-diff-context-highlight ((t (:background ,background :foreground ,frost))))
+     `(magit-section-highlight ((t (:background ,background))))
      `(magit-section-heading ((t (:foreground ,sunrise :inherit nil))))
      `(magit-diff-hunk-heading ((t (:foreground ,twitter :background ,sbt-midnight))))
      `(magit-diff-hunk-heading-highlight ((t (:foreground ,twitter :background ,sbt-midnight))))
@@ -205,8 +204,8 @@
      ;; Org-mode
      `(org-tag                      ((,c (:foreground ,yellow :bold nil))))
      `(org-ellipsis                 ((,c (:inherit hs-face))))
-     `(org-hide                     ((,c (:foreground ,bg))))
-     `(org-table                    ((,c (:foreground ,twitter))))
+     `(org-hide                     ((,c (:foreground ,background))))
+     `(org-table                    ((,c (:foreground ,yellow))))
      `(org-quote                    ((,c (:slant italic :foreground ,grey :background ,current-line))))
      `(org-document-info            ((,c (:foreground ,orange))))
      `(org-document-info-keyword    ((,c (:foreground ,grey-1))))
@@ -217,19 +216,20 @@
      `(org-archived                 ((,c (:foreground ,grey-.5))))
      `(org-document-title           ((,c (:foreground ,twitter))))
      `(org-level-1                  ((,c (:foreground ,santa))))
-     `(org-level-2                  ((,c (:foreground ,cyan))))
-     `(org-level-3                  ((,c (:foreground ,violet))))
-     `(org-level-4                  ((,c (:foreground ,spring-flower))))
-     `(org-level-5                  ((,c (:foreground ,yellow))))
-     `(org-level-6                  ((,c (:foreground ,waddles))))
+     `(org-level-2                  ((,c (:foreground ,spring-flower))))
+     `(org-level-3                  ((,c (:foreground ,twitter))))
+     `(org-level-4                  ((,c (:foreground ,frost))))
+     `(org-level-5                  ((,c (:foreground ,fg))))
+     `(org-level-6                  ((,c (:foreground ,fg))))
      `(org-code                     ((,c (:foreground ,orange))))
-     `(org-column                   ((,c (:background ,bg))))
-     `(org-column-title             ((,c (:background ,bg :foreground ,comment))))
-     `(org-verbatim                 ((,c (:foreground ,green))))
-     `(org-formula                  ((,c (:foreground ,yellow))))
+     `(org-column                   ((,c (:background ,background))))
+     `(org-column-title             ((,c (:background ,background :foreground ,comment))))
+     `(org-verbatim                 ((,c (:foreground ,diredcl))))
+     `(org-formula                  ((,c (:foreground ,orange))))
      `(org-list-dt                  ((,c (:foreground ,twitter))))
      `(org-footnote                 ((,c (:foreground ,orange))))
-     `(org-link                     ((,c (:foreground ,frost :underline t))))
+     `(org-link                     ((,c (:foreground ,twitter :underline t))))
+
      `(org-date                     ((,c (:foreground ,violet))))
      `(org-todo                     ((,c (:foreground ,yellow))))
      `(org-done                     ((,c (:foreground ,green))))
@@ -238,15 +238,15 @@
      `(org-checkbox-statistics-todo ((,c (:inherit org-todo))))
      `(org-checkbox-statistics-done ((,c (:inherit org-done))))
 
-     `(org-habit-clear-face ((,c (:background ,bg :foreground ,frost :underline t))))
-     `(org-habit-clear-future-face ((,c (:background ,bg :underline t :foreground ,frost))))
-     `(org-habit-ready-face ((,c (:background ,bg :foreground ,green :underline t))))
-     `(org-habit-ready-future-face ((,c (:background ,bg :underline t :foreground ,green))))
+     `(org-habit-clear-face ((,c (:background ,background :foreground ,frost :underline t))))
+     `(org-habit-clear-future-face ((,c (:background ,background :underline t :foreground ,frost))))
+     `(org-habit-ready-face ((,c (:background ,background :foreground ,green :underline t))))
+     `(org-habit-ready-future-face ((,c (:background ,background :underline t :foreground ,green))))
 
-     `(org-habit-alert-face ((,c (:background ,bg :underline t :foreground ,yellow))))
-     `(org-habit-alert-future-face ((,c (:background ,bg :underline t :foreground ,yellow))))
-     `(org-habit-overdue-face ((,c (:background ,bg :underline t :foreground ,red))))
-     `(org-habit-overdue-future-face ((,c (:background ,bg :underline t :foreground ,red))))
+     `(org-habit-alert-face ((,c (:background ,background :underline t :foreground ,yellow))))
+     `(org-habit-alert-future-face ((,c (:background ,background :underline t :foreground ,yellow))))
+     `(org-habit-overdue-face ((,c (:background ,background :underline t :foreground ,red))))
+     `(org-habit-overdue-future-face ((,c (:background ,background :underline t :foreground ,red))))
 
      `(org-scheduled-today ((,c (:foreground ,green))))
      `(org-scheduled-previously ((,c (:foreground ,orange))))
@@ -330,7 +330,7 @@
      `(elfeed-search-date-face ((t (:foreground ,diredcl))))
 
      ;; Flycheck
-     `(flycheck-warning ((t (:foreground ,santa :underline t))))
+     `(flycheck-warning ((t (:underline (:color ,santa :style wave)))))
 
      ;; js2-mode
      `(js2-function-param ((t (:foreground ,saffron))))
@@ -371,15 +371,15 @@
      `(dired-filetype-link ((t (:foreground ,twitter :underline t))))
      `(dired-flagged ((t (:foreground ,santa :underline t))))
      `(dired-marked ((t (:foreground ,saffron :underline t))))
-     `(dired-subtree-depth-1-face ((t (:background ,bg))))
-     `(dired-subtree-depth-2-face ((t (:background ,bg))))
-     `(dired-subtree-depth-3-face ((t (:background ,bg))))
-     `(dired-subtree-depth-4-face ((t (:background ,bg))))
-     `(dired-subtree-depth-5-face ((t (:background ,bg))))
-     `(dired-subtree-depth-6-face ((t (:background ,bg))))
-     `(dired-subtree-depth-7-face ((t (:background ,bg))))
-     `(dired-subtree-depth-8-face ((t (:background ,bg))))
-     `(dired-subtree-depth-9-face ((t (:background ,bg))))
+     `(dired-subtree-depth-1-face ((t (:background ,background))))
+     `(dired-subtree-depth-2-face ((t (:background ,background))))
+     `(dired-subtree-depth-3-face ((t (:background ,background))))
+     `(dired-subtree-depth-4-face ((t (:background ,background))))
+     `(dired-subtree-depth-5-face ((t (:background ,background))))
+     `(dired-subtree-depth-6-face ((t (:background ,background))))
+     `(dired-subtree-depth-7-face ((t (:background ,background))))
+     `(dired-subtree-depth-8-face ((t (:background ,background))))
+     `(dired-subtree-depth-9-face ((t (:background ,background))))
 
    ;;; dired+
      `(diredp-dir-heading ((t (:foreground ,santa))))
@@ -396,29 +396,31 @@
      `(diredp-exec-priv ((t (:foreground ,spring-flower))))
      `(diredp-no-priv ((t (:foreground ,fg))))
      `(diredp-rare-priv ((t (:foreground ,waddles))))
-     `(diredp-flag-mark ((t (:foreground ,bg))))
-     `(diredp-flag-mark-line ((t (:foreground ,bg :background ,sunrise))))
+     `(diredp-flag-mark ((t (:foreground ,background))))
+     `(diredp-flag-mark-line ((t (:foreground ,background :background ,sunrise))))
      `(diredp-mode-line-marked ((t (:foreground ,sunrise))))
-     `(diredp-deletion ((t (:foreground ,bg :background ,santa))))
-     `(diredp-deletion-file-name ((t (:foreground ,bg :background ,santa))))
+     `(diredp-deletion ((t (:foreground ,background :background ,santa))))
+     `(diredp-deletion-file-name ((t (:foreground ,background :background ,santa))))
      `(diredp-mode-line-flagged ((t (:foreground ,santa))))
 
      ;; ido
-     `(minibuffer-prompt ((t (:foreground ,comment))))
-     `(ido-first-match ((t (:foreground ,frost))))
-     `(ido-only-match ((t (:foreground ,spring-flower))))
+     `(minibuffer-prompt ((t (:foreground ,diredcl))))
+     `(ido-first-match ((t (:bold t))))
+     `(ido-only-match ((t (:bold t :foreground ,fg))))
      `(ido-subdir ((t (:foreground ,frost))))
-     `(ido-vertical-match-face ((t (:foreground ,twitter))))
+     `(ido-virtual ((t (:foreground ,comment))))
+     `(ido-vertical-match-face ((t (:underline ,diredcl))))
 
      ;; vertical-border
      `(vertical-border ((t (:foreground "#282a2e"))))
 
+     ;; yas
+     `(yas-field-highlight-face ((t (:background ,ada-midnight))))
+
      ;; hackernews
      `(hackernews-score-face ((t (:foreground ,fg))))
      `(hackernews-link-face ((t (:foreground ,spring-flower))))
-     `(hackernews-comment-count-face ((t (:foreground ,santa))))))
-
-  )
+     `(hackernews-comment-count-face ((t (:foreground ,santa)))))))
 
 ;;;###autoload
 (when load-file-name
