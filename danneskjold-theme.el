@@ -166,7 +166,7 @@
 
      ;; Highlight quoted mode-line
      `(highlight-quoted-symbol ((t (:foreground ,waddles))))
-     `(highlight-symbol-face ((t (:foreground ,background :background ,violet))))
+     `(highlight-symbol-face ((t (:foreground ,background :background ,diredcl))))
 
      ;; Hl-line and hlinum-activate
      `(linum-highlight-face ((t (:foreground ,anthracite :background ,ada-midnight :weight bold))))
@@ -262,7 +262,7 @@
      ;; Hi
      `(hi-green-b ((t (:foreground ,spring-flower))))
      `(hi-yellow-b ((t (:foreground ,sunrise))))
-     `(hi-yellow ((t (:foreground ,orange-sat))))
+     `(hi-yellow ((t (:foreground ,background :background ,yellow))))
      `(hi-red-b ((t (:foreground ,santa))))
 
      ;; Wgrep
