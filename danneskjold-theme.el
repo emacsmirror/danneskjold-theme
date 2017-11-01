@@ -228,7 +228,7 @@
      `(org-formula                  ((,c (:foreground ,orange))))
      `(org-list-dt                  ((,c (:foreground ,twitter))))
      `(org-footnote                 ((,c (:foreground ,orange))))
-     `(org-link                     ((,c (:foreground ,twitter :underline t))))
+     `(org-link                     ((,c (:underline ,diredcl))))
 
      `(org-date                     ((,c (:foreground ,violet))))
      `(org-todo                     ((,c (:foreground ,yellow))))
