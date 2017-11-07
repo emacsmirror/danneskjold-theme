@@ -407,7 +407,7 @@
      `(ivy-virtual ((,c (:foreground ,violet))))
      `(ivy-action ((,c (:foreground ,yellow))))
      `(ivy-highlight-face ((,c (:foreground ,orange))))
-     `(ivy-minibuffer-match-face-1 ((,c (:underline ,vsubtle))))
+     `(ivy-minibuffer-match-face-1 ((,c (:foreground ,fg))))
      `(ivy-minibuffer-match-face-2 ((,c (:underline ,yellow))))
      `(ivy-minibuffer-match-face-3 ((,c (:underline ,orange))))
      `(ivy-minibuffer-match-face-4 ((,c (:underline ,red))))
