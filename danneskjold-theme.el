@@ -199,7 +199,7 @@
      `(org-quote                    ((,c (:slant italic :foreground ,grey :background ,current-line))))
      `(org-document-info            ((,c (:foreground ,orange))))
      `(org-document-info-keyword    ((,c (:foreground ,grey-1))))
-     `(org-meta-line                ((,c (:foreground ,vsubtle))))
+     `(org-meta-line                ((,c (:foreground ,comment))))
      `(org-block-begin-line         ((,c (:foreground ,vsubtle))))
      `(org-block-end-line           ((,c (:inherit org-block-begin-line))))
      `(org-block-background         ((,c (:background ,current-line))))
@@ -407,10 +407,10 @@
      `(ivy-virtual ((,c (:foreground ,violet))))
      `(ivy-action ((,c (:foreground ,yellow))))
      `(ivy-highlight-face ((,c (:foreground ,orange))))
-     `(ivy-minibuffer-match-face-1 ((,c (:underline ,diredcl))))
-     `(ivy-minibuffer-match-face-2 ((,c (:underline ,diredcl))))
-     `(ivy-minibuffer-match-face-3 ((,c (:underline ,diredcl))))
-     `(ivy-minibuffer-match-face-4 ((,c (:underline ,diredcl))))
+     `(ivy-minibuffer-match-face-1 ((,c (:underline ,vsubtle))))
+     `(ivy-minibuffer-match-face-2 ((,c (:underline ,yellow))))
+     `(ivy-minibuffer-match-face-3 ((,c (:underline ,orange))))
+     `(ivy-minibuffer-match-face-4 ((,c (:underline ,red))))
 
      ;; vertical-border
      `(vertical-border ((,c (:foreground "#282a2e"))))
