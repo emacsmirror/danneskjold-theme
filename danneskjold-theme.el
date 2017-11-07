@@ -402,7 +402,11 @@
 
      ;; ivy
      `(ivy-current-match ((,c (:bold t :foreground ,fg))))
+     `(ivy-prompt-match ((,c (:bold t :foreground ,fg))))
      `(ivy-confirm-face ((,c (:underline ,diredcl))))
+     `(ivy-virtual ((,c (:foreground ,violet))))
+     `(ivy-action ((,c (:foreground ,yellow))))
+     `(ivy-highlight-face ((,c (:foreground ,orange))))
      `(ivy-minibuffer-match-face-1 ((,c (:underline ,diredcl))))
      `(ivy-minibuffer-match-face-2 ((,c (:underline ,diredcl))))
      `(ivy-minibuffer-match-face-3 ((,c (:underline ,diredcl))))
