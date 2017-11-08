@@ -403,11 +403,11 @@
      `(ido-vertical-match-face ((,c (:underline ,diredcl))))
 
      ;; ivy
-     `(ivy-current-match ((,c (:bold t :foreground ,background :background ,fg :underline nil))))
+     `(ivy-current-match ((,c (:inherit swiper-line-face))))
      `(ivy-prompt-match ((,c (:bold t :foreground ,fg))))
      `(ivy-confirm-face ((,c (:underline ,diredcl))))
-     `(ivy-virtual ((,c (:foreground ,violet))))
-     `(ivy-cursor ((,c (:foreground ,violet))))
+     `(ivy-virtual ((,c (:foreground ,orange))))
+     `(ivy-cursor ((,c (:foreground ,comment))))
      `(ivy-action ((,c (:foreground ,yellow))))
      `(ivy-highlight-face ((,c (:foreground ,orange))))
      `(ivy-minibuffer-match-face-1 ((,c (:foreground ,fg))))
