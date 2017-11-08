@@ -40,7 +40,7 @@
 
 
       ;; danneskjold-colors
-      (frost          "#D0E1F9" )
+      (frost          "#D0E1F9")
       (comment        "#8593AE")
       (anthracite     "#3a3f4b")
       (sbt-midnight   "#282c34")
@@ -231,7 +231,6 @@
      `(org-habit-clear-future-face ((,c (:background ,background :underline t :foreground ,frost))))
      `(org-habit-ready-face ((,c (:background ,background :foreground ,green :underline t))))
      `(org-habit-ready-future-face ((,c (:background ,background :underline t :foreground ,green))))
-
      `(org-habit-alert-face ((,c (:background ,background :underline t :foreground ,yellow))))
      `(org-habit-alert-future-face ((,c (:background ,background :underline t :foreground ,yellow))))
      `(org-habit-overdue-face ((,c (:background ,background :underline t :foreground ,red))))
@@ -240,10 +239,13 @@
      `(org-scheduled-today ((,c (:foreground ,green))))
      `(org-scheduled-previously ((,c (:foreground ,orange))))
      `(org-time-grid ((,c (:foreground ,comment))))
+
+     `(org-agenda-clocking ((,c (:background ,ada-midnight))))
      `(org-agenda-date ((,c (:foreground ,blue))))
      `(org-agenda-dimmed-todo-face ((,c (:foreground ,comment))))
      `(org-agenda-date-today ((,c (:foreground ,red))))
      `(org-agenda-structure ((,c (:foreground ,violet))))
+
      `(org-upcoming-deadline ((,c (:foreground ,violet))))
 
      `(secondary-selection ((,c (:background ,sbt-midnight))))
@@ -401,16 +403,17 @@
      `(ido-vertical-match-face ((,c (:underline ,diredcl))))
 
      ;; ivy
-     `(ivy-current-match ((,c (:bold t :foreground ,fg))))
+     `(ivy-current-match ((,c (:bold t :foreground ,background :background ,fg :underline nil))))
      `(ivy-prompt-match ((,c (:bold t :foreground ,fg))))
      `(ivy-confirm-face ((,c (:underline ,diredcl))))
      `(ivy-virtual ((,c (:foreground ,violet))))
+     `(ivy-cursor ((,c (:foreground ,violet))))
      `(ivy-action ((,c (:foreground ,yellow))))
      `(ivy-highlight-face ((,c (:foreground ,orange))))
      `(ivy-minibuffer-match-face-1 ((,c (:foreground ,fg))))
-     `(ivy-minibuffer-match-face-2 ((,c (:underline ,yellow))))
+     `(ivy-minibuffer-match-face-2 ((,c (:underline ,red))))
      `(ivy-minibuffer-match-face-3 ((,c (:underline ,orange))))
-     `(ivy-minibuffer-match-face-4 ((,c (:underline ,red))))
+     `(ivy-minibuffer-match-face-4 ((,c (:underline ,yellow))))
 
      ;; vertical-border
      `(vertical-border ((,c (:foreground "#282a2e"))))
