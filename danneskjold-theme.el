@@ -415,6 +415,11 @@
      `(ivy-minibuffer-match-face-3 ((,c (:underline ,orange))))
      `(ivy-minibuffer-match-face-4 ((,c (:underline ,yellow))))
 
+     `(swiper-match-face-1 ((,c (:foreground ,fg))))
+     `(swiper-match-face-2 ((,c (:underline ,red))))
+     `(swiper-match-face-3 ((,c (:underline ,orange))))
+     `(swiper-match-face-4 ((,c (:underline ,yellow))))
+
      ;; vertical-border
      `(vertical-border ((,c (:foreground "#282a2e"))))
 
