@@ -406,7 +406,9 @@
      `(ivy-current-match ((,c (:inherit swiper-line-face))))
      `(ivy-prompt-match ((,c (:bold t :foreground ,fg))))
      `(ivy-confirm-face ((,c (:underline ,diredcl))))
+
      `(ivy-virtual ((,c (:foreground ,orange))))
+     `(ivy-remote ((,c (:foreground ,fg :slant italic))))
      `(ivy-cursor ((,c (:foreground ,comment))))
      `(ivy-action ((,c (:foreground ,yellow))))
      `(ivy-highlight-face ((,c (:foreground ,orange))))
@@ -414,7 +416,6 @@
      `(ivy-minibuffer-match-face-2 ((,c (:underline ,red))))
      `(ivy-minibuffer-match-face-3 ((,c (:underline ,orange))))
      `(ivy-minibuffer-match-face-4 ((,c (:underline ,yellow))))
-
      `(swiper-match-face-1 ((,c (:foreground ,fg))))
      `(swiper-match-face-2 ((,c (:underline ,red))))
      `(swiper-match-face-3 ((,c (:underline ,orange))))
