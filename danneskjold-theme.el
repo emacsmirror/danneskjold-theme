@@ -26,15 +26,15 @@
       (grey-1         "#525254")
       (grey-2         "#39393D")
       (white          "#FFFFFF")
-      (yellow         "#E2C770")
-      (orange         "#FD971F")
-      (red            "#E74C3C")
+      (yellow         "#FFDB45") ;; "#E2C770"
+      (orange         "#FD971F") ;; "#FF9009"
+      (red            "#E74C3C") ;; "#F34A4A"
       (magenta        "#F92672")
       (violet         "#9C91E4")
-      (blue           "#268BD2")
+      (blue           "#4CB5F5") ;; "#268BD2"
       (blue+2         "#727280")
       (cyan           "#66D9EF")
-      (green          "#B6E63E")
+      (green          "#B6E63E") ;; "#B3DE81"
       (green-3        "#86B20E")
       (dark-cyan      "#8FA1B3")
 
@@ -45,17 +45,12 @@
       (anthracite     "#3a3f4b")
       (sbt-midnight   "#282c34")
       (ada-midnight   "#21252b")
-      (sunrise        "#FFDB45")
       (saffron        "#F9BA32")
-      (orange-sat     "#FF9009")
-      (spring-flower  "#B3DE81")
       (summer-flower  "#013220")
-      (twitter        "#4CB5F5")
       (diredcl        "#749AF7")
       (dvi            "DarkViolet")
       (waddles        "#FF87BA")
       (krayola        "#E38B75")
-      (santa          "#F34A4A")
       (red-forest     "#8b0000"))
 
   (let* ((search-bg      green)
@@ -108,18 +103,18 @@
      `(link ((,c (:foreground ,frost :underline t))))
      `(menu ((,c (:foreground ,fg :background ,ada-midnight))))
 
-     `(show-paren-match ((,c (:background ,twitter :foreground ,white))))
+     `(show-paren-match ((,c (:background ,blue :foreground ,white))))
 
-     `(font-lock-string-face ((,c (:foreground ,spring-flower))))
-     `(font-lock-doc-face ((,c (:foreground ,spring-flower))))
-     `(font-lock-builtin-face ((,c (:foreground ,twitter))))
+     `(font-lock-string-face ((,c (:foreground ,green))))
+     `(font-lock-doc-face ((,c (:foreground ,green))))
+     `(font-lock-builtin-face ((,c (:foreground ,blue))))
      `(font-lock-variable-name-face ((,c (:foreground ,fg))))
      `(font-lock-keyword-face ((,c (:foreground ,frost))))
      `(font-lock-comment-face ((,c (:foreground ,comment))))
      `(font-lock-comment-delimiter-face ((,c (:foreground ,anthracite))))
      `(font-lock-function-name-face ((,c (:foreground ,saffron))))
-     `(font-lock-type-face ((,c (:foreground ,orange-sat))))
-     `(font-lock-constant-face ((,c (:foreground ,sunrise))))
+     `(font-lock-type-face ((,c (:foreground ,orange))))
+     `(font-lock-constant-face ((,c (:foreground ,yellow))))
 
      `(mmm-default-submode-face ((,c (:background ,ada-midnight))))
 
@@ -141,10 +136,10 @@
                                                   :color sbt-midnight)))))
      `(mode-line-buffer-id ((,c (:foreground ,frost))))
 
-     `(font-lock-warning-face ((,c (:underline (:color ,santa :style wave)))))
-     `(compilation-error ((,c (:background ,santa))))
-     `(compilation-warning ((,c (:underline (:color ,santa :style wave)))))
-     `(compilation-info ((,c (:foreground ,spring-flower))))
+     `(font-lock-warning-face ((,c (:underline (:color ,red :style wave)))))
+     `(compilation-error ((,c (:background ,red))))
+     `(compilation-warning ((,c (:underline (:color ,red :style wave)))))
+     `(compilation-info ((,c (:foreground ,green))))
      `(highlight ((,c (:background ,ada-midnight :foreground ,frost))))
 
      ;; Linum
@@ -162,11 +157,11 @@
      `(hl-line ((,c (:foreground ,fg :background ,diredcl))))
 
      ;; Diff
-     `(diff-header ((,c (:foreground ,sunrise))))
-     `(diff-file-header ((,c (:foreground ,sunrise))))
+     `(diff-header ((,c (:foreground ,yellow))))
+     `(diff-file-header ((,c (:foreground ,yellow))))
      `(diff-indicator-removed ((,c (:foreground ,background))))
-     `(diff-removed ((,c (:foreground ,santa))))
-     `(diff-added ((,c (:foreground ,spring-flower))))
+     `(diff-removed ((,c (:foreground ,red))))
+     `(diff-added ((,c (:foreground ,green))))
      `(diff-indicator-added ((,c (:foreground ,background))))
      `(diff-refine-removed ((,c (:foreground ,red-forest))))
      `(diff-refine-added ((,c (:foreground ,summer-flower))))
@@ -174,18 +169,18 @@
      `(diff-context ((,c (:foreground ,comment))))
 
      ;; Magit
-     `(magit-diff-added ((,c (:foreground ,spring-flower))))
-     `(magit-diff-added-highlight ((,c (:foreground ,spring-flower))))
-     `(magit-diff-removed ((,c (:foreground ,santa))))
-     `(magit-diff-removed-highlight ((,c (:foreground ,santa))))
+     `(magit-diff-added ((,c (:foreground ,green))))
+     `(magit-diff-added-highlight ((,c (:foreground ,green))))
+     `(magit-diff-removed ((,c (:foreground ,red))))
+     `(magit-diff-removed-highlight ((,c (:foreground ,red))))
      `(magit-diff-context ((,c (:background ,background :foreground ,frost))))
      `(magit-diff-context-highlight ((,c (:background ,background :foreground ,frost))))
      `(magit-section-highlight ((,c (:background ,background))))
-     `(magit-section-heading ((,c (:foreground ,sunrise :inherit nil))))
-     `(magit-diff-hunk-heading ((,c (:foreground ,twitter :background ,sbt-midnight))))
-     `(magit-diff-hunk-heading-highlight ((,c (:foreground ,twitter :background ,sbt-midnight))))
+     `(magit-section-heading ((,c (:foreground ,yellow :inherit nil))))
+     `(magit-diff-hunk-heading ((,c (:foreground ,blue :background ,sbt-midnight))))
+     `(magit-diff-hunk-heading-highlight ((,c (:foreground ,blue :background ,sbt-midnight))))
      `(magit-diff-lines-heading ((,c (:foreground ,frost :background ,sbt-midnight))))
-     `(magit-blame-heading ((,c (:foreground ,twitter :background ,sbt-midnight))))
+     `(magit-blame-heading ((,c (:foreground ,blue :background ,sbt-midnight))))
      `(magit-diff-lines-heading ((,c (:foreground ,orange :background ,sbt-midnight))))
      `(magit-diff-lines-boundary ((,c (:foreground ,fg :background ,sbt-midnight))))
      `(magit-diff-hunk-heading-highlight ((,c (:foreground ,fg :background ,sbt-midnight))))
@@ -204,10 +199,10 @@
      `(org-block-end-line           ((,c (:inherit org-block-begin-line))))
      `(org-block-background         ((,c (:background ,current-line))))
      `(org-archived                 ((,c (:foreground ,grey-.5))))
-     `(org-document-title           ((,c (:foreground ,twitter))))
-     `(org-level-1                  ((,c (:foreground ,santa))))
-     `(org-level-2                  ((,c (:foreground ,spring-flower))))
-     `(org-level-3                  ((,c (:foreground ,twitter))))
+     `(org-document-title           ((,c (:foreground ,blue))))
+     `(org-level-1                  ((,c (:foreground ,red))))
+     `(org-level-2                  ((,c (:foreground ,green))))
+     `(org-level-3                  ((,c (:foreground ,blue))))
      `(org-level-4                  ((,c (:foreground ,frost))))
      `(org-level-5                  ((,c (:foreground ,fg))))
      `(org-level-6                  ((,c (:foreground ,fg))))
@@ -251,15 +246,15 @@
      `(secondary-selection ((,c (:background ,sbt-midnight))))
 
      ;; Hi
-     `(hi-green-b ((,c (:foreground ,spring-flower))))
-     `(hi-yellow-b ((,c (:foreground ,sunrise))))
+     `(hi-green-b ((,c (:foreground ,green))))
+     `(hi-yellow-b ((,c (:foreground ,yellow))))
      `(hi-yellow ((,c (:foreground ,background :background ,yellow))))
-     `(hi-red-b ((,c (:foreground ,santa))))
+     `(hi-red-b ((,c (:foreground ,red))))
 
      ;; Wgrep
      `(wgrep-face                  ((,c (:foreground ,saffron))))
      `(wgrep-done-face                  ((,c (:foreground ,green))))
-     `(wgrep-reject-face                  ((,c (:foreground ,santa))))
+     `(wgrep-reject-face                  ((,c (:foreground ,red))))
 
      ;; Perspeen
      `(perspeen-selected-face ((,c (:foreground ,frost))))
@@ -275,42 +270,42 @@
      `(whitespace-indentation ((,c (:foreground ,yellow))))
 
      ;; Powerline
-     `(powerline-active1 ((,c (:foreground ,sunrise))))
+     `(powerline-active1 ((,c (:foreground ,yellow))))
      `(powerline-active2 ((,c (:foreground ,comment))))
      `(powerline-inactive1 ((,c (:foreground ,comment))))
      `(powerline-inactive2 ((,c (:foreground ,comment))))
 
      ;; Prodigy
-     `(prodigy-red-face ((,c (:foreground ,santa))))
-     `(prodigy-green-face ((,c (:foreground ,spring-flower))))
-     `(prodigy-yellow-face ((,c (:foreground ,sunrise))))
+     `(prodigy-red-face ((,c (:foreground ,red))))
+     `(prodigy-green-face ((,c (:foreground ,green))))
+     `(prodigy-yellow-face ((,c (:foreground ,yellow))))
 
      ;; Jabber
-     `(jabber-title-large ((,c (:foreground ,sunrise))))
-     `(jabber-title-medium ((,c (:foreground ,sunrise))))
-     `(jabber-title-small ((,c (:foreground ,sunrise))))
+     `(jabber-title-large ((,c (:foreground ,yellow))))
+     `(jabber-title-medium ((,c (:foreground ,yellow))))
+     `(jabber-title-small ((,c (:foreground ,yellow))))
      `(jabber-chat-prompt-local ((,c (:foreground ,frost))))
-     `(jabber-chat-prompt-foreign ((,c(:foreground ,sunrise))))
+     `(jabber-chat-prompt-foreign ((,c(:foreground ,yellow))))
      `(jabber-roster-user-xa ((,c (:foreground ,saffron))))
-     `(jabber-roster-user-online ((,c (:foreground ,spring-flower))))
+     `(jabber-roster-user-online ((,c (:foreground ,green))))
      `(jabber-roster-user-offline ((,c (:foreground ,comment))))
      `(jabber-roster-user-away ((,c (:foreground ,frost))))
      `(jabber-rare-time-face ((,c (:foreground ,sbt-midnight))))
 
      ;; SQL*Plus
-     `(sqlplus-table-head-face ((,c (:foreground ,sunrise))))
+     `(sqlplus-table-head-face ((,c (:foreground ,yellow))))
      `(sqlplus-table-even-rows-face ((,c (:foreground ,fg :background ,ada-midnight))))
      `(sqlplus-table-odd-rows-face ((,c (:foreground ,fg))))
 
      ;; Rainbow-delimiters
-     `(rainbow-delimiters-depth-1-face ((,c (:foreground ,spring-flower))))
-     `(rainbow-delimiters-depth-2-face ((,c (:foreground ,santa))))
+     `(rainbow-delimiters-depth-1-face ((,c (:foreground ,green))))
+     `(rainbow-delimiters-depth-2-face ((,c (:foreground ,red))))
      `(rainbow-delimiters-depth-3-face ((,c (:foreground ,frost))))
      `(rainbow-delimiters-depth-4-face ((,c (:foreground ,saffron))))
      `(rainbow-delimiters-depth-5-face ((,c (:foreground ,waddles))))
      `(rainbow-delimiters-depth-6-face ((,c (:foreground ,frost))))
-     `(rainbow-delimiters-depth-7-face ((,c (:foreground ,spring-flower))))
-     `(rainbow-delimiters-depth-8-face ((,c (:foreground ,santa))))
+     `(rainbow-delimiters-depth-7-face ((,c (:foreground ,green))))
+     `(rainbow-delimiters-depth-8-face ((,c (:foreground ,red))))
      `(rainbow-delimiters-depth-9-face ((,c (:foreground ,frost))))
      `(rainbow-delimiters-depth-10-face ((,c (:foreground ,saffron))))
 
@@ -321,17 +316,17 @@
      `(company-scrollbar-bg ((,c (:background ,sbt-midnight))))
      `(company-tooltip-common ((,c (:foreground ,saffron))))
      `(company-preview ((,c (:background ,sbt-midnight))))
-     `(company-preview-common ((,c (:background ,sbt-midnight :foreground ,santa))))
+     `(company-preview-common ((,c (:background ,sbt-midnight :foreground ,red))))
      `(company-mouse ((,c (:background ,ada-midnight))))
 
      ;; Elfeed
      `(elfeed-search-feed-face ((,c (:foreground ,comment))))
-     `(elfeed-search-tag-face ((,c (:foreground ,spring-flower))))
+     `(elfeed-search-tag-face ((,c (:foreground ,green))))
      `(elfeed-search-unread-title-face ((,c (:foreground ,fg))))
      `(elfeed-search-date-face ((,c (:foreground ,diredcl))))
 
      ;; Flycheck
-     `(flycheck-warning ((,c (:underline (:color ,santa :style wave)))))
+     `(flycheck-warning ((,c (:underline (:color ,red :style wave)))))
 
      ;; js2-mode
      `(js2-function-param ((,c (:foreground ,saffron))))
@@ -344,33 +339,33 @@
      `(shr-link ((,c (:foreground ,frost :underline t))))
 
      ;; erc
-     `(erc-timestamp-face ((,c (:foreground ,santa))))
-     `(erc-prompt-face ((,c (:foreground ,spring-flower))))
+     `(erc-timestamp-face ((,c (:foreground ,red))))
+     `(erc-prompt-face ((,c (:foreground ,green))))
      `(erc-nick-default-face ((,c (:foreground ,frost))))
      `(erc-notice-face ((,c (:foreground ,waddles))))
      `(erc-button ((,c (:foreground ,frost))))
-     `(erc-current-nick-face ((,c (:foreground ,santa))))
+     `(erc-current-nick-face ((,c (:foreground ,red))))
 
      ;; eshell
      `(eshell-prompt ((,c (:foreground ,green))))
-     `(eshell-ls-executable ((,c (:foreground ,spring-flower))))
-     `(eshell-ls-directory ((,c (:foreground ,twitter))))
+     `(eshell-ls-executable ((,c (:foreground ,green))))
+     `(eshell-ls-directory ((,c (:foreground ,blue))))
      `(eshell-ls-symlink ((,c (:foreground ,waddles))))
      `(eshell-ls-readonly ((,c (:foreground ,anthracite))))
-     `(eshell-ls-missing ((,c (:foreground ,santa))))
+     `(eshell-ls-missing ((,c (:foreground ,red))))
      `(eshell-ls-special ((,c (:foreground ,comment :underline t))))
 
      ;; dired
-     `(dired-directory ((,c (:foreground ,twitter))))
-     `(dired-git-face ((,c (:foreground ,santa))))
+     `(dired-directory ((,c (:foreground ,blue))))
+     `(dired-git-face ((,c (:foreground ,red))))
      `(dired-ignored ((,c (:foreground ,anthracite))))
      `(dired-filetype-omit ((,c (:foreground ,anthracite))))
      `(dired-filetype-common ((,c (:foreground ,saffron))))
-     `(dired-filetype-execute ((,c (:foreground ,spring-flower))))
-     `(dired-filetype-source ((,c (:foreground ,orange-sat))))
+     `(dired-filetype-execute ((,c (:foreground ,green))))
+     `(dired-filetype-source ((,c (:foreground ,orange))))
      `(dired-filetype-plain ((,c (:foreground ,comment))))
-     `(dired-filetype-link ((,c (:foreground ,twitter :underline t))))
-     `(dired-flagged ((,c (:foreground ,santa :underline t))))
+     `(dired-filetype-link ((,c (:foreground ,blue :underline t))))
+     `(dired-flagged ((,c (:foreground ,red :underline t))))
      `(dired-marked ((,c (:foreground ,saffron :underline t))))
      `(dired-subtree-depth-1-face ((,c (:background ,background))))
      `(dired-subtree-depth-2-face ((,c (:background ,background))))
@@ -383,26 +378,26 @@
      `(dired-subtree-depth-9-face ((,c (:background ,background))))
 
    ;;; dired+
-     `(diredp-dir-heading ((,c (:foreground ,santa))))
-     `(diredp-dir-name ((,c (:foreground ,twitter))))
+     `(diredp-dir-heading ((,c (:foreground ,red))))
+     `(diredp-dir-name ((,c (:foreground ,blue))))
      `(diredp-file-name ((,c (:foreground ,frost))))
      `(diredp-file-suffix ((,c (:foreground ,frost))))
      `(diredp-ignored-file-name ((,c (:foreground ,comment))))
      `(diredp-symlink ((,c (:foreground ,waddles))))
      `(diredp-number ((,c (:foreground ,saffron))))
 
-     `(diredp-dir-priv ((,c (:foreground ,twitter))))
-     `(diredp-read-priv ((,c (:foreground ,santa))))
-     `(diredp-write-priv ((,c (:foreground ,sunrise))))
-     `(diredp-exec-priv ((,c (:foreground ,spring-flower))))
+     `(diredp-dir-priv ((,c (:foreground ,blue))))
+     `(diredp-read-priv ((,c (:foreground ,red))))
+     `(diredp-write-priv ((,c (:foreground ,yellow))))
+     `(diredp-exec-priv ((,c (:foreground ,green))))
      `(diredp-no-priv ((,c (:foreground ,fg))))
      `(diredp-rare-priv ((,c (:foreground ,waddles))))
      `(diredp-flag-mark ((,c (:foreground ,background))))
-     `(diredp-flag-mark-line ((,c (:foreground ,background :background ,sunrise))))
-     `(diredp-mode-line-marked ((,c (:foreground ,sunrise))))
-     `(diredp-deletion ((,c (:foreground ,background :background ,santa))))
-     `(diredp-deletion-file-name ((,c (:foreground ,background :background ,santa))))
-     `(diredp-mode-line-flagged ((,c (:foreground ,santa))))
+     `(diredp-flag-mark-line ((,c (:foreground ,background :background ,yellow))))
+     `(diredp-mode-line-marked ((,c (:foreground ,yellow))))
+     `(diredp-deletion ((,c (:foreground ,background :background ,red))))
+     `(diredp-deletion-file-name ((,c (:foreground ,background :background ,red))))
+     `(diredp-mode-line-flagged ((,c (:foreground ,red))))
 
      ;; ido
      `(minibuffer-prompt ((,c (:foreground ,diredcl))))
@@ -413,7 +408,7 @@
      `(ido-vertical-match-face ((,c (:underline ,diredcl))))
 
      ;; ivy
-     `(ivy-current-match ((,c (:inherit swiper-line-face))))
+     `(ivy-current-match ((,c (:inherit highlight))))
      `(ivy-prompt-match ((,c (:bold t :foreground ,fg))))
      `(ivy-confirm-face ((,c (:underline ,diredcl))))
 
@@ -439,8 +434,8 @@
 
      ;; hackernews
      `(hackernews-score-face ((,c (:foreground ,fg))))
-     `(hackernews-link-face ((,c (:foreground ,spring-flower))))
-     `(hackernews-comment-count-face ((,c (:foreground ,santa)))))))
+     `(hackernews-link-face ((,c (:foreground ,green))))
+     `(hackernews-comment-count-face ((,c (:foreground ,red)))))))
 
 ;;;###autoload
 (when load-file-name
