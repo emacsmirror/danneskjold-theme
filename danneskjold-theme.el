@@ -347,7 +347,7 @@
      `(erc-current-nick-face ((,c (:foreground ,red))))
 
      ;; eshell
-     `(eshell-prompt ((,c (:foreground ,green))))
+     `(eshell-prompt ((,c (:foreground ,red))))
      `(eshell-ls-executable ((,c (:foreground ,green))))
      `(eshell-ls-directory ((,c (:foreground ,blue))))
      `(eshell-ls-symlink ((,c (:foreground ,waddles))))
