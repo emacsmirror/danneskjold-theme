@@ -265,9 +265,13 @@
      `(perspeen-selected-face ((,c (:foreground ,frost))))
 
      ;; Whitespace mode
-     `(whitespace-space-after-tab ((,c (:foreground ,comment))))
-     `(whitespace-space ((,c (:foreground ,comment))))
+     `(whitespace-space-after-tab ((,c (:foreground ,ada-midnight))))
+     `(whitespace-space ((,c (:foreground ,ada-midnight))))
+     `(whitespace-hspace ((,c (:foreground ,ada-midnight))))
+     `(whitespace-newline ((,c (:foreground ,ada-midnight))))
      `(whitespace-line ((,c ())))
+     `(whitespace-empty ((,c (:foreground ,ada-midnight))))
+     `(whitespace-tab ((,c (:foreground ,ada-midnight))))
      `(whitespace-indentation ((,c (:foreground ,yellow))))
 
      ;; Powerline
@@ -348,7 +352,7 @@
      `(erc-current-nick-face ((,c (:foreground ,santa))))
 
      ;; eshell
-     `(eshell-prompt ((,c (:foreground ,santa))))
+     `(eshell-prompt ((,c (:foreground ,green))))
      `(eshell-ls-executable ((,c (:foreground ,spring-flower))))
      `(eshell-ls-directory ((,c (:foreground ,twitter))))
      `(eshell-ls-symlink ((,c (:foreground ,waddles))))
