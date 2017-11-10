@@ -267,7 +267,7 @@
      ;; Whitespace mode
      `(whitespace-space-after-tab ((,c (:foreground ,comment))))
      `(whitespace-space ((,c (:foreground ,comment))))
-     `(whitespace-line ((,c (:foreground ,yellow))))
+     `(whitespace-line ((,c ())))
      `(whitespace-indentation ((,c (:foreground ,yellow))))
 
      ;; Powerline
