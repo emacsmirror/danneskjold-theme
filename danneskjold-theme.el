@@ -264,6 +264,12 @@
      ;; Perspeen
      `(perspeen-selected-face ((,c (:foreground ,frost))))
 
+     ;; Whitespace mode
+     `(whitespace-space-after-tab ((,c (:foreground ,comment))))
+     `(whitespace-space ((,c (:foreground ,comment))))
+     `(whitespace-line ((,c (:foreground ,yellow))))
+     `(whitespace-indentation ((,c (:foreground ,yellow))))
+
      ;; Powerline
      `(powerline-active1 ((,c (:foreground ,sunrise))))
      `(powerline-active2 ((,c (:foreground ,comment))))
