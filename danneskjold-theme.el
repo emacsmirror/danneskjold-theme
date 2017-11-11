@@ -26,7 +26,7 @@
       (grey-1         "#525254")
       (grey-2         "#39393D")
       (white          "#FFFFFF")
-      (yellow         "#FFDB45") ;; "#E2C770"
+      (yellow         "#FFDB45") ;; "#E2C770" "#F9BA32"
       (orange         "#FD971F") ;; "#FF9009"
       (red            "#E74C3C") ;; "#F34A4A"
       (magenta        "#F92672")
@@ -45,7 +45,6 @@
       (anthracite     "#3a3f4b")
       (sbt-midnight   "#282c34")
       (ada-midnight   "#21252b")
-      (saffron        "#F9BA32")
       (summer-flower  "#013220")
       (diredcl        "#749AF7")
       (dvi            "DarkViolet")
@@ -112,9 +111,10 @@
      `(font-lock-keyword-face ((,c (:foreground ,frost))))
      `(font-lock-comment-face ((,c (:foreground ,comment))))
      `(font-lock-comment-delimiter-face ((,c (:foreground ,anthracite))))
-     `(font-lock-function-name-face ((,c (:foreground ,saffron))))
-     `(font-lock-type-face ((,c (:foreground ,orange))))
+     `(font-lock-function-name-face ((,c (:foreground ,yellow))))
+     `(font-lock-type-face ((,c (:foreground ,diredcl))))
      `(font-lock-constant-face ((,c (:foreground ,yellow))))
+     `(font-lock-warning-face ((,c (:underline (:color ,red :style wave)))))
 
      `(mmm-default-submode-face ((,c (:background ,ada-midnight))))
 
@@ -136,17 +136,18 @@
                                                   :color sbt-midnight)))))
      `(mode-line-buffer-id ((,c (:foreground ,frost))))
 
-     `(font-lock-warning-face ((,c (:underline (:color ,red :style wave)))))
-     `(compilation-error ((,c (:background ,red))))
+     `(compilation-error ((,c (:foreground ,red))))
+     `(compilation-line-number ((,c (:foreground ,yellow))))
+     `(compilation-column-number ((,c (:foreground ,green))))
      `(compilation-warning ((,c (:underline (:color ,red :style wave)))))
-     `(compilation-info ((,c (:foreground ,green))))
+     `(compilation-info ((,c (:foreground ,diredcl))))
      `(highlight ((,c (:background ,ada-midnight :foreground ,frost))))
 
      ;; Linum
      `(linum ((,c (:foreground ,anthracite))))
 
      `(widget-field ((,c (:foreground ,fg :background ,sbt-midnight))))
-     `(widget-button ((,c (:foreground ,saffron))))
+     `(widget-button ((,c (:foreground ,yellow))))
 
      ;; Highlight quoted mode-line
      `(highlight-quoted-symbol ((,c (:foreground ,waddles))))
@@ -235,15 +236,19 @@
      `(org-scheduled-previously ((,c (:foreground ,orange))))
      `(org-time-grid ((,c (:foreground ,comment))))
 
-     `(org-agenda-clocking ((,c (:background ,ada-midnight))))
+     `(org-agenda-clocking ((,c (:foreground ,diredcl :background ,ada-midnight))))
      `(org-agenda-date ((,c (:foreground ,blue))))
+     `(org-agenda-done ((,c (:foreground ,green))))
      `(org-agenda-dimmed-todo-face ((,c (:foreground ,comment))))
      `(org-agenda-date-today ((,c (:foreground ,red))))
      `(org-agenda-structure ((,c (:foreground ,violet))))
-
      `(org-upcoming-deadline ((,c (:foreground ,violet))))
 
      `(secondary-selection ((,c (:background ,sbt-midnight))))
+
+     ;; Hydra
+     `(hydra-face-red ((,c (:foreground ,red))))
+     `(hydra-face-blue ((,c (:foreground ,blue))))
 
      ;; Hi
      `(hi-green-b ((,c (:foreground ,green))))
@@ -252,7 +257,7 @@
      `(hi-red-b ((,c (:foreground ,red))))
 
      ;; Wgrep
-     `(wgrep-face                  ((,c (:foreground ,saffron))))
+     `(wgrep-face                  ((,c (:foreground ,yellow))))
      `(wgrep-done-face                  ((,c (:foreground ,green))))
      `(wgrep-reject-face                  ((,c (:foreground ,red))))
 
@@ -286,7 +291,7 @@
      `(jabber-title-small ((,c (:foreground ,yellow))))
      `(jabber-chat-prompt-local ((,c (:foreground ,frost))))
      `(jabber-chat-prompt-foreign ((,c(:foreground ,yellow))))
-     `(jabber-roster-user-xa ((,c (:foreground ,saffron))))
+     `(jabber-roster-user-xa ((,c (:foreground ,yellow))))
      `(jabber-roster-user-online ((,c (:foreground ,green))))
      `(jabber-roster-user-offline ((,c (:foreground ,comment))))
      `(jabber-roster-user-away ((,c (:foreground ,frost))))
@@ -301,20 +306,20 @@
      `(rainbow-delimiters-depth-1-face ((,c (:foreground ,green))))
      `(rainbow-delimiters-depth-2-face ((,c (:foreground ,red))))
      `(rainbow-delimiters-depth-3-face ((,c (:foreground ,frost))))
-     `(rainbow-delimiters-depth-4-face ((,c (:foreground ,saffron))))
+     `(rainbow-delimiters-depth-4-face ((,c (:foreground ,yellow))))
      `(rainbow-delimiters-depth-5-face ((,c (:foreground ,waddles))))
      `(rainbow-delimiters-depth-6-face ((,c (:foreground ,frost))))
      `(rainbow-delimiters-depth-7-face ((,c (:foreground ,green))))
      `(rainbow-delimiters-depth-8-face ((,c (:foreground ,red))))
      `(rainbow-delimiters-depth-9-face ((,c (:foreground ,frost))))
-     `(rainbow-delimiters-depth-10-face ((,c (:foreground ,saffron))))
+     `(rainbow-delimiters-depth-10-face ((,c (:foreground ,yellow))))
 
      ;; Company-mode
      `(company-tooltip ((,c (:foreground ,fg :background ,ada-midnight))))
      `(company-tooltip-selection ((,c (:foreground ,fg :background ,sbt-midnight))))
      `(company-scrollbar-fg ((,c (:background ,ada-midnight))))
      `(company-scrollbar-bg ((,c (:background ,sbt-midnight))))
-     `(company-tooltip-common ((,c (:foreground ,saffron))))
+     `(company-tooltip-common ((,c (:foreground ,yellow))))
      `(company-preview ((,c (:background ,sbt-midnight))))
      `(company-preview-common ((,c (:background ,sbt-midnight :foreground ,red))))
      `(company-mouse ((,c (:background ,ada-midnight))))
@@ -329,7 +334,7 @@
      `(flycheck-warning ((,c (:underline (:color ,red :style wave)))))
 
      ;; js2-mode
-     `(js2-function-param ((,c (:foreground ,saffron))))
+     `(js2-function-param ((,c (:foreground ,yellow))))
 
      ;; message
      `(message-header-name ((,c (:foreground ,comment))))
@@ -360,13 +365,13 @@
      `(dired-git-face ((,c (:foreground ,red))))
      `(dired-ignored ((,c (:foreground ,anthracite))))
      `(dired-filetype-omit ((,c (:foreground ,anthracite))))
-     `(dired-filetype-common ((,c (:foreground ,saffron))))
+     `(dired-filetype-common ((,c (:foreground ,yellow))))
      `(dired-filetype-execute ((,c (:foreground ,green))))
      `(dired-filetype-source ((,c (:foreground ,orange))))
      `(dired-filetype-plain ((,c (:foreground ,comment))))
      `(dired-filetype-link ((,c (:foreground ,blue :underline t))))
      `(dired-flagged ((,c (:foreground ,red :underline t))))
-     `(dired-marked ((,c (:foreground ,saffron :underline t))))
+     `(dired-marked ((,c (:foreground ,yellow :underline t))))
      `(dired-subtree-depth-1-face ((,c (:background ,background))))
      `(dired-subtree-depth-2-face ((,c (:background ,background))))
      `(dired-subtree-depth-3-face ((,c (:background ,background))))
@@ -384,7 +389,7 @@
      `(diredp-file-suffix ((,c (:foreground ,frost))))
      `(diredp-ignored-file-name ((,c (:foreground ,comment))))
      `(diredp-symlink ((,c (:foreground ,waddles))))
-     `(diredp-number ((,c (:foreground ,saffron))))
+     `(diredp-number ((,c (:foreground ,yellow))))
 
      `(diredp-dir-priv ((,c (:foreground ,blue))))
      `(diredp-read-priv ((,c (:foreground ,red))))
