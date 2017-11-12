@@ -170,6 +170,8 @@
      `(diff-context ((,c (:foreground ,comment))))
 
      ;; Magit
+     `(git-commit-summary ((,c (:foreground ,fg))))
+
      `(magit-diff-added ((,c (:foreground ,green))))
      `(magit-diff-added-highlight ((,c (:foreground ,green))))
      `(magit-diff-removed ((,c (:foreground ,red))))
