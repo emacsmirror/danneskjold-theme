@@ -119,9 +119,9 @@
      `(mmm-default-submode-face ((,c (:background ,ada-midnight))))
 
      `(header-line ((,c (:background ,background
-                                    :foreground ,comment
-                                    :underline ,comment
-                                    :weight normal))))
+                         :foreground ,comment
+                         :underline ,comment
+                         :weight normal))))
 
      ;; Mode-line
      `(mode-line ((,c (:background ,ada-midnight
