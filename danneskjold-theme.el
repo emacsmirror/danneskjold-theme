@@ -272,7 +272,7 @@
      `(whitespace-line ((,c ())))
      `(whitespace-empty ((,c (:foreground ,ada-midnight))))
      `(whitespace-tab ((,c (:foreground ,ada-midnight))))
-     `(whitespace-indentation ((,c (:foreground ,yellow))))
+     `(whitespace-indentation ((,c (:foreground ,ada-midnight))))
 
      ;; Powerline
      `(powerline-active1 ((,c (:foreground ,yellow))))
