@@ -171,6 +171,8 @@
 
      ;; Magit
      `(git-commit-summary ((,c (:foreground ,fg))))
+     `(git-commit-comment-file ((,c (:foreground ,green))))
+     `(git-commit-comment-heading ((,c (:foreground ,frost))))
 
      `(magit-diff-added ((,c (:foreground ,green))))
      `(magit-diff-added-highlight ((,c (:foreground ,green))))
