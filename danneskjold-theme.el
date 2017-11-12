@@ -119,9 +119,9 @@
      `(mmm-default-submode-face ((,c (:background ,ada-midnight))))
 
      `(header-line ((,c (:background ,background
-                                    :foreground ,comment
-                                    :underline ,comment
-                                    :weight normal))))
+                         :foreground ,comment
+                         :underline ,comment
+                         :weight normal))))
 
      ;; Mode-line
      `(mode-line ((,c (:background ,ada-midnight
@@ -170,6 +170,10 @@
      `(diff-context ((,c (:foreground ,comment))))
 
      ;; Magit
+     `(git-commit-summary ((,c (:foreground ,fg))))
+     `(git-commit-comment-file ((,c (:foreground ,green))))
+     `(git-commit-comment-heading ((,c (:foreground ,frost))))
+
      `(magit-diff-added ((,c (:foreground ,green))))
      `(magit-diff-added-highlight ((,c (:foreground ,green))))
      `(magit-diff-removed ((,c (:foreground ,red))))
