@@ -112,7 +112,7 @@
      `(font-lock-comment-face ((,c (:foreground ,comment))))
      `(font-lock-comment-delimiter-face ((,c (:foreground ,anthracite))))
      `(font-lock-function-name-face ((,c (:foreground ,yellow))))
-     `(font-lock-type-face ((,c (:foreground ,diredcl))))
+     `(font-lock-type-face ((,c (:foreground ,orange))))
      `(font-lock-constant-face ((,c (:foreground ,yellow))))
      `(font-lock-warning-face ((,c (:underline (:color ,red :style wave)))))
 
