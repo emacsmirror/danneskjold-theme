@@ -1,2 +1,2 @@
-http://paletton.com/#uid=73q0u0knlw0dAMdiZD2sXuguBnl
+* Palette: http://paletton.com/#uid=73E0u0k5MYN00++0R+XaxTye+Kt
 * [[http://eclipsecolorthemes.org/?view=theme&id=1][Eclipse Colors]]

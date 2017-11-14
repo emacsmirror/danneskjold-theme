@@ -81,10 +81,10 @@
 
          (error-highlight red)
 
-         (linum-bg       current-line)
-         (linum-fg       "#3F3F48")
-         (linum-hl-fg    orange)
-         (linum-hl-bg    current-line)
+         ;; (linum-bg       current-line)
+         ;; (linum-fg       "#3F3F48")
+         ;; (linum-hl-fg    orange)
+         ;; (linum-hl-bg    current-line)
 
          (active-minibuffer "#404046")
          (modeline-fg    white)
@@ -152,6 +152,7 @@
 
      ;; Linum
      `(linum ((,c (:foreground ,invisible))))
+     `(linum-highlight-face ((,c (:foreground ,white))))
 
      `(widget-field ((,c (:foreground ,white :background ,sbt-midnight))))
      `(widget-button ((,c (:foreground ,yellow))))
@@ -160,9 +161,8 @@
      `(highlight-quoted-symbol ((,c (:foreground ,waddles))))
      `(highlight-symbol-face ((,c (:foreground ,black :background ,diredcl))))
 
-     ;; Hl-line and hlinum-activate
-     `(linum-highlight-face ((,c (:foreground ,invisible :background ,ada-midnight :weight bold))))
-     `(hl-line ((,c (:foreground ,white :background ,diredcl))))
+     ;; Hl-line
+     `(hl-line ((,c (:background "#284D80"))))
 
      ;; Diff
      `(diff-header ((,c (:foreground ,yellow))))
