@@ -197,6 +197,10 @@
      `(magit-diff-lines-boundary ((,c (:foreground ,white :background ,sbt-midnight))))
      `(magit-diff-hunk-heading-highlight ((,c (:foreground ,white :background ,sbt-midnight))))
 
+     ;; Monky
+     `(monky-diff-add ((,c (:foreground ,green))))
+     `(monky-diff-del ((,c (:foreground ,red))))
+
      ;; Org-mode
      `(org-tag                      ((,c (:foreground ,yellow :bold nil))))
      `(org-ellipsis                 ((,c (:inherit hs-face :underline nil))))
@@ -371,6 +375,10 @@
      `(eshell-ls-readonly ((,c (:foreground ,invisible))))
      `(eshell-ls-missing ((,c (:foreground ,red))))
      `(eshell-ls-special ((,c (:foreground ,comment :underline t))))
+
+     `(epe-remote-face ((,c (:foreground ,comment))))
+     `(epe-dir-face ((,c (:foreground ,blue))))
+     `(epe-symbol-face ((,c (:foreground ,invisible))))
 
      ;; dired
      `(dired-directory ((,c (:foreground ,blue))))
