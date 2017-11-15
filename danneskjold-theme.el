@@ -405,12 +405,13 @@
      `(dired-subtree-depth-9-face ((,c (:background ,black))))
 
    ;;; dired+
+     `(diredp-date-time ((,c (:foreground ,diredcl))))
      `(diredp-dir-heading ((,c (:foreground ,red))))
      `(diredp-dir-name ((,c (:foreground ,blue))))
-     `(diredp-file-name ((,c (:foreground ,frost))))
-     `(diredp-file-suffix ((,c (:foreground ,frost))))
+     `(diredp-file-name ((,c (:foreground ,white))))
+     `(diredp-file-suffix ((,c (:foreground ,invisible))))
      `(diredp-ignored-file-name ((,c (:foreground ,comment))))
-     `(diredp-symlink ((,c (:foreground ,waddles))))
+     `(diredp-symlink ((,c (:foreground ,yellow))))
      `(diredp-number ((,c (:foreground ,yellow))))
 
      `(diredp-dir-priv ((,c (:foreground ,blue))))
