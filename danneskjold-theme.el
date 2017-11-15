@@ -274,6 +274,12 @@
      `(hi-yellow ((,c (:foreground ,black :background ,yellow))))
      `(hi-red-b ((,c (:foreground ,red))))
 
+     ;; Bookmarks
+     `(bmkp-remote-file ((,c (:foreground ,green))))
+     `(bmkp-url ((,c (:foreground ,white))))
+     `(bmkp-local-directory ((,c (:foreground ,blue))))
+     `(bmkp-no-local ((,c (:foreground ,yellow :slant italic))))
+
      ;; Wgrep
      `(wgrep-face                  ((,c (:foreground ,yellow))))
      `(wgrep-done-face                  ((,c (:foreground ,green))))
