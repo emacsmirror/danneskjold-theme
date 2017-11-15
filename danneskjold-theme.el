@@ -16,7 +16,6 @@
 (let ((c '((class color) (min-colors 89)))
       (background     "#000000")
       (fg             "#ffffff")
-      (vsubtle        "#556172")
 
       ;; doom-molokai-colors
       ;; https://github.com/hlissner/emacs-doom-theme/blob/master/doom-molokai-theme.el
@@ -64,7 +63,6 @@
          (search-rest-bg violet)
          (search-rest-fg black)
          (highlight      orange)
-         (vertical-bar   grey-2)
          (current-line   "#1F1F1F")
          (selection      "#535556")
          (builtin        orange)
@@ -211,7 +209,8 @@
      `(org-document-info            ((,c (:foreground ,orange))))
      `(org-document-info-keyword    ((,c (:foreground ,grey-1))))
      `(org-meta-line                ((,c (:foreground ,comment))))
-     `(org-block-begin-line         ((,c (:foreground ,vsubtle))))
+     `(org-block                    ((,c ())))
+     `(org-block-begin-line         ((,c (:foreground ,invisible))))
      `(org-block-end-line           ((,c (:inherit org-block-begin-line))))
      `(org-block-background         ((,c (:background ,current-line))))
      `(org-archived                 ((,c (:foreground ,grey-.5))))
@@ -452,7 +451,7 @@
      `(swiper-match-face-4 ((,c (:underline ,yellow))))
 
      ;; vertical-border
-     `(vertical-border ((,c (:foreground "#282a2e"))))
+     `(vertical-border ((,c (:foreground ,black))))
 
      ;; yas
      `(yas-field-highlight-face ((,c (:background ,ada-midnight))))
