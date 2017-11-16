@@ -200,7 +200,7 @@
      `(monky-diff-del ((,c (:foreground ,red))))
 
      ;; Org-mode
-     `(org-tag                      ((,c (:foreground ,yellow :bold nil))))
+     `(org-tag                      ((,c (:foreground ,invisible :bold nil))))
      `(org-ellipsis                 ((,c (:inherit hs-face :underline nil))))
      `(org-link                     ((,c (:foreground ,frost :underline ,diredcl))))
      `(org-hide                     ((,c (:foreground ,black))))
@@ -213,7 +213,7 @@
      `(org-block-begin-line         ((,c (:foreground ,invisible))))
      `(org-block-end-line           ((,c (:inherit org-block-begin-line))))
      `(org-block-background         ((,c (:background ,current-line))))
-     `(org-archived                 ((,c (:foreground ,grey-.5))))
+     `(org-archived                 ((,c (:foreground ,invisible))))
      `(org-document-title           ((,c (:foreground ,blue))))
      `(org-level-1                  ((,c (:foreground ,red))))
      `(org-level-2                  ((,c (:foreground ,green))))
