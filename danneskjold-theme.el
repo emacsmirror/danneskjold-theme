@@ -239,7 +239,7 @@
      `(org-checkbox-statistics-done ((,c (:inherit org-done))))
 
      ;; comint
-     `(comint-highlight-input ((,c (:foreground ,white))))
+     `(comint-highlight-input ((,c (:foreground ,white :bold t))))
      `(comint-highlight-prompt ((,c (:foreground ,invisible))))
 
      `(org-habit-clear-face ((,c (:background ,black :foreground ,frost :underline t))))
