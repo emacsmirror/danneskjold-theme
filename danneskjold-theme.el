@@ -101,8 +101,8 @@
     (custom-theme-set-faces
      'danneskjold
      `(default ((,c (:foreground ,white :background ,black))))
-     `(fringe ((,c (:background ,black))))
-     `(region ((,c (:background ,invisible))))
+     `(fringe ((,c (:foreground ,invisible :background ,black))))
+     `(region ((,c (:foreground ,invisible :background ,white))))
      `(button ((,c (:foreground ,frost :underline t :weight normal))))
      `(link ((,c (:foreground ,frost :underline t))))
      `(menu ((,c (:foreground ,white :background ,ada-midnight))))
@@ -465,7 +465,7 @@
      `(swiper-match-face-4 ((,c (:underline ,yellow))))
 
      ;; vertical-border
-     `(vertical-border ((,c (:foreground ,black))))
+     `(vertical-border ((,c (:foreground "#223959"))))
 
      ;; yas
      `(yas-field-highlight-face ((,c (:background ,ada-midnight))))
