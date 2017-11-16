@@ -238,6 +238,10 @@
      `(org-checkbox-statistics-todo ((,c (:inherit org-todo))))
      `(org-checkbox-statistics-done ((,c (:inherit org-done))))
 
+     ;; comint
+     `(comint-highlight-input ((,c (:foreground ,white))))
+     `(comint-highlight-prompt ((,c (:foreground ,invisible))))
+
      `(org-habit-clear-face ((,c (:background ,black :foreground ,frost :underline t))))
      `(org-habit-clear-future-face ((,c (:background ,black :underline t :foreground ,frost))))
      `(org-habit-ready-face ((,c (:background ,black :foreground ,green :underline t))))
