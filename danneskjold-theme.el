@@ -102,7 +102,7 @@
      'danneskjold
      `(default ((,c (:foreground ,white :background ,black))))
      `(fringe ((,c (:foreground ,invisible :background ,black))))
-     `(region ((,c (:foreground ,invisible :background ,white))))
+     `(region ((,c (:foreground ,black :background ,white))))
      `(button ((,c (:foreground ,frost :underline t :weight normal))))
      `(link ((,c (:foreground ,frost :underline t))))
      `(menu ((,c (:foreground ,white :background ,ada-midnight))))
@@ -228,7 +228,7 @@
      `(org-formula                  ((,c (:foreground ,orange))))
      `(org-list-dt                  ((,c (:foreground ,orange))))
      `(org-footnote                 ((,c (:foreground ,orange))))
-     `(org-priority                 ((,c (:foreground ,violet))))
+     `(org-priority                 ((,c (:foreground ,frost))))
 
      `(org-date                     ((,c (:foreground ,violet))))
      `(org-todo                     ((,c (:foreground ,yellow))))
@@ -413,6 +413,9 @@
      `(dired-subtree-depth-7-face ((,c (:background ,black))))
      `(dired-subtree-depth-8-face ((,c (:background ,black))))
      `(dired-subtree-depth-9-face ((,c (:background ,black))))
+
+     ;; dired-rainbow
+     `(dired-rainbow-executable-unix-face ((,c (:foreground ,green))))
 
    ;;; dired+
      `(diredp-date-time ((,c (:foreground ,diredcl))))
