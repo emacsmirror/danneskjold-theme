@@ -1,2 +1,100 @@
-* Palette: http://paletton.com/#uid=73E0u0k5MYN00++0R+XaxTye+Kt
-* [[http://eclipsecolorthemes.org/?view=theme&id=1][Eclipse Colors]]
+#+TBLNAME: Base-Colors
+| Name   | HEX     | Description                                        |
+|--------+---------+----------------------------------------------------|
+| white  | #FFFFFF | Use it to achieve maximum contrast with background |
+| black  | #000000 | Used for background                                |
+| yellow | #FFDB45 |                                                    |
+| orange | #FF9009 |                                                    |
+| red    | #E74C3C |                                                    |
+| violet | #9C91E4 |                                                    |
+| blue   | #4CB5F5 |                                                    |
+| cyan   | #66D9EF |                                                    |
+| green  | #B6E63E |                                                    |
+
+#+TBLNAME: Danneskjold-Palette-Colors
+| Name        | HEX     | Description |
+|-------------+---------+-------------|
+| magnolias   | #FAF9FF |             |
+| wisteria    | #B2A9ED |             |
+| amethyst    | #8B7FD7 |             |
+| frost       | #D0E1F9 |             |
+| ghost       | #F9FBFF |             |
+| periwinkle  | #D8D2FA |             |
+| cornflower  | #A4C2EB |             |
+| habr        | #789ED2 |             |
+| lemoncream  | #FFF5D1 |             |
+| snowy       | #FFFEF8 |             |
+| sand        | #FFEEAB |             |
+| lightgolden | #FFE688 |             |
+| almond      | #FFEED1 |             |
+| niveous     | #FFFCF8 |             |
+| navajo      | #FFE0AB |             |
+| macheese    | #FFD288 |             |
+
+#+TBLNAME: Shades-of-Grey
+| Name      | HEX     | Description |
+|-----------+---------+-------------|
+| comment   | #A4C2EB |             |
+| invisible | #7B9ED2 |             |
+
+#+TBLNAME: Bright-Ones
+| Name    | HEX     | Description |
+|---------+---------+-------------|
+| diredcl | #749AF7 |             |
+
+#+TBLNAME: Faces
+| ! | Name             | Foreground | Background | Underline | Weight | Aloha   |
+|---+------------------+------------+------------+-----------+--------+---------|
+| # | default          | white      | black      |           |        |         |
+| # | fringe           | invisible  | black      |           |        |         |
+| # | region           | black      | white      |           |        |         |
+| # | menu             | white      | black      |           |        |         |
+| # | button           | frost      |            | t         | normal |         |
+| # | link             | frost      |            | t         |        |         |
+|---+------------------+------------+------------+-----------+--------+---------|
+| # | show-paren-match | white      | blue       |           |        |         |
+| # | highlight        | black      | invisible  |           |        | foololo |
+#+TBLFM: $7='(propertize "foololo" 'face 'italic 'mouse-face 'bold-italic)
+
+* Color Sources
+** [[http://paletton.com/#uid=73E0u0k5MYN00++0R+XaxTye+Kt][Danneskjold Palette]]
+** [[http://eclipsecolorthemes.org/?view=theme&id=1][Eclipse Colors]]
+* Implementation
+** Header
+#+BEGIN_SRC emacs-lisp
+;; danneskjold-theme.el --- beautiful high-contrast theme
+
+;; Copyright (c) 2016-2018 Dmitry Akatov
+
+;; Author: Dmitry Akatov <akatovda@yandex.com>
+;; URL: https://github.com/rails-to-cosmos/
+;; Package-Version: 2.0
+
+;;; Commentary:
+
+;;; Code:
+#+END_SRC
+** Theme Definition
+#+BEGIN_SRC emacs-lisp
+(deftheme danneskjold
+  "Amazing. Beautiful. Contrast.")
+#+END_SRC
+** Autoloads
+#+BEGIN_SRC emacs-lisp
+;;;###autoload
+(when load-file-name
+  (add-to-list 'custom-theme-load-path
+	       (file-name-as-directory (file-name-directory load-file-name))))
+#+END_SRC
+** Footer
+#+BEGIN_SRC emacs-lisp
+(provide-theme 'danneskjold)
+;;; danneskjold-theme.el ends here
+#+END_SRC
+* Local Settings                                                                :ARCHIVE:
+# CONSTANTS: org-table-separator-space=" "
+# Local Variables:
+# firestarter: (org-babel-tangle)
+# eval: (rainbow-mode)
+# eval: (face-remap-add-relative 'org-table :foreground "#7B9ED2")
+# End:
