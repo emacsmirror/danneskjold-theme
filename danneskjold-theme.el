@@ -222,6 +222,7 @@
      `(org-column-title             ((,c (:background ,black :foreground ,comment))))
      `(org-verbatim                 ((,c (:foreground ,diredcl))))
      `(org-formula                  ((,c (:foreground ,orange))))
+     `(org-latex-and-related        ((,c (:foreground "#FAF9FF"))))
      `(org-list-dt                  ((,c (:foreground ,orange))))
      `(org-footnote                 ((,c (:foreground ,orange))))
      `(org-priority                 ((,c (:foreground ,frost))))
