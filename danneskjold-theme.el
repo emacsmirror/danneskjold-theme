@@ -16,7 +16,6 @@
 (let ((c '((class color) (min-colors 89)))
       (background     "#000000")
       (fg             "#ffffff")
-      (vsubtle        "#556172")
 
       ;; doom-molokai-colors
       ;; https://github.com/hlissner/emacs-doom-theme/blob/master/doom-molokai-theme.el
@@ -64,7 +63,6 @@
          (search-rest-bg violet)
          (search-rest-fg black)
          (highlight      orange)
-         (vertical-bar   grey-2)
          (current-line   "#1F1F1F")
          (selection      "#535556")
          (builtin        orange)
@@ -98,13 +96,15 @@
     (custom-theme-set-faces
      'danneskjold
      `(default ((,c (:foreground ,white :background ,black))))
-     `(fringe ((,c (:background ,black))))
-     `(region ((,c (:background ,invisible))))
+     `(fringe ((,c (:foreground ,invisible :background ,black))))
+     `(region ((,c (:foreground ,black :background ,white))))
      `(button ((,c (:foreground ,frost :underline t :weight normal))))
      `(link ((,c (:foreground ,frost :underline t))))
      `(menu ((,c (:foreground ,white :background ,ada-midnight))))
 
      `(show-paren-match ((,c (:background ,blue :foreground ,white))))
+
+     `(highlight ((,c (:background ,invisible :foreground ,black))))
 
      `(font-lock-string-face ((,c (:foreground ,green))))
      `(font-lock-doc-face ((,c (:foreground ,green))))
@@ -127,23 +127,22 @@
 
      ;; Mode-line
      `(mode-line ((,c (:background ,ada-midnight
-                                  :foreground ,comment
-                                  :box ,(list
-                                         :line-width 4
-                                         :color ada-midnight)))))
+                       :foreground ,comment
+                       :box ,(list
+                              :line-width 4
+                              :color ada-midnight)))))
      `(mode-line-inactive ((,c (:background ,sbt-midnight
-                                           :foreground ,comment
-                                           :box ,(list
-                                                  :line-width 4
-                                                  :color sbt-midnight)))))
-     `(mode-line-buffer-id ((,c (:foreground ,frost))))
+                                :foreground ,invisible
+                                :box ,(list
+                                       :line-width 4
+                                       :color sbt-midnight)))))
+     `(mode-line-buffer-id ((,c (:foreground ,fg))))
 
      `(compilation-error ((,c (:foreground ,red))))
      `(compilation-line-number ((,c (:foreground ,yellow))))
      `(compilation-column-number ((,c (:foreground ,green))))
      `(compilation-warning ((,c (:underline (:color ,red :style wave)))))
      `(compilation-info ((,c (:foreground ,diredcl))))
-     `(highlight ((,c (:background ,ada-midnight :foreground ,frost))))
 
      ;; Linum
      `(linum ((,c (:foreground ,invisible))))
@@ -197,7 +196,7 @@
      `(monky-diff-del ((,c (:foreground ,red))))
 
      ;; Org-mode
-     `(org-tag                      ((,c (:foreground ,yellow :bold nil))))
+     `(org-tag                      ((,c (:foreground ,invisible :bold nil))))
      `(org-ellipsis                 ((,c (:inherit hs-face :underline nil))))
      `(org-link                     ((,c (:foreground ,frost :underline ,diredcl))))
      `(org-hide                     ((,c (:foreground ,black))))
@@ -206,10 +205,11 @@
      `(org-document-info            ((,c (:foreground ,orange))))
      `(org-document-info-keyword    ((,c (:foreground ,grey-1))))
      `(org-meta-line                ((,c (:foreground ,comment))))
-     `(org-block-begin-line         ((,c (:foreground ,vsubtle))))
+     `(org-block                    ((,c ())))
+     `(org-block-begin-line         ((,c (:foreground ,invisible))))
      `(org-block-end-line           ((,c (:inherit org-block-begin-line))))
      `(org-block-background         ((,c (:background ,current-line))))
-     `(org-archived                 ((,c (:foreground ,grey-.5))))
+     `(org-archived                 ((,c (:foreground ,invisible))))
      `(org-document-title           ((,c (:foreground ,blue))))
      `(org-level-1                  ((,c (:foreground ,red))))
      `(org-level-2                  ((,c (:foreground ,green))))
@@ -224,7 +224,7 @@
      `(org-formula                  ((,c (:foreground ,orange))))
      `(org-list-dt                  ((,c (:foreground ,orange))))
      `(org-footnote                 ((,c (:foreground ,orange))))
-     `(org-priority                 ((,c (:foreground ,violet))))
+     `(org-priority                 ((,c (:foreground ,frost))))
 
      `(org-date                     ((,c (:foreground ,violet))))
      `(org-todo                     ((,c (:foreground ,yellow))))
@@ -233,6 +233,10 @@
      `(org-special-keyword          ((,c (:foreground ,orange))))
      `(org-checkbox-statistics-todo ((,c (:inherit org-todo))))
      `(org-checkbox-statistics-done ((,c (:inherit org-done))))
+
+     ;; comint
+     `(comint-highlight-input ((,c (:foreground ,white :bold t))))
+     `(comint-highlight-prompt ((,c (:foreground ,invisible))))
 
      `(org-habit-clear-face ((,c (:background ,black :foreground ,frost :underline t))))
      `(org-habit-clear-future-face ((,c (:background ,black :underline t :foreground ,frost))))
@@ -243,16 +247,19 @@
      `(org-habit-overdue-face ((,c (:background ,black :underline t :foreground ,red))))
      `(org-habit-overdue-future-face ((,c (:background ,black :underline t :foreground ,red))))
 
+     `(org-scheduled ((,c (:foreground ,white))))
+     `(org-warning ((,c (:foreground ,orange))))
      `(org-scheduled-today ((,c (:foreground ,green))))
-     `(org-scheduled-previously ((,c (:foreground ,orange))))
-     `(org-time-grid ((,c (:foreground ,comment))))
+     `(org-scheduled-previously ((,c (:foreground ,red))))
+     `(org-time-grid ((,c (:foreground ,invisible))))
 
      `(org-agenda-clocking ((,c (:foreground ,diredcl :background ,ada-midnight))))
-     `(org-agenda-date ((,c (:foreground ,blue))))
+     `(org-agenda-date ((,c (:foreground ,invisible))))
+     `(org-agenda-date-weekend ((,c (:foreground ,comment))))
      `(org-agenda-done ((,c (:foreground ,green))))
      `(org-agenda-dimmed-todo-face ((,c (:foreground ,comment))))
-     `(org-agenda-date-today ((,c (:foreground ,red))))
-     `(org-agenda-structure ((,c (:foreground ,violet))))
+     `(org-agenda-date-today ((,c (:foreground ,white))))
+     `(org-agenda-structure ((,c (:foreground ,invisible))))
      `(org-upcoming-deadline ((,c (:foreground ,violet))))
 
      `(secondary-selection ((,c (:background ,sbt-midnight))))
@@ -266,6 +273,13 @@
      `(hi-yellow-b ((,c (:foreground ,yellow))))
      `(hi-yellow ((,c (:foreground ,black :background ,yellow))))
      `(hi-red-b ((,c (:foreground ,red))))
+
+     ;; Bookmarks
+     `(bmkp-remote-file ((,c (:foreground ,green))))
+     `(bmkp-url ((,c (:foreground ,white))))
+     `(bmkp-local-directory ((,c (:foreground ,blue))))
+     `(bmkp-no-local ((,c (:foreground ,yellow :slant italic))))
+     `(bmkp-D-mark ((,c (:foreground ,red))))
 
      ;; Wgrep
      `(wgrep-face                  ((,c (:foreground ,yellow))))
@@ -373,7 +387,7 @@
 
      `(epe-remote-face ((,c (:foreground ,comment))))
      `(epe-dir-face ((,c (:foreground ,blue))))
-     `(epe-symbol-face ((,c (:foreground ,invisible))))
+     `(epe-symbol-face ((,c (:foreground ,yellow))))
 
      ;; dired
      `(dired-directory ((,c (:foreground ,blue))))
@@ -397,13 +411,19 @@
      `(dired-subtree-depth-8-face ((,c (:background ,black))))
      `(dired-subtree-depth-9-face ((,c (:background ,black))))
 
+     ;; dired-rainbow
+     `(dired-rainbow-executable-unix-face ((,c (:foreground ,green))))
+
    ;;; dired+
+     `(diredp-date-time ((,c (:foreground ,diredcl))))
      `(diredp-dir-heading ((,c (:foreground ,red))))
      `(diredp-dir-name ((,c (:foreground ,blue))))
-     `(diredp-file-name ((,c (:foreground ,frost))))
-     `(diredp-file-suffix ((,c (:foreground ,frost))))
-     `(diredp-ignored-file-name ((,c (:foreground ,comment))))
-     `(diredp-symlink ((,c (:foreground ,waddles))))
+     `(diredp-file-name ((,c (:foreground ,white))))
+     `(diredp-file-suffix ((,c (:foreground ,invisible))))
+     `(diredp-ignored-file-name ((,c (:foreground ,invisible))))
+     `(diredp-compressed-file-suffix ((,c (:foreground ,orange))))
+     `(diredp-rainbow-media-face ((,c (:foreground ,yellow))))
+     `(diredp-symlink ((,c (:foreground ,yellow))))
      `(diredp-number ((,c (:foreground ,yellow))))
 
      `(diredp-dir-priv ((,c (:foreground ,blue))))
@@ -447,7 +467,7 @@
      `(swiper-match-face-4 ((,c (:underline ,yellow))))
 
      ;; vertical-border
-     `(vertical-border ((,c (:foreground "#282a2e"))))
+     `(vertical-border ((,c (:foreground "#223959"))))
 
      ;; yas
      `(yas-field-highlight-face ((,c (:background ,ada-midnight))))
