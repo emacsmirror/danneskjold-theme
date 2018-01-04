@@ -81,11 +81,6 @@
 
          (error-highlight red)
 
-         ;; (linum-bg       current-line)
-         ;; (linum-fg       "#3F3F48")
-         ;; (linum-hl-fg    orange)
-         ;; (linum-hl-bg    current-line)
-
          (active-minibuffer "#404046")
          (modeline-fg    white)
          (modeline-fg-2  orange)
