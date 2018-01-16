@@ -163,6 +163,10 @@
      ;; Hl-line
      `(hl-line ((,c (:background "#284D80"))))
 
+     ;; search
+     `(isearch ((,c (:foreground ,black :background ,invisible))))
+     `(lazy-highlight ((,c (:foreground ,black :background ,yellow))))
+
      ;; Diff
      `(diff-header ((,c (:foreground ,yellow))))
      `(diff-file-header ((,c (:foreground ,yellow))))
