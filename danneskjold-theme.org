@@ -97,4 +97,5 @@
 # firestarter: (org-babel-tangle)
 # eval: (rainbow-mode)
 # eval: (face-remap-add-relative 'org-table :foreground "#7B9ED2")
+# eval: (face-remap-add-relative 'org-formula :foreground "#D0E1F9")
 # End:
