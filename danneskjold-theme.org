@@ -45,7 +45,7 @@
 #+TBLNAME: Faces
 | ! | Name             | Foreground | Background | Underline | Weight | Aloha   |
 |---+------------------+------------+------------+-----------+--------+---------|
-| # | default          | white      | black      |           |        |         |
+| # | default          | white      | black      |           |        | foobar  |
 | # | fringe           | invisible  | black      |           |        |         |
 | # | region           | black      | white      |           |        |         |
 | # | menu             | white      | black      |           |        |         |
@@ -53,8 +53,8 @@
 | # | link             | frost      |            | t         |        |         |
 |---+------------------+------------+------------+-----------+--------+---------|
 | # | show-paren-match | white      | blue       |           |        |         |
-| # | highlight        | black      | invisible  |           |        | foololo |
-#+TBLFM: $7='(propertize "foololo" 'face 'italic 'mouse-face 'bold-italic)
+| # | highlight        | black      | invisible  |           |        | foobar  |
+#+TBLFM: $7='(propertize "foobar" 'face 'italic 'mouse-face 'bold-italic)
 
 * Color Sources
 ** [[http://paletton.com/#uid=73E0u0k5MYN00++0R+XaxTye+Kt][Danneskjold Palette]]
