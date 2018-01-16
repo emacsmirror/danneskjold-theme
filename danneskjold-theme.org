@@ -1,8 +1,8 @@
 #+TBLNAME: Base-Colors
 | Name   | HEX     | Description                                        |
 |--------+---------+----------------------------------------------------|
+| black  | #000000 | Background                                         |
 | white  | #FFFFFF | Use it to achieve maximum contrast with background |
-| black  | #000000 | Used for background                                |
 | yellow | #FFDB45 |                                                    |
 | orange | #FF9009 |                                                    |
 | red    | #E74C3C |                                                    |
