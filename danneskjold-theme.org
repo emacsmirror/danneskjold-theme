@@ -43,17 +43,17 @@
 | diredcl | #749AF7 |             |
 
 #+TBLNAME: Faces
-| ! | Name             | Foreground | Background | Underline | Weight | Aloha   |
-|---+------------------+------------+------------+-----------+--------+---------|
-| # | default          | white      | black      |           |        | foobar  |
-| # | fringe           | invisible  | black      |           |        |         |
-| # | region           | black      | white      |           |        |         |
-| # | menu             | white      | black      |           |        |         |
-| # | button           | frost      |            | t         | normal |         |
-| # | link             | frost      |            | t         |        |         |
-|---+------------------+------------+------------+-----------+--------+---------|
-| # | show-paren-match | white      | blue       |           |        |         |
-| # | highlight        | black      | invisible  |           |        | foobar  |
+| ! | Name             | Foreground | Background | Underline | Weight | Aloha  |
+|---+------------------+------------+------------+-----------+--------+--------|
+| # | default          | white      | black      |           |        | foobar |
+| # | fringe           | invisible  | black      |           |        |        |
+| # | region           | black      | white      |           |        |        |
+| # | menu             | white      | black      |           |        |        |
+| # | button           | frost      |            | t         | normal |        |
+| # | link             | frost      |            | t         |        |        |
+|---+------------------+------------+------------+-----------+--------+--------|
+| # | show-paren-match | white      | blue       |           |        |        |
+| # | highlight        | black      | invisible  |           |        | foobar |
 #+TBLFM: $7='(propertize "foobar" 'face 'italic 'mouse-face 'bold-italic)
 
 * Color Sources
