@@ -1,15 +1,16 @@
 #+TBLNAME: Base-Colors
-| Name   | HEX     | Description                                        |
-|--------+---------+----------------------------------------------------|
-| black  | #000000 | Background                                         |
-| white  | #FFFFFF | Use it to achieve maximum contrast with background |
-| yellow | #FFDB45 |                                                    |
-| orange | #FF9009 |                                                    |
-| red    | #E74C3C |                                                    |
-| violet | #9C91E4 |                                                    |
-| blue   | #4CB5F5 |                                                    |
-| cyan   | #66D9EF |                                                    |
-| green  | #B6E63E |                                                    |
+| Name      | HEX     | Description                                        |
+|-----------+---------+----------------------------------------------------|
+| black     | #000000 | Background                                         |
+| white     | #FFFFFF | Use it to achieve maximum contrast with background |
+| yellow    | #FFDB45 |                                                    |
+| orange    | #FF9009 |                                                    |
+| red       | #E74C3C |                                                    |
+| violet    | #9C91E4 |                                                    |
+| blue      | #4CB5F5 |                                                    |
+| cyan      | #66D9EF |                                                    |
+| green     | #B6E63E |                                                    |
+| green-sat | #53D253 |                                                    |
 
 #+TBLNAME: Danneskjold-Palette-Colors
 | Name        | HEX     | Description |
@@ -30,6 +31,7 @@
 | niveous     | #FFFCF8 |             |
 | navajo      | #FFE0AB |             |
 | macheese    | #FFD288 |             |
+| diredcl     | #749AF7 |             |
 
 #+TBLNAME: Shades-of-Grey
 | Name      | HEX     | Description |
@@ -37,22 +39,17 @@
 | comment   | #A4C2EB |             |
 | invisible | #7B9ED2 |             |
 
-#+TBLNAME: Bright-Ones
-| Name    | HEX     | Description |
-|---------+---------+-------------|
-| diredcl | #749AF7 |             |
-
 #+TBLNAME: Faces
 | ! | Name             | Foreground | Background | Underline | Weight | Aloha  |
 |---+------------------+------------+------------+-----------+--------+--------|
 | # | default          | white      | black      |           |        | foobar |
-| # | fringe           | invisible  | black      |           |        |        |
-| # | region           | black      | white      |           |        |        |
-| # | menu             | white      | black      |           |        |        |
-| # | button           | frost      |            | t         | normal |        |
-| # | link             | frost      |            | t         |        |        |
+| # | fringe           | invisible  | black      |           |        | foobar |
+| # | region           | black      | white      |           |        | foobar |
+| # | menu             | white      | black      |           |        | foobar |
+| # | button           | frost      |            | t         | normal | foobar |
+| # | link             | frost      |            | t         |        | foobar |
 |---+------------------+------------+------------+-----------+--------+--------|
-| # | show-paren-match | white      | blue       |           |        |        |
+| # | show-paren-match | white      | blue       |           |        | foobar |
 | # | highlight        | black      | invisible  |           |        | foobar |
 #+TBLFM: $7='(propertize "foobar" 'face 'italic 'mouse-face 'bold-italic)
 
