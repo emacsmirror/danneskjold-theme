@@ -227,7 +227,7 @@
      `(org-verbatim                 ((,c (:foreground ,diredcl))))
      `(org-formula                  ((,c (:foreground ,orange))))
      `(org-latex-and-related        ((,c (:foreground "#FAF9FF"))))
-     `(org-list-dt                  ((,c (:foreground ,orange))))
+     `(org-list-dt                  ((,c (:foreground ,yellow))))
      `(org-footnote                 ((,c (:foreground ,orange))))
      `(org-priority                 ((,c (:foreground ,frost))))
 
@@ -238,6 +238,10 @@
      `(org-special-keyword          ((,c (:foreground ,orange))))
      `(org-checkbox-statistics-todo ((,c (:inherit org-todo))))
      `(org-checkbox-statistics-done ((,c (:inherit org-done))))
+
+     ;; minimap
+     `(minimap-active-region-background ((,c (:background ,sbt-midnight))))
+
 
      ;; comint
      `(comint-highlight-input ((,c (:foreground ,white :bold t))))
@@ -253,7 +257,7 @@
      `(org-habit-overdue-future-face ((,c (:background ,black :underline t :foreground ,red))))
 
      `(org-scheduled ((,c (:foreground ,white))))
-     `(org-warning ((,c (:foreground ,orange))))
+     `(org-warning ((,c (:foreground ,red))))
      `(org-scheduled-today ((,c (:foreground ,green))))
      `(org-scheduled-previously ((,c (:foreground ,red))))
      `(org-time-grid ((,c (:foreground ,invisible))))
