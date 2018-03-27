@@ -43,18 +43,24 @@
 | diredcl | #749AF7 |             |
 
 #+TBLNAME: Faces
-| ! | Name             | Foreground | Background | Underline | Weight | Aloha   |
-|---+------------------+------------+------------+-----------+--------+---------|
-| # | default          | white      | black      |           |        | foobar  |
-| # | fringe           | invisible  | black      |           |        |         |
-| # | region           | black      | white      |           |        |         |
-| # | menu             | white      | black      |           |        |         |
-| # | button           | frost      |            | t         | normal |         |
-| # | link             | frost      |            | t         |        |         |
-|---+------------------+------------+------------+-----------+--------+---------|
-| # | show-paren-match | white      | blue       |           |        |         |
-| # | highlight        | black      | invisible  |           |        | foobar  |
-#+TBLFM: $7='(propertize "foobar" 'face 'italic 'mouse-face 'bold-italic)
+| ! | Name             | Foreground | Background | Underline | Weight |
+|---+------------------+------------+------------+-----------+--------|
+| # | default          | white      | black      |           |        |
+| # | fringe           | invisible  | black      |           |        |
+| # | region           | black      | white      |           |        |
+| # | menu             | white      | black      |           |        |
+| # | button           | frost      |            | t         | normal |
+| # | link             | frost      |            | t         |        |
+|---+------------------+------------+------------+-----------+--------|
+| # | show-paren-match | white      | blue       |           |        |
+| # | highlight        | black      | invisible  |           |        |
+#+TBLFM: $2='(build-face-highlight $Name)
+
+#+BEGIN_SRC emacs-lisp
+(defun build-face-highlight (face)
+  (highlight-phrase face (intern face))
+  face)
+#+END_SRC
 
 * Color Sources
 ** [[http://paletton.com/#uid=73E0u0k5MYN00++0R+XaxTye+Kt][Danneskjold Palette]]
@@ -91,7 +97,7 @@
 (provide-theme 'danneskjold)
 ;;; danneskjold-theme.el ends here
 #+END_SRC
-* Local Settings                                                                :ARCHIVE:
+* Settings                                                                      :ARCHIVE:
 # CONSTANTS: org-table-separator-space=" "
 # Local Variables:
 # firestarter: (org-babel-tangle)
