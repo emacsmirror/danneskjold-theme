@@ -293,6 +293,7 @@
      ;; Wgrep
      `(wgrep-face                  ((,c (:foreground ,yellow))))
      `(wgrep-done-face                  ((,c (:foreground ,green))))
+     `(wgrep-file-face                  ((,c (:background ,yellow-c :foreground ,yellow))))
      `(wgrep-reject-face                  ((,c (:foreground ,red))))
 
      ;; Perspeen

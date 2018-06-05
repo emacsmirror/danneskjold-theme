@@ -59,6 +59,9 @@
   face)
 #+END_SRC
 
+#+RESULTS:
+: build-face-highlight
+
 * Color Sources
 ** [[http://paletton.com/#uid=73E0u0k5MYN00++0R+XaxTye+Kt][Danneskjold Palette]]
 ** [[http://eclipsecolorthemes.org/?view=theme&id=1][Eclipse Colors]]
