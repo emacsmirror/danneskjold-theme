@@ -145,6 +145,9 @@
      `(compilation-info ((,c (:foreground ,diredcl))))
 
      ;; Linum
+     `(line-number ((,c (:foreground ,invisible))))
+     `(line-number-current-line ((,c (:foreground ,white))))
+
      `(linum ((,c (:foreground ,invisible))))
      `(linum-highlight-face ((,c (:foreground ,white))))
 
