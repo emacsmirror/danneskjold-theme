@@ -80,14 +80,6 @@
          (error-highlight red)
 
          (active-minibuffer "#404046")
-         (modeline-fg    white)
-         (modeline-fg-2  orange)
-         (modeline-fg-3  orange)
-         (modeline-fg-inactive  "#80858F")
-         (modeline-bg    grey-2)
-         (modeline-bg-2  grey-2)
-         (modeline-bg-3  grey-2)
-         (modeline-bg-inactive  current-line)
 
          (vc-modified    grey-2)
          (vc-added       green-3)
