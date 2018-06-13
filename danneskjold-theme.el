@@ -237,6 +237,10 @@
      ;; minimap
      `(minimap-active-region-background ((,c (:background ,sbt-midnight))))
 
+     ;; lsp
+     ;; lsp-face-highlight-textual
+     ;; lsp-face-highlight-read
+     ;; lsp-face-highlight-write
 
      ;; comint
      `(comint-highlight-input ((,c (:foreground ,white :bold t))))
