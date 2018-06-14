@@ -242,6 +242,14 @@
      ;; lsp-face-highlight-read
      ;; lsp-face-highlight-write
 
+     ;; vc
+     `(vc-annotate-face-3F3FFF ((,c (:foreground ,blue))))
+     `(vc-annotate-face-FF3F3F ((,c (:foreground ,red))))
+     `(vc-annotate-face-FFF33F ((,c (:foreground ,yellow))))
+     `(vc-annotate-face-56FF3F ((,c (:foreground ,green))))
+     `(vc-annotate-face-3FF3FF ((,c (:foreground ,frost))))
+     `(vc-annotate-face-3FFF56 ((,c (:foreground ,violet))))
+
      ;; comint
      `(comint-highlight-input ((,c (:foreground ,white :bold t))))
      `(comint-highlight-prompt ((,c (:foreground ,invisible))))
