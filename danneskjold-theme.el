@@ -219,7 +219,7 @@
      `(org-code                     ((,c (:foreground ,orange))))
      `(org-column                   ((,c (:background ,black))))
      `(org-column-title             ((,c (:background ,black :foreground ,comment))))
-     `(org-verbatim                 ((,c (:foreground ,diredcl))))
+     `(org-verbatim                 ((,c (:foreground ,blue))))
      `(org-formula                  ((,c (:foreground ,orange))))
      `(org-latex-and-related        ((,c (:foreground "#FAF9FF"))))
      `(org-list-dt                  ((,c (:foreground ,yellow))))
