@@ -271,7 +271,7 @@
 
      `(org-agenda-clocking ((,c (:foreground ,diredcl :background ,ada-midnight))))
      `(org-agenda-date ((,c (:foreground ,invisible))))
-     `(org-agenda-calendar-event ((,c (:foreground ,violet :slant italic))))
+     `(org-agenda-calendar-event ((,c (:foreground ,orange :slant italic))))
      `(org-agenda-date-weekend ((,c (:foreground ,comment))))
      `(org-agenda-done ((,c (:foreground ,green))))
      `(org-agenda-diary ((,c (:foreground ,orange :slant italic))))
