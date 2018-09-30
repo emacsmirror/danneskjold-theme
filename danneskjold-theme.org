@@ -46,21 +46,26 @@
 |---+------------------+------------+------------+-----------+--------|
 | # | default          | white      | black      |           |        |
 | # | fringe           | invisible  | black      |           |        |
-| # | region           | black      | white      |           |        |
+| # | region           | black      | white      | t         |        |
 | # | menu             | white      | black      |           |        |
 | # | button           | frost      |            | t         | normal |
 | # | link             | frost      |            | t         |        |
 |---+------------------+------------+------------+-----------+--------|
 | # | show-paren-match | white      | blue       |           |        |
 | # | highlight        | black      | invisible  |           |        |
-#+TBLFM: $2='(build-face-highlight $Name)
+#+TBLFM: $2='(build-face-highlight $Name $Foreground $Background $Underline)
 
 #+BEGIN_SRC emacs-lisp
-(defun build-face-highlight (face)
+(use-package highlight
+  :ensure t)
+
+(defun build-face-highlight (face &optional fg bg ul)
   (let* ((face-name (format "%s--%s" "danneskjold-temp-face" face))
-         (face-name-q (quote face-name))
-         (spec '((t :background "white"
-                    :foreground "black")))
+         (face-name-q (eval (read (format "(quote %s)" face-name))))
+         (spec (list (list t
+                           :background (if (string-empty-p bg) "black" bg)
+                           :foreground (if (string-empty-p fg) "white" fg)
+                           :underline  (if (string-empty-p ul) nil     ul))))
          (doc "Face used to highlight examples.")
          (group ":group 'danneskjold-faces"))
     (eval (car (read-from-string
