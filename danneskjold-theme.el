@@ -80,14 +80,6 @@
          (error-highlight red)
 
          (active-minibuffer "#404046")
-         (modeline-fg    white)
-         (modeline-fg-2  orange)
-         (modeline-fg-3  orange)
-         (modeline-fg-inactive  "#80858F")
-         (modeline-bg    grey-2)
-         (modeline-bg-2  grey-2)
-         (modeline-bg-3  grey-2)
-         (modeline-bg-inactive  current-line)
 
          (vc-modified    grey-2)
          (vc-added       green-3)
@@ -145,6 +137,9 @@
      `(compilation-info ((,c (:foreground ,diredcl))))
 
      ;; Linum
+     `(line-number ((,c (:foreground ,invisible))))
+     `(line-number-current-line ((,c (:foreground ,white))))
+
      `(linum ((,c (:foreground ,invisible))))
      `(linum-highlight-face ((,c (:foreground ,white))))
 
@@ -215,16 +210,16 @@
      `(org-block-background         ((,c (:background ,current-line))))
      `(org-archived                 ((,c (:foreground ,invisible))))
      `(org-document-title           ((,c (:foreground ,blue))))
-     `(org-level-1                  ((,c (:foreground ,red))))
-     `(org-level-2                  ((,c (:foreground ,green))))
-     `(org-level-3                  ((,c (:foreground ,blue))))
-     `(org-level-4                  ((,c (:foreground ,frost))))
+     `(org-level-1                  ((,c (:foreground ,white))))
+     `(org-level-2                  ((,c (:foreground ,white))))
+     `(org-level-3                  ((,c (:foreground ,white))))
+     `(org-level-4                  ((,c (:foreground ,white))))
      `(org-level-5                  ((,c (:foreground ,white))))
      `(org-level-6                  ((,c (:foreground ,white))))
      `(org-code                     ((,c (:foreground ,orange))))
      `(org-column                   ((,c (:background ,black))))
      `(org-column-title             ((,c (:background ,black :foreground ,comment))))
-     `(org-verbatim                 ((,c (:foreground ,diredcl))))
+     `(org-verbatim                 ((,c (:foreground ,blue))))
      `(org-formula                  ((,c (:foreground ,orange))))
      `(org-latex-and-related        ((,c (:foreground "#FAF9FF"))))
      `(org-list-dt                  ((,c (:foreground ,yellow))))
@@ -242,6 +237,18 @@
      ;; minimap
      `(minimap-active-region-background ((,c (:background ,sbt-midnight))))
 
+     ;; lsp
+     ;; lsp-face-highlight-textual
+     ;; lsp-face-highlight-read
+     ;; lsp-face-highlight-write
+
+     ;; vc
+     `(vc-annotate-face-3F3FFF ((,c (:foreground ,blue))))
+     `(vc-annotate-face-FF3F3F ((,c (:foreground ,red))))
+     `(vc-annotate-face-FFF33F ((,c (:foreground ,yellow))))
+     `(vc-annotate-face-56FF3F ((,c (:foreground ,green))))
+     `(vc-annotate-face-3FF3FF ((,c (:foreground ,frost))))
+     `(vc-annotate-face-3FFF56 ((,c (:foreground ,violet))))
 
      ;; comint
      `(comint-highlight-input ((,c (:foreground ,white :bold t))))
@@ -264,11 +271,14 @@
 
      `(org-agenda-clocking ((,c (:foreground ,diredcl :background ,ada-midnight))))
      `(org-agenda-date ((,c (:foreground ,invisible))))
+     `(org-agenda-calendar-event ((,c (:foreground ,orange :slant italic))))
      `(org-agenda-date-weekend ((,c (:foreground ,comment))))
      `(org-agenda-done ((,c (:foreground ,green))))
+     `(org-agenda-diary ((,c (:foreground ,orange :slant italic))))
      `(org-agenda-dimmed-todo-face ((,c (:foreground ,comment))))
      `(org-agenda-date-today ((,c (:foreground ,white))))
      `(org-agenda-structure ((,c (:foreground ,invisible))))
+     `(org-agenda-current-time ((,c (:foreground ,yellow))))
      `(org-upcoming-deadline ((,c (:foreground ,violet))))
 
      `(secondary-selection ((,c (:background ,sbt-midnight))))
@@ -293,6 +303,7 @@
      ;; Wgrep
      `(wgrep-face                  ((,c (:foreground ,yellow))))
      `(wgrep-done-face                  ((,c (:foreground ,green))))
+     `(wgrep-file-face                  ((,c (:background ,yellow-c :foreground ,yellow))))
      `(wgrep-reject-face                  ((,c (:foreground ,red))))
 
      ;; Perspeen
