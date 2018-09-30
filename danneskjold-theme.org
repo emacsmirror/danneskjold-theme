@@ -1,3 +1,5 @@
+#+CATEGORY: danneskjold-theme
+
 #+TBLNAME: Base-Colors
 | Name      | HEX     | Description                                        |
 |-----------+---------+----------------------------------------------------|
