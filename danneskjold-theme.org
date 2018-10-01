@@ -1,52 +1,46 @@
 #+CATEGORY: danneskjold-theme
 
-#+TBLNAME: Base-Colors
-| Name      | HEX     | Description                                        |
-|-----------+---------+----------------------------------------------------|
-| black     | #000000 | Background                                         |
-| white     | #FFFFFF | Use it to achieve maximum contrast with background |
-| yellow    | #FFDB45 |                                                    |
-| orange    | #FF9009 |                                                    |
-| red       | #E74C3C |                                                    |
-| violet    | #9C91E4 |                                                    |
-| blue      | #4CB5F5 |                                                    |
-| cyan      | #66D9EF |                                                    |
-| green     | #B6E63E |                                                    |
-| green-sat | #53D253 |                                                    |
-
-#+TBLNAME: Danneskjold-Palette-Colors
-| Name        | HEX     | Description |
-|-------------+---------+-------------|
-| magnolias   | #FAF9FF |             |
-| wisteria    | #B2A9ED |             |
-| amethyst    | #8B7FD7 |             |
-| frost       | #D0E1F9 |             |
-| ghost       | #F9FBFF |             |
-| periwinkle  | #D8D2FA |             |
-| cornflower  | #A4C2EB |             |
-| habr        | #789ED2 |             |
-| lemoncream  | #FFF5D1 |             |
-| snowy       | #FFFEF8 |             |
-| sand        | #FFEEAB |             |
-| lightgolden | #FFE688 |             |
-| almond      | #FFEED1 |             |
-| niveous     | #FFFCF8 |             |
-| navajo      | #FFE0AB |             |
-| macheese    | #FFD288 |             |
-| diredcl     | #749AF7 |             |
-
-#+TBLNAME: Shades-of-Grey
-| Name      | HEX     | Description |
-|-----------+---------+-------------|
-| comment   | #A4C2EB |             |
-| invisible | #7B9ED2 |             |
+#+TBLNAME: Colors
+| Name        | HEX     | Description                                        |
+|-------------+---------+----------------------------------------------------|
+| black       | #000000 | Background                                         |
+| white       | #FFFFFF | Use it to achieve maximum contrast with background |
+| yellow      | #FFDB45 |                                                    |
+| orange      | #FF9009 |                                                    |
+| red         | #E74C3C |                                                    |
+| violet      | #9C91E4 |                                                    |
+| blue        | #4CB5F5 |                                                    |
+| cyan        | #66D9EF |                                                    |
+| green       | #B6E63E |                                                    |
+| green-sat   | #53D253 |                                                    |
+|-------------+---------+----------------------------------------------------|
+| magnolias   | #FAF9FF |                                                    |
+| wisteria    | #B2A9ED |                                                    |
+| amethyst    | #8B7FD7 |                                                    |
+| frost       | #D0E1F9 |                                                    |
+| ghost       | #F9FBFF |                                                    |
+| periwinkle  | #D8D2FA |                                                    |
+| cornflower  | #A4C2EB |                                                    |
+| habr        | #789ED2 |                                                    |
+| lemoncream  | #FFF5D1 |                                                    |
+| snowy       | #FFFEF8 |                                                    |
+| sand        | #FFEEAB |                                                    |
+| lightgolden | #FFE688 |                                                    |
+| almond      | #FFEED1 |                                                    |
+| niveous     | #FFFCF8 |                                                    |
+| navajo      | #FFE0AB |                                                    |
+| macheese    | #FFD288 |                                                    |
+| diredcl     | #749AF7 |                                                    |
+|-------------+---------+----------------------------------------------------|
+| comment     | #A4C2EB |                                                    |
+| invisible   | #7B9ED2 |                                                    |
 
 #+TBLNAME: Faces
 | ! | Name             | Foreground | Background | Underline | Weight |
 |---+------------------+------------+------------+-----------+--------|
 | # | default          | white      | black      |           |        |
 | # | fringe           | invisible  | black      |           |        |
-| # | region           | black      | white      | t         |        |
+| # | region           | black      | white      |           |        |
 | # | menu             | white      | black      |           |        |
 | # | button           | frost      |            | t         | normal |
 | # | link             | frost      |            | t         |        |
@@ -55,16 +49,20 @@
 | # | highlight        | black      | invisible  |           |        |
 #+TBLFM: $2='(build-face-highlight $Name $Foreground $Background $Underline)
 
-#+BEGIN_SRC emacs-lisp
+#+BEGIN_SRC emacs-lisp :results silent
 (use-package highlight
   :ensure t)
 
 (defun build-face-highlight (face &optional fg bg ul)
   (let* ((face-name (format "%s--%s" "danneskjold-temp-face" face))
          (face-name-q (eval (read (format "(quote %s)" face-name))))
+         (colors (org-table-get-remote-range "Colors" "@2$1..@>$2"))
+         (colors-alist (mapcar (lambda (x) (apply 'cons x))
+                               (seq-partition
+                                (mapcar 'substring-no-properties colors) 2)))
          (spec (list (list t
-                           :background (if (string-empty-p bg) "black" bg)
-                           :foreground (if (string-empty-p fg) "white" fg)
+                           :background (if (string-empty-p bg) "black" (or (alist-get bg colors-alist nil nil 'string=) bg))
+                           :foreground (if (string-empty-p fg) "white" (or (alist-get fg colors-alist nil nil 'string=) fg))
                            :underline  (if (string-empty-p ul) nil     ul))))
          (doc "Face used to highlight examples.")
          (group ":group 'danneskjold-faces"))
@@ -77,9 +75,6 @@
       (hlt-highlight-regexp-region start end face face-name-q))
   face))
 #+END_SRC
-
-#+RESULTS:
-: build-face-highlight
 
 * Color Sources
 ** [[http://paletton.com/#uid=73E0u0k5MYN00++0R+XaxTye+Kt][Danneskjold Palette]]
