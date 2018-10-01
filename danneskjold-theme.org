@@ -1,5 +1,9 @@
+#+TITLE: danneskjold-theme
+#+AUTHOR: Dmitry Akatov
+#+EMAIL: akatovda@yandex.com
 #+CATEGORY: danneskjold-theme
 
+* Colors
 #+TBLNAME: Colors
 | Name        | HEX     | Description                                        |
 |-------------+---------+----------------------------------------------------|
@@ -35,6 +39,7 @@
 | comment     | #A4C2EB |                                                    |
 | invisible   | #7B9ED2 |                                                    |
 
+* Faces
 #+TBLNAME: Faces
 | ! | Name             | Foreground | Background | Underline | Weight |
 |---+------------------+------------+------------+-----------+--------|
@@ -48,7 +53,7 @@
 | # | show-paren-match | white      | blue       |           |        |
 | # | highlight        | black      | invisible  |           |        |
 #+TBLFM: $2='(build-face-highlight $Name $Foreground $Background $Underline)
-
+* Devtools
 #+BEGIN_SRC emacs-lisp :results silent
 (use-package highlight
   :ensure t)
@@ -75,7 +80,6 @@
       (hlt-highlight-regexp-region start end face face-name-q))
   face))
 #+END_SRC
-
 * Color Sources
 ** [[http://paletton.com/#uid=73E0u0k5MYN00++0R+XaxTye+Kt][Danneskjold Palette]]
 ** [[http://eclipsecolorthemes.org/?view=theme&id=1][Eclipse Colors]]
