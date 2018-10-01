@@ -111,7 +111,7 @@
 (provide-theme 'danneskjold)
 ;;; danneskjold-theme.el ends here
 #+END_SRC
-* Settings                                                                      :ARCHIVE:
+* Local Variables
 # CONSTANTS: org-table-separator-space=" "
 # Local Variables:
 # firestarter: (org-babel-tangle)
