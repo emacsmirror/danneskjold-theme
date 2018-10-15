@@ -50,8 +50,8 @@
 | # | button           | frost      |            | t         | normal |
 | # | link             | frost      |            | t         |        |
 |---+------------------+------------+------------+-----------+--------|
-| # | show-paren-match | white      | blue       |           |        |
-| # | highlight        | black      | invisible  |           |        |
+| # | show-paren-match | white      | black      |           |        |
+| # | highlight        | black      | invisible  | t         |        |
 #+TBLFM: $2='(build-face-highlight $Name $Foreground $Background $Underline)
 * Devtools
 #+BEGIN_SRC emacs-lisp :results silent
@@ -59,7 +59,11 @@
   :ensure t)
 
 (defun build-face-highlight (face &optional fg bg ul)
-  (let* ((face-name (format "%s--%s" "danneskjold-temp-face" face))
+  (let* ((fg (s-trim fg))
+         (bg (s-trim bg))
+         (ul (s-trim ul))
+
+         (face-name (format "%s--%s" "danneskjold-temp-face" face))
          (face-name-q (eval (read (format "(quote %s)" face-name))))
          (colors (org-table-get-remote-range "Colors" "@2$1..@>$2"))
          (colors-alist (mapcar (lambda (x) (apply 'cons x))
