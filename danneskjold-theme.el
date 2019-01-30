@@ -263,7 +263,7 @@
 
      `(org-agenda-clocking ((,c (:foreground ,diredcl :background ,ada-midnight))))
 
-     `(org-agenda-date ((,c (:foreground ,orange))))
+     `(org-agenda-date ((,c (:foreground ,blue))))
      `(org-agenda-date-today ((,c (:foreground ,white))))
      `(org-agenda-date-weekend ((,c (:foreground ,green))))
 
