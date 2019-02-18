@@ -6,6 +6,10 @@ Beautiful high-contrast emacs theme.
 Screenshots
 -----------
 
+#### Org-mode ####
+
+![org-mode](https://github.com/rails-to-cosmos/danneskjold-theme/raw/master/screenshots/org.png)
+
 #### Dired and org-mode ####
 
 ![dired and org-mode](https://github.com/rails-to-cosmos/danneskjold-theme/raw/master/screenshots/dired-and-org.png)
