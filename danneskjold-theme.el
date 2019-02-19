@@ -318,8 +318,8 @@
 
      ;; Popup
      `(popup-face ((,c (:foreground ,white :background ,ada-midnight))))
-     `(popup-menu-mouse-face ((,c (:foreground ,"##FFCA00" :background ,ada-midnight))))
-     `(popup-menu-selection-face ((,c (:foreground ,"##FFCA00" :background ,ada-midnight))))
+     `(popup-menu-mouse-face ((,c (:foreground ,yellow :background ,ada-midnight))))
+     `(popup-menu-selection-face ((,c (:foreground ,yellow :background ,ada-midnight))))
 
      ;; Powerline
      `(powerline-active1 ((,c (:foreground ,yellow))))
