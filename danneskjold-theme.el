@@ -316,6 +316,11 @@
      `(whitespace-tab ((,c (:foreground ,ada-midnight))))
      `(whitespace-indentation ((,c (:foreground ,ada-midnight))))
 
+     ;; Popup
+     `(popup-face ((,c (:foreground ,white :background ,ada-midnight))))
+     `(popup-menu-mouse-face ((,c (:foreground ,"##FFCA00" :background ,ada-midnight))))
+     `(popup-menu-selection-face ((,c (:foreground ,"##FFCA00" :background ,ada-midnight))))
+
      ;; Powerline
      `(powerline-active1 ((,c (:foreground ,yellow))))
      `(powerline-active2 ((,c (:foreground ,comment))))
