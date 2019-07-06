@@ -199,7 +199,6 @@
      `(org-block                    ((,c ())))
      `(org-block-begin-line         ((,c (:foreground ,invisible))))
      `(org-block-end-line           ((,c (:inherit org-block-begin-line))))
-     `(org-block-background         ((,c (:background ,current-line))))
      `(org-archived                 ((,c (:foreground ,invisible))))
      `(org-document-title           ((,c (:foreground ,blue))))
      `(org-level-1                  ((,c (:foreground ,white))))
