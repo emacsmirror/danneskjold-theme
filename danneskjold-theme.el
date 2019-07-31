@@ -269,7 +269,7 @@
      `(org-agenda-date-weekend ((,c (:foreground ,green))))
 
      `(org-agenda-structure ((,c (:foreground ,white))))
-     `(org-agenda-calendar-event ((,c (:foreground ,orange :slant italic))))
+     `(org-agenda-calendar-event ((,c (:foreground ,comment :slant italic))))
 
      `(org-agenda-done ((,c (:foreground ,green))))
      `(org-agenda-diary ((,c (:foreground ,orange :slant italic))))
