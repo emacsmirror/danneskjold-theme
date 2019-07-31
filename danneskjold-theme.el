@@ -257,7 +257,7 @@
      `(org-habit-overdue-future-face ((,c (:background ,black :underline t :foreground ,red))))
 
      `(org-scheduled ((,c (:foreground ,white))))
-     `(org-warning ((,c (:foreground ,yellow :slant italic))))
+     `(org-warning ((,c (:foreground ,orange :slant italic))))
      `(org-scheduled-today ((,c (:foreground ,white))))
      `(org-scheduled-previously ((,c (:foreground ,red))))
      `(org-time-grid ((,c (:foreground ,invisible))))
