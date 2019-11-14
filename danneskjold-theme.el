@@ -280,6 +280,7 @@
      `(org-agenda-dimmed-todo-face ((,c (:foreground ,comment))))
      `(org-agenda-current-time ((,c (:foreground ,frost))))
      `(org-upcoming-deadline ((,c (:foreground ,violet))))
+     `(org-upcoming-distant-deadline ((,c (:foreground ,comment))))
 
      `(secondary-selection ((,c (:background ,sbt-midnight))))
 
