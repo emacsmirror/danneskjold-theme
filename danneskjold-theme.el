@@ -438,6 +438,9 @@
      `(dired-subtree-depth-8-face ((,c (:background ,black))))
      `(dired-subtree-depth-9-face ((,c (:background ,black))))
 
+     ;; custom hacks
+     `(dired-collapsed-dirs ((,c (:background ,black :foreground ,frost))))
+
      ;; dired-rainbow
      `(dired-rainbow-executable-unix-face ((,c (:foreground ,green))))
 
