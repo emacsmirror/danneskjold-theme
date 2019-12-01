@@ -118,9 +118,9 @@
                          :weight normal))))
 
      ;; Mode-line
-     `(mode-line ((,c (:background ,ada-midnight :foreground ,comment))))
-     `(mode-line-inactive ((,c (:background ,sbt-midnight :foreground ,invisible))))
-     `(mode-line-buffer-id ((,c (:foreground ,fg))))
+     `(mode-line ((,c (:background ,black :foreground ,white))))
+     `(mode-line-inactive ((,c (:background ,black :foreground ,invisible))))
+     `(mode-line-buffer-id ((,c (:foreground ,white))))
 
      `(compilation-error ((,c (:foreground ,red))))
      `(compilation-line-number ((,c (:foreground ,yellow))))
@@ -269,13 +269,14 @@
      `(org-agenda-date-weekend ((,c (:foreground ,green))))
 
      `(org-agenda-structure ((,c (:foreground ,white))))
-     `(org-agenda-calendar-event ((,c (:foreground ,comment :slant italic))))
+     `(org-agenda-calendar-event ((,c (:foreground ,yellow :slant italic))))
 
      `(org-agenda-done ((,c (:foreground ,green))))
      `(org-agenda-diary ((,c (:foreground ,orange :slant italic))))
      `(org-agenda-dimmed-todo-face ((,c (:foreground ,comment))))
      `(org-agenda-current-time ((,c (:foreground ,frost))))
      `(org-upcoming-deadline ((,c (:foreground ,violet))))
+     `(org-upcoming-distant-deadline ((,c (:foreground ,green :slant italic))))
 
      `(secondary-selection ((,c (:background ,sbt-midnight))))
 
