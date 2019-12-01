@@ -3,6 +3,8 @@
 #+EMAIL: akatovda@yandex.com
 #+CATEGORY: danneskjold-theme
 
+! list-colors-display
+
 * Colors
 #+TBLNAME: Colors
 | Name        | HEX     | Description                                        |
