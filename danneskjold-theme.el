@@ -118,7 +118,7 @@
                          :weight normal))))
 
      ;; Mode-line
-     `(mode-line ((,c (:background ,black :foreground ,white))))
+     `(mode-line ((,c (:background ,black :foreground ,invisible))))
      `(mode-line-inactive ((,c (:background ,black :foreground ,invisible))))
      `(mode-line-buffer-id ((,c (:foreground ,white))))
 
