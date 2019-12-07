@@ -218,12 +218,14 @@
      `(org-list-dt                  ((,c (:foreground ,yellow))))
      `(org-footnote                 ((,c (:foreground ,orange))))
      `(org-priority                 ((,c (:foreground ,red))))
+     `(org-drawer                 ((,c (:foreground "##789ED2"))))
 
      `(org-date                     ((,c (:foreground ,violet))))
      `(org-todo                     ((,c (:foreground ,yellow))))
      `(org-done                     ((,c (:foreground ,green))))
      `(org-headline-done            ((,c (:foreground ,grey-.5 :strike-through t :bold nil))))
-     `(org-special-keyword          ((,c (:foreground "orange"))))
+     `(org-special-keyword          ((,c (:foreground "#A4C2EB"))))
+     `(org-property-value          ((,c (:foreground ,white))))
      `(org-checkbox-statistics-todo ((,c (:inherit org-todo))))
      `(org-checkbox-statistics-done ((,c (:inherit org-done))))
 
