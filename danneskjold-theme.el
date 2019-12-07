@@ -412,6 +412,7 @@
      `(eshell-ls-symlink ((,c (:foreground ,waddles))))
      `(eshell-ls-readonly ((,c (:foreground ,invisible))))
      `(eshell-ls-missing ((,c (:foreground ,red))))
+     `(eshell-ls-product ((,c (:foreground ,comment))))
      `(eshell-ls-special ((,c (:foreground ,comment :underline t))))
 
      `(epe-remote-face ((,c (:foreground ,comment))))
