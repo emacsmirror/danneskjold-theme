@@ -25,7 +25,7 @@
       (white          "#FFFFFF")
       (white-c        "#000000")
 
-      (yellow         "#FFDB45") ;; "#E2C770" "#F9BA32"
+      (yellow         "#ffcc00") ;; "#E2C770" "#F9BA32"
       (yellow-c       "#281580")
 
       (grey           "#C0C5CF")
@@ -224,7 +224,7 @@
      `(org-todo                     ((,c (:foreground ,yellow))))
      `(org-done                     ((,c (:foreground ,green))))
      `(org-headline-done            ((,c (:foreground ,grey-.5 :strike-through t :bold nil))))
-     `(org-special-keyword          ((,c (:foreground ,yellow))))
+     `(org-special-keyword          ((,c (:foreground "#ffcc00"))))
      `(org-property-value          ((,c (:foreground ,white))))
      `(org-checkbox-statistics-todo ((,c (:inherit org-todo))))
      `(org-checkbox-statistics-done ((,c (:inherit org-done))))
