@@ -46,7 +46,7 @@
 
       ;; danneskjold-colors
       (frost        "#D0E1F9")
-      (invisible    "#7B9ED2")
+      (invisible    "#2b4b6e")
       (comment      "#A4C2EB")
 
       (sbt-midnight   "#282c34")
