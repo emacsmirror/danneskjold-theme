@@ -32,7 +32,7 @@
       (grey-.5        "#828284")
       (grey-1         "#525254")
       (grey-2         "#39393D")
-      (orange         "#FF9009") ;; "#FD971F"
+      (orange         "#ffa500") ;; "#FD971F"
       (red            "#E74C3C") ;; "#F34A4A"
       (magenta        "#F92672")
       (violet         "#9C91E4")
