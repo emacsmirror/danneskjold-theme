@@ -197,7 +197,7 @@
      `(org-document-info-keyword    ((,c (:foreground ,comment))))
      `(org-meta-line                ((,c (:foreground ,comment))))
      `(org-block                    ((,c ())))
-     `(org-block-begin-line         ((,c (:foreground ,invisible))))
+     `(org-block-begin-line         ((,c (:foreground ,green))))
      `(org-block-end-line           ((,c (:inherit org-block-begin-line))))
      `(org-archived                 ((,c (:foreground ,invisible))))
      `(org-document-title           ((,c (:foreground ,blue))))
