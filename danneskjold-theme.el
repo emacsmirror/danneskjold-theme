@@ -35,7 +35,7 @@
       (orange         "#ffa500") ;; "#FD971F"
       (red            "#E74C3C") ;; "#F34A4A"
       (magenta        "#F92672")
-      (violet         "#9C91E4")
+      (violet         "#7b68ee")
       (blue           "#4CB5F5") ;; "#268BD2"
       (blue+2         "#727280")
       (cyan           "#66D9EF")
