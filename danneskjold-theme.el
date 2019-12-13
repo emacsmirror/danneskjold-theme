@@ -88,11 +88,13 @@
     (custom-theme-set-faces
      'danneskjold
      `(default ((,c (:foreground ,white :background ,black))))
-     `(fringe ((,c (:foreground ,invisible :background ,black))))
+     `(fringe ((,c (:foreground ,invisible))))
      `(region ((,c (:background "#373d4f"))))
      `(button ((,c (:foreground ,frost :underline t :weight normal))))
      `(link ((,c (:foreground ,frost :underline t))))
      `(menu ((,c (:foreground ,white :background ,ada-midnight))))
+
+     `(secondary-selection ((,c ())))
 
      `(show-paren-match ((,c (:background ,blue :foreground ,white))))
 
@@ -283,8 +285,6 @@
      `(org-agenda-current-time ((,c (:foreground ,frost))))
      `(org-upcoming-deadline ((,c (:foreground ,violet))))
      `(org-upcoming-distant-deadline ((,c (:foreground ,comment))))
-
-     `(secondary-selection ((,c (:background "#1f0e11"))))
 
      ;; Hydra
      `(hydra-face-red ((,c (:foreground ,red))))
