@@ -228,7 +228,7 @@
      `(org-headline-done            ((,c (:foreground ,grey-.5 :strike-through t :bold nil))))
      `(org-special-keyword          ((,c (:foreground "#ffcc00"))))
      `(org-property-value          ((,c (:foreground ,white))))
-     `(org-checkbox-statistics-todo ((,c (:inherit org-todo))))
+     `(org-checkbox-statistics-todo ((,c (:foreground ,comment))))
      `(org-checkbox-statistics-done ((,c (:inherit org-done))))
 
      ;; cider
