@@ -189,7 +189,7 @@
      `(monky-diff-del ((,c (:foreground ,red))))
 
      ;; Org-mode
-     `(org-tag                      ((,c (:foreground ,invisible :bold nil))))
+     `(org-tag                      ((,c (:foreground ,frost :slant italic))))
      `(org-ellipsis                 ((,c (:inherit hs-face :underline nil))))
      `(org-link                     ((,c (:foreground ,frost :underline ,diredcl))))
      `(org-hide                     ((,c (:foreground ,black))))
