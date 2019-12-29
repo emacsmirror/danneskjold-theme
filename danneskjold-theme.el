@@ -274,7 +274,7 @@
 
      `(org-agenda-date ((,c (:foreground ,blue))))
      `(org-agenda-date-today ((,c (:foreground ,white))))
-     `(org-agenda-date-weekend ((,c (:foreground ,green))))
+     `(org-agenda-date-weekend ((,c (:foreground ,white :bold t))))
 
      `(org-agenda-structure ((,c (:foreground ,white))))
      `(org-agenda-calendar-event ((,c (:foreground ,yellow :slant italic))))
