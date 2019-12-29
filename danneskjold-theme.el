@@ -222,7 +222,7 @@
      `(org-priority                 ((,c (:foreground ,red))))
      `(org-drawer                 ((,c (:foreground ,orange))))
 
-     `(org-date                     ((,c (:foreground "#53D253" :underline "darkgreen"))))
+     `(org-date                     ((,c (:foreground "NavajoWhite1" :underline "NavajoWhite4"))))
      `(org-todo                     ((,c (:foreground ,yellow))))
      `(org-done                     ((,c (:foreground ,green))))
      `(org-headline-done            ((,c (:foreground ,grey-.5 :strike-through t :bold nil))))
