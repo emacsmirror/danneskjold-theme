@@ -199,7 +199,7 @@
      `(org-document-info-keyword    ((,c (:foreground ,frost :bold t))))
      `(org-meta-line                ((,c (:foreground ,frost))))
      `(org-block                    ((,c (:background "#0e1824"))))
-     `(org-block-begin-line         ((,c (:foreground ,green :slant italic))))
+     `(org-block-begin-line         ((,c (:foreground "selectedControlColor" :slant italic))))
      `(org-block-end-line           ((,c (:inherit org-block-begin-line))))
      `(org-archived                 ((,c (:foreground ,invisible))))
      `(org-document-title           ((,c (:foreground ,white :bold t))))
@@ -267,7 +267,7 @@
      `(org-scheduled ((,c (:foreground ,white))))
      `(org-warning ((,c (:foreground ,orange :slant italic))))
      `(org-scheduled-today ((,c (:foreground ,white))))
-     `(org-scheduled-previously ((,c (:foreground ,red))))
+     `(org-scheduled-previously ((,c (:foreground "darkred" :bold t ))))
      `(org-time-grid ((,c (:foreground ,invisible))))
 
      `(org-agenda-clocking ((,c (:foreground ,diredcl :background ,ada-midnight))))
@@ -283,7 +283,7 @@
      `(org-agenda-diary ((,c (:foreground ,orange :slant italic))))
      `(org-agenda-dimmed-todo-face ((,c (:foreground ,comment))))
      `(org-agenda-current-time ((,c (:foreground ,frost))))
-     `(org-upcoming-deadline ((,c (:foreground ,violet))))
+     `(org-upcoming-deadline ((,c (:foreground ,red))))
      `(org-upcoming-distant-deadline ((,c (:foreground ,comment))))
 
      ;; Hydra
