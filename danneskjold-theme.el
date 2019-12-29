@@ -191,7 +191,7 @@
      ;; Org-mode
      `(org-tag                      ((,c (:foreground ,frost :slant italic))))
      `(org-ellipsis                 ((,c (:inherit hs-face :underline nil))))
-     `(org-link                     ((,c (:foreground ,frost :underline ,diredcl))))
+     `(org-link                     ((,c (:foreground ,frost :underline ,invisible))))
      `(org-hide                     ((,c (:foreground ,black))))
      `(org-table                    ((,c (:foreground ,yellow))))
      `(org-quote                    ((,c (:slant italic :foreground ,grey :background ,current-line))))
@@ -222,7 +222,7 @@
      `(org-priority                 ((,c (:foreground ,red))))
      `(org-drawer                 ((,c (:foreground ,orange))))
 
-     `(org-date                     ((,c (:foreground ,white :slant italic))))
+     `(org-date                     ((,c (:foreground "#53D253" :underline "darkgreen"))))
      `(org-todo                     ((,c (:foreground ,yellow))))
      `(org-done                     ((,c (:foreground ,green))))
      `(org-headline-done            ((,c (:foreground ,grey-.5 :strike-through t :bold nil))))
