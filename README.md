@@ -10,10 +10,6 @@ Screenshots
 
 ![org-mode](https://github.com/rails-to-cosmos/danneskjold-theme/raw/master/screenshots/org.png)
 
-#### Dired and org-mode ####
-
-![dired](https://github.com/rails-to-cosmos/danneskjold-theme/raw/master/screenshots/dired.png)
-
 ### Bug Reporting
 
 Here are some things to keep in mind when submitting a bug report:
