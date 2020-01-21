@@ -221,7 +221,7 @@
      `(org-priority                 ((,c (:foreground ,red))))
      `(org-drawer                 ((,c (:foreground ,orange))))
 
-     `(org-date                     ((,c (:foreground "wheat1" :underline "wheat4"))))
+     `(org-date                     ((,c (:foreground "LightSteelBlue2" :underline "LightSteelBlue3"))))
      `(org-todo                     ((,c (:foreground ,yellow))))
      `(org-done                     ((,c (:foreground ,green))))
      `(org-headline-done            ((,c (:foreground ,grey-.5 :strike-through t :bold nil))))
