@@ -109,7 +109,7 @@
      `(font-lock-function-name-face ((,c (:foreground ,yellow))))
      `(font-lock-type-face ((,c (:foreground ,orange))))
      `(font-lock-constant-face ((,c (:foreground ,yellow))))
-     `(font-lock-warning-face ((,c (:underline (:foreground "tomato1" :slant italic)))))
+     `(font-lock-warning-face ((,c (:underline (:color "orange" :style wave)))))
 
      `(mmm-default-submode-face ((,c (:background ,ada-midnight))))
 
@@ -126,7 +126,7 @@
      `(compilation-error ((,c (:foreground ,red))))
      `(compilation-line-number ((,c (:foreground ,yellow))))
      `(compilation-column-number ((,c (:foreground ,green))))
-     `(compilation-warning ((,c (:foreground "tomato1" :slant italic))))
+     `(compilation-warning ((,c (:underline (:color "orange" :style wave)))))
      `(compilation-info ((,c (:foreground ,diredcl))))
 
      ;; Linum
@@ -259,7 +259,7 @@
      `(org-habit-overdue-future-face ((,c (:background ,black :underline t :foreground ,red))))
 
      `(org-scheduled ((,c (:foreground ,white))))
-     `(org-warning ((,c (:foreground "tomato1" :slant italic))))
+     `(org-warning ((,c (:underline (:color "orange" :style wave)))))
      `(org-scheduled-today ((,c (:foreground ,white))))
      `(org-scheduled-previously ((,c (:foreground "darkred" :bold t ))))
      `(org-time-grid ((,c (:foreground ,invisible))))
