@@ -259,9 +259,9 @@
      `(org-habit-overdue-future-face ((,c (:background ,black :underline t :foreground ,red))))
 
      `(org-scheduled ((,c (:foreground ,white))))
-     `(org-warning ((,c (:underline (:color "orange" :style wave)))))
+     `(org-warning ((,c (:foreground "#FFCA00"))))
      `(org-scheduled-today ((,c (:foreground ,white))))
-     `(org-scheduled-previously ((,c (:foreground "darkred" :bold t ))))
+     `(org-scheduled-previously ((,c (:inherit org-warning :slant italic))))
      `(org-time-grid ((,c (:foreground ,invisible))))
 
      `(org-agenda-clocking ((,c (:foreground ,diredcl :background ,ada-midnight))))
