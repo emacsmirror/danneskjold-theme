@@ -336,6 +336,9 @@
      `(org-checkbox-statistics-todo ((,c (:inherit org-todo))))
      `(org-checkbox-statistics-done ((,c (:inherit org-done))))
 
+     ;; packages
+     `(package-name                 ((,c (:inherit org-link))))
+
      ;; cider
      `(cider-stacktrace-error-class-face ((,c (:foreground ,yellow))))
      `(cider-stacktrace-error-message-face ((,c (:foreground ,green))))
