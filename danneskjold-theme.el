@@ -273,7 +273,7 @@
 
      ;; magit `next'
      `(magit-section ((,class (:inherit nil))))
-     `(magit-section-highlight ((,class (:background ,grey-blue-dark))))
+     `(magit-section-highlight ((,class (:background "#0e1824"))))
      `(magit-section-heading ((,class (:foreground ,blue-bright))))
      `(magit-branch-local ((,class (:foreground ,turquoise-bright))))
      `(magit-branch-remote ((,class (:foreground ,yellow-bright))))
