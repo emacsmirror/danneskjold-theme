@@ -386,7 +386,7 @@
      `(org-agenda-diary ((,c (:foreground ,orange :slant italic))))
      `(org-agenda-dimmed-todo-face ((,c (:foreground ,comment))))
      `(org-agenda-current-time ((,c (:foreground ,frost))))
-     `(org-upcoming-deadline ((,c (:foreground ,red))))
+     `(org-upcoming-deadline ((,c (:foreground ,orange))))
      `(org-upcoming-distant-deadline ((,c (:foreground ,comment))))
 
      ;; Hydra
