@@ -153,7 +153,7 @@
      `(compilation-error ((,c (:foreground ,red))))
      `(compilation-line-number ((,c (:foreground ,yellow))))
      `(compilation-column-number ((,c (:foreground ,green))))
-     `(compilation-warning ((,c (:underline (:color "orange" :style wave)))))
+     `(compilation-warning ((,c :foreground "systemOrangeColor")))
      `(compilation-info ((,c (:foreground ,diredcl))))
 
      ;; Linum
