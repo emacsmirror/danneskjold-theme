@@ -171,7 +171,7 @@
      `(highlight-symbol-face ((,c (:foreground ,black :background ,diredcl))))
 
      ;; Hl-line
-     `(hl-line ((,c (:background "#284D80"))))
+     `(hl-line ((,c (:background "keyboardFocusIndicatorColor"))))
 
      ;; search
      `(isearch ((,c (:foreground ,black :background ,invisible))))
