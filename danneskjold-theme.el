@@ -236,7 +236,7 @@
      `(diredp-write-priv ((,class (:foreground ,magenta-bright :background nil))))
      `(diredp-date-time ((,c (:foreground ,diredcl))))
      `(diredp-dir-heading ((,c (:foreground ,red))))
-     `(diredp-dir-name ((,c (:foreground ,blue))))
+     `(diredp-dir-name ((,c (:foreground "DeepSkyBlue1"))))
      `(diredp-file-name ((,c (:foreground ,white))))
      `(diredp-ignored-file-name ((,c ())))
      `(diredp-compressed-file-suffix ((,c (:foreground ,orange))))
