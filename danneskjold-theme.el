@@ -342,7 +342,8 @@
      `(org-list-dt                  ((,c (:foreground ,yellow))))
      `(org-footnote                 ((,c (:foreground ,orange))))
      `(org-priority                 ((,c (:foreground ,red))))
-     `(org-drawer                 ((,c (:foreground ,orange))))
+     `(org-drawer                   ((,c (:foreground ,orange))))
+     `(org-headline-done            ((,c (:foreground ,white))))
 
      `(org-date                     ((,c (:foreground "LightSteelBlue2" :underline "LightSteelBlue4"))))
      `(org-todo                     ((,c (:foreground ,yellow))))
