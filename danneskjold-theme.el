@@ -343,7 +343,7 @@
      `(org-footnote                 ((,c (:foreground ,orange))))
      `(org-priority                 ((,c (:foreground ,red))))
      `(org-drawer                   ((,c (:foreground ,orange))))
-     `(org-headline-done            ((,c (:foreground ,white))))
+     `(org-headline-done            ((,c (:inherit org-headline-todo))))
 
      `(org-date                     ((,c (:foreground "LightSteelBlue2" :underline "LightSteelBlue4"))))
      `(org-todo                     ((,c (:foreground ,yellow))))
