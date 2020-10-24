@@ -13,7 +13,8 @@
 (deftheme danneskjold
   "Amazing. Beautiful. Contrast.")
 
-(let ((c '((class color) (min-colors 89)))
+(let (;; (custom--inhibit-theme-enable nil)
+      (c '((class color) (min-colors 89)))
       (class '((class color) (min-colors 89)))
       (background     "#000000")
       (fg             "#ffffff")
@@ -339,6 +340,8 @@
      `(org-property-value          ((,c (:foreground ,white))))
      `(org-checkbox-statistics-todo ((,c (:inherit org-todo))))
      `(org-checkbox-statistics-done ((,c (:inherit org-done))))
+
+     `(org-headline-done ((,c (:foreground ,comment))))
 
      ;; jupyter
      `(jupyter-repl-traceback ((,c (:foreground ,orange))))
