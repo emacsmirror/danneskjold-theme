@@ -177,18 +177,6 @@
      `(isearch ((,c (:foreground ,black :background ,invisible))))
      `(lazy-highlight ((,c (:foreground ,black :background ,yellow))))
 
-     ;; Diff
-     ;; `(diff-header ((,c (:foreground ,yellow))))
-     ;; `(diff-file-header ((,c (:foreground ,yellow))))
-     ;; `(diff-indicator-removed ((,c (:foreground ,black))))
-     ;; `(diff-removed ((,c (:foreground ,red))))
-     ;; `(diff-added ((,c (:foreground ,green))))
-     ;; `(diff-indicator-added ((,c (:foreground ,black))))
-     ;; `(diff-refine-removed ((,c (:foreground ,red-forest))))
-     ;; `(diff-refine-added ((,c (:foreground ,summer-flower))))
-
-     ;; `(diff-context ((,c (:foreground ,comment))))
-
      ;; diff
      `(diff-added ((,class (:foreground ,green-dark))))
      `(diff-changed ((,class (:foreground ,magenta-bright))))
