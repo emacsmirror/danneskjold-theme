@@ -23,6 +23,8 @@
 
    `(mode-line-buffer-read-only-face ((,class (:foreground "brown4"))))
 
+   `(font-lock-comment-face ((,class (:foreground "grey"))))
+
    ;; dired+
    `(diredp-compressed-file-suffix ((,class (:foreground "#f39c12"))))
    `(diredp-date-time ((,class (:foreground "goldenrod1"))))
