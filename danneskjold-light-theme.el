@@ -59,6 +59,7 @@
 
    ;; org
    ;; `(org-link ((,class (:foreground "#D0E1F9" :underline "#2b4b6e"))))
+   `(org-meta-line ((,class (:foreground "#9b59b6"))))
    `(org-block-begin-line ((,class (:background "#f50af50af50a"))))
    `(org-block-end-line ((,class (:background "#f50af50af50a"))))
    `(org-block ((,class (:foreground "black" :background "#f50af50af50a"))))
