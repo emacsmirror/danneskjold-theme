@@ -23,7 +23,7 @@
 
    `(mode-line-buffer-read-only-face ((,class (:foreground "brown4"))))
 
-   `(font-lock-comment-face ((,class (:foreground "LightSalmon2"))))
+   `(font-lock-comment-face ((,class (:foreground "#7f8c8d"))))
 
    ;; dired+
    `(diredp-compressed-file-suffix ((,class (:foreground "#f39c12"))))
@@ -56,6 +56,19 @@
    `(diredp-rainbow-media-face ((,class (:foreground "#ffcc00"))))
    `(diredp-symlink ((,class (:foreground "#ffcc00"))))
    `(diredp-number ((,class (:foreground "#ffcc00"))))
+
+   ;; org
+   ;; `(org-link ((,class (:foreground "#D0E1F9" :underline "#2b4b6e"))))
+   `(org-block-begin-line ((,class (:background "#f50af50af50a"))))
+   `(org-block-end-line ((,class (:background "#f50af50af50a"))))
+   `(org-block ((,class (:foreground "black" :background "#f50af50af50a"))))
+   `(org-verbatim ((,class
+                    (:background "#f50af708f906"
+                                 :box (:line-width 2 :color "#f50af708f906")))))
+   `(org-code ((,class
+                (:foreground "white"
+                             :background "#2b4b6e"
+                             :box (:line-width 2 :color "#2b4b6e")))))
    ))
 
 (provide-theme 'danneskjold-light)
