@@ -67,7 +67,7 @@
                     (:background "#f50af708f906"
                                  :box (:line-width 2 :color "#f50af708f906")))))
    `(org-code ((,class
-                (:foreground "white"
+                (:foreground "black"
                              :background "#f50af50af50a"
                              :box (:line-width 2 :color "#f50af50af50a")))))
    ))
