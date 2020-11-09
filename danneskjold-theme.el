@@ -120,6 +120,7 @@
      `(button ((,c (:foreground ,frost :underline t :weight normal))))
      `(link ((,c (:foreground ,frost :underline t))))
      `(menu ((,c (:foreground ,white :background ,ada-midnight))))
+     `(shadow ((,c (:foreground ,comment))))
 
      `(secondary-selection ((,c ())))
 
