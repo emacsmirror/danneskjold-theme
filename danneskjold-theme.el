@@ -331,7 +331,7 @@
      `(org-latex-and-related        ((,c (:foreground "#FAF9FF"))))
      `(org-list-dt                  ((,c (:foreground ,yellow))))
      `(org-footnote                 ((,c (:foreground ,orange))))
-     `(org-priority                 ((,c (:foreground ,red))))
+     `(org-priority                 ((,c (:foreground ,white))))
      `(org-drawer                   ((,c (:foreground ,orange))))
 
      `(org-date                     ((,c (:foreground "LightSteelBlue2" :underline "LightSteelBlue4"))))
