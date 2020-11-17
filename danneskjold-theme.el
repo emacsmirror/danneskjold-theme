@@ -151,6 +151,8 @@
      `(mode-line ((,c (:background ,black :foreground ,comment))))
      `(mode-line-inactive ((,c (:background ,black :foreground ,invisible))))
      `(mode-line-buffer-id ((,c (:foreground ,white))))
+     `(org-mode-line-clock ((,c (:foreground ,yellow))))
+     `(org-mode-line-clock-overrun ((,c (:foreground ,red))))
 
      `(compilation-error ((,c (:foreground ,red))))
      `(compilation-line-number ((,c (:foreground ,yellow))))
