@@ -155,9 +155,9 @@
      `(org-mode-line-clock-overrun ((,c (:foreground ,red))))
 
      `(compilation-error ((,c (:foreground ,red))))
-     `(compilation-line-number ((,c (:foreground ,yellow))))
-     `(compilation-column-number ((,c (:foreground ,green))))
-     `(compilation-warning ((,c :foreground "systemOrangeColor")))
+     `(compilation-line-number ((,c (:foreground ,green))))
+     `(compilation-column-number ((,c (:foreground ,blue))))
+     `(compilation-warning ((,c :foreground ,yellow)))
      `(compilation-info ((,c (:foreground ,diredcl))))
 
      ;; Linum
