@@ -440,6 +440,7 @@
 
      ;; Popup
      `(popup-face ((,c (:foreground ,white :background ,ada-midnight))))
+     `(popup-tip-face ((,c (:foreground ,black :background ,yellow))))
      `(popup-menu-mouse-face ((,c (:foreground ,white :background ,sbt-midnight))))
      `(popup-menu-selection-face ((,c (:foreground ,white :background ,sbt-midnight))))
      `(flx-highlight-face ((,c (:underline ,red :background ,sbt-midnight :foreground ,white))))
