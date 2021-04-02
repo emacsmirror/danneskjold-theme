@@ -25,6 +25,8 @@
 
    `(font-lock-comment-face ((,class (:foreground "#7f8c8d"))))
 
+   `(highlight ((,class (:background "honeydew"))))
+
    ;; dired+
    `(diredp-compressed-file-suffix ((,class (:foreground "#f39c12"))))
    `(diredp-date-time ((,class (:foreground "goldenrod1"))))
