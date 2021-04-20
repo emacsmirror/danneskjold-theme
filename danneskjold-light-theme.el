@@ -68,8 +68,8 @@
    ;; `(org-link ((t (:foreground "#D0E1F9" :underline "#2b4b6e"))))
    `(org-meta-line ((t (:foreground "#9b59b6"))))
 
-   `(org-block-begin-line ((t (:background "#f50af708f906" :extend t))))
-   `(org-block-end-line ((t (:background "#f50af708f906" :extend t))))
+   `(org-block-begin-line ((t (:foreground "#2980b9" :weight bold :background "white"))))
+   `(org-block-end-line ((t (:foreground "#2980b9" :weight bold :background "white"))))
    '(org-block ((t (:extend t :background "#f50af708f906"))))
    ;; '(org-code ((t (:inherit (shadow fixed-pitch)))))
 
