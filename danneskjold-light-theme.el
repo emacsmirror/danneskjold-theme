@@ -6,8 +6,7 @@
    'danneskjold-light
    `(org-ellipsis ((t (:underline nil))))
 
-   `(ivy-current-match ((t (:foreground "black" :weight bold))))
-
+   ;; `(ivy-current-match ((t (:foreground "black" :weight bold))))
    ;; `(ivy-minibuffer-match-face-1 ((t (:foreground "black"))))
    ;; `(ivy-minibuffer-match-face-2 ((t (:height ,zoom-in-factor))))
    ;; `(ivy-minibuffer-match-face-3 ((t (:height ,zoom-in-factor))))
