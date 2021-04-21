@@ -1,21 +1,21 @@
 (deftheme danneskjold-light "Default theme with minor improvements.")
 
 (let ((class '((class color) (min-colors 89)))
-      (zoom-in-factor 1.3))
+      (zoom-in-factor 1.5))
   (custom-theme-set-faces
    'danneskjold-light
    `(org-ellipsis ((t (:underline nil))))
 
-   ;; `(ivy-current-match ((t (:foreground "black" :weight bold))))
-   ;; `(ivy-minibuffer-match-face-1 ((t (:foreground "black"))))
-   ;; `(ivy-minibuffer-match-face-2 ((t (:height ,zoom-in-factor))))
-   ;; `(ivy-minibuffer-match-face-3 ((t (:height ,zoom-in-factor))))
-   ;; `(ivy-minibuffer-match-face-4 ((t (:height ,zoom-in-factor))))
+   `(ivy-current-match ((t (:weight bold :background "gold"))))
+   `(ivy-minibuffer-match-face-1 ((t (:foreground "black"))))
+   `(ivy-minibuffer-match-face-2 ((t (:height ,zoom-in-factor))))
+   `(ivy-minibuffer-match-face-3 ((t (:height ,zoom-in-factor))))
+   `(ivy-minibuffer-match-face-4 ((t (:height ,zoom-in-factor))))
 
    `(swiper-match-face-1 ((t (:foreground "black"))))
-   `(swiper-match-face-2 ((t (:underline "red"))))
-   `(swiper-match-face-3 ((t (:underline "orange"))))
-   `(swiper-match-face-4 ((t (:underline "gold"))))
+   `(swiper-match-face-2 ((t (:height ,zoom-in-factor))))
+   `(swiper-match-face-3 ((t (:height ,zoom-in-factor))))
+   `(swiper-match-face-4 ((t (:height ,zoom-in-factor))))
 
    `(line-number ((t (:foreground "grey"))))
    `(line-number-current-line ((t (:foreground "#749AF7"))))
