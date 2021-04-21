@@ -8,10 +8,10 @@
 
    `(ivy-current-match ((t (:foreground "black" :weight bold))))
 
-   `(ivy-minibuffer-match-face-1 ((t (:foreground "black"))))
-   `(ivy-minibuffer-match-face-2 ((t (:height ,zoom-in-factor))))
-   `(ivy-minibuffer-match-face-3 ((t (:height ,zoom-in-factor))))
-   `(ivy-minibuffer-match-face-4 ((t (:height ,zoom-in-factor))))
+   ;; `(ivy-minibuffer-match-face-1 ((t (:foreground "black"))))
+   ;; `(ivy-minibuffer-match-face-2 ((t (:height ,zoom-in-factor))))
+   ;; `(ivy-minibuffer-match-face-3 ((t (:height ,zoom-in-factor))))
+   ;; `(ivy-minibuffer-match-face-4 ((t (:height ,zoom-in-factor))))
 
    `(swiper-match-face-1 ((t (:foreground "black"))))
    `(swiper-match-face-2 ((t (:underline "red"))))
@@ -70,7 +70,7 @@
 
    `(org-block-begin-line ((t (:foreground "black" :weight bold :background "white"))))
    `(org-block-end-line ((t (:foreground "black" :weight bold :background "white"))))
-   '(org-block ((t (:extend t :inherit (shadow fixed-pitch) :background "ghost white" ))))
+   '(org-block ((t (:extend t :background "ghost white"))))
    ;; '(org-code ((t (:inherit (shadow fixed-pitch)))))
 
    `(org-verbatim ((t
