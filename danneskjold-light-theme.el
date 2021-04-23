@@ -6,7 +6,7 @@
    'danneskjold-light
    `(org-ellipsis ((t (:underline nil))))
 
-   `(ivy-current-match ((t (:weight bold :background "gold"))))
+   `(ivy-current-match ((t (:weight bold :background "#ffd600"))))
    `(ivy-minibuffer-match-face-1 ((t (:foreground "black"))))
    `(ivy-minibuffer-match-face-2 ((t (:height ,zoom-in-factor))))
    `(ivy-minibuffer-match-face-3 ((t (:height ,zoom-in-factor))))
@@ -57,8 +57,6 @@
    `(diredp-rainbow-media-face ((t (:foreground "#ffcc00"))))
    `(diredp-symlink ((t (:foreground "#ffcc00"))))
    `(diredp-number ((t (:foreground "#ffcc00"))))
-
-   `(cursor ((t (:foreground "#D0E1F9"))))
 
    ;; hl-line
    `(hl-line ((t (:background "#f50af50af50a"))))
