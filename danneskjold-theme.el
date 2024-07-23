@@ -13,6 +13,17 @@
 (deftheme danneskjold
   "High-contrast minimalistic theme.")
 
+(defun danneskjold-toggle-theme ()
+  "Toggle light danneskjold theme."
+  (interactive)
+  (if (custom-theme-enabled-p 'danneskjold-light)
+      (progn
+        (disable-theme 'danneskjold-light)
+        (enable-theme 'danneskjold))
+    (progn
+      (disable-theme 'danneskjold)
+      (enable-theme 'danneskjold-light))))
+
 (defun danneskjold-invert-color (color)
   "Invert a hex color string."
   (let* ((hex-map '(("0" . 0) ("1" . 1) ("2" . 2) ("3" . 3) ("4" . 4)
