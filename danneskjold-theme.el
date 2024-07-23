@@ -10,8 +10,8 @@
 
 ;;; Code:
 
-(deftheme danneskjold
-  "High-contrast minimalistic theme.")
+(deftheme danneskjold "High-contrast minimalistic theme. Dark variant.")
+(deftheme danneskjold-light "High-contrast minimalistic theme. Light variant.")
 
 (defun danneskjold-toggle-theme ()
   "Toggle light danneskjold theme."
