@@ -4,7 +4,7 @@
 
 ;; Author: Dmitry Akatov <akatovda@yandex.com>
 ;; URL: https://github.com/rails-to-cosmos/danneskjold-theme
-;; Package-Version: 20231110.0
+;; Package-Version: 1.0.0
 
 ;;; Commentary:
 
