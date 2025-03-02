@@ -1,8 +1,8 @@
 ;; danneskjold-theme.el --- beautiful high-contrast theme
 
-;; Copyright (c) 2016-2024 Dmitry Akatov
+;; Copyright (c) 2016-2025 Dmitry Akatov
 
-;; Author: Dmitry Akatov <akatovda@yandex.com>
+;; Author: Dmitry Akatov <akatovda@google.com>
 ;; URL: https://github.com/rails-to-cosmos/danneskjold-theme
 ;; Package-Version: 1.0.0
 
