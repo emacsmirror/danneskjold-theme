@@ -479,6 +479,7 @@
                           `(vc-annotate-face-FFF33F ((,class (:foreground ,yellow))))
                           `(vertical-border ((,class (:foreground "#223959"))))
                           `(vertico-current ((,class (:foreground "#FFCA00"))))
+                          `(icomplete-selected-match ((,class (:foreground "#FFCA00"))))
                           `(wgrep-done-face                  ((,class (:foreground ,green))))
                           `(wgrep-face                  ((,class (:foreground ,yellow))))
                           `(wgrep-file-face                  ((,class (:background ,(danneskjold-invert-color yellow-c) :foreground ,yellow))))
