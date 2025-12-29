@@ -135,6 +135,13 @@
    `(wgrep-file-face ((,class (:background ,(danneskjold-invert-color "#281580") :foreground ,yellow))))
    `(whitespace-space ((,class (:foreground ,ada-midnight))))
    `(whitespace-newline ((,class (:foreground ,ada-midnight))))
+
+   `(org-priority ((,class (:foreground ,foreground)))) ;; Default
+   `(org-priority-highest ((,class (:foreground ,red :bold t))))    ; [#A]
+   `(org-priority-medium ((,class (:foreground ,yellow))))          ; [#B]
+   `(org-priority-lowest ((,class (:foreground ,green-dark))))      ; [#C]
+   `(org-ellipsis ((,class (:inherit hs-face :underline unspecified))))
+
    `(vertico-current ((,class (:foreground "#FFCA00")))))
 
   ;; --- Light Theme Face Definitions ---

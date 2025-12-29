@@ -53,11 +53,11 @@ The theme provides a distinct background for blocks to make code stand out from 
 * Tables and Data
 Tables use the =yellow= face for borders and content in this theme.
 
-| Name               | Role               | Status   |
-|--------------------+--------------------+----------|
-| Ragnar Danneskjold | Privateer          | Active   |
-| John Galt          | Engineer           | Hidden   |
-| Dagny Taggart      | VP Operations      | Working  |
+| Name               | Role          | Status  |
+|--------------------+---------------+---------|
+| Ragnar Danneskjold | Privateer     | Active  |
+| John Galt          | Engineer      | Hidden  |
+| Dagny Taggart      | VP Operations | Working |
 
 * Deadlines and Schedules
 These elements are vital for the Org-Agenda:
