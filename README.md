@@ -8,7 +8,7 @@ Screenshots
 
 #### Org-mode ####
 
-![org-mode](https://github.com/rails-to-cosmos/danneskjold-theme/raw/master/screenshots/org.png)
+![org-mode](https://github.com/rails-to-cosmos/danneskjold-theme/raw/master/screenshots/org-mode.png)
 
 ### Bug Reporting
 
