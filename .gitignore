@@ -4,3 +4,4 @@
 # Packaging
 .cask
 *.~undo-tree~
+*.el#
