@@ -1,0 +1,68 @@
+#+TITLE: Danneskjold Theme Showcase
+#+AUTHOR: Dmitry Akatov
+#+OPTIONS: toc:2
+
+* Headlines and Structure
+This is the top-level headline (Level 1). It usually represents the main project or document section.
+
+** Level 2 Headline
+Notice how the high contrast helps differentiate between the text and the structure.
+*** Level 3 Headline
+**** Level 4 Headline
+***** Level 5 Headline
+****** Level 6 Headline
+Even at deep nesting levels, the theme remains readable.
+
+* Formatting and Markup
+Org-mode supports various types of text decoration:
+- *Bold text* for emphasis.
+- /Italicized text/ for a softer touch.
+- _Underlined text_ for clarity.
+- +Strikethrough text+ for deleted items.
+- ~Code snippets~ and =Verbatim= text for technical notes.
+
+** Links and Footnotes
+You can have [[https://github.com/rails-to-cosmos/danneskjold-theme][External Links]] which use the =frost= color, or internal footnotes[fn:1].
+
+* Task Management
+The theme highlights the status of your workflow:
+
+- TODO This is an active task using the =yellow= face.
+- DONE This is a completed task using the =green= face.
+- WAIT This is a task on hold.
+
+** Tags and Priorities
+- [#A] High Priority Task :urgent:work:
+- [#B] Medium Priority Task :maintenance:
+- [#C] Low Priority Task :optional:
+
+* Blocks and Source Code
+The theme provides a distinct background for blocks to make code stand out from prose.
+
+#+begin_src elisp
+(defun hello-danneskjold ()
+  "A simple greeting function."
+  (message "Looking good in high-contrast!"))
+#+end_src
+
+#+begin_quote
+"The man who does not value himself, cannot value anything or anyone."
+— Francisco d'Anconia (The theme's namesake inspiration).
+#+end_quote
+
+* Tables and Data
+Tables use the =yellow= face for borders and content in this theme.
+
+| Name               | Role               | Status   |
+|--------------------+--------------------+----------|
+| Ragnar Danneskjold | Privateer          | Active   |
+| John Galt          | Engineer           | Hidden   |
+| Dagny Taggart      | VP Operations      | Working  |
+
+* Deadlines and Schedules
+These elements are vital for the Org-Agenda:
+- SCHEDULED: <2025-12-30 Tue>
+- DEADLINE: <2026-01-15 Wed>
+
+* Footnotes
+[fn:1] Footnotes appear at the bottom and inherit the theme's link styling.
